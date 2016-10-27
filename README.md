@@ -7,3 +7,9 @@ My ESLint configuration. See <http://eslint.org/docs/developer-guide/shareable-c
 ```sh
 npm install --save-dev eslint github:ybiquitous/eslint-config-ybiquitous
 ```
+
+or
+
+```sh
+yarn add --dev eslint github:ybiquitous/eslint-config-ybiquitous
+```
