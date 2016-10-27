@@ -39,13 +39,14 @@
   },
   "scripts": {
     "postinstall": "node ./postinstall.js",
+    "lint": "eslint --max-warnings=0 .",
+    "pretest": "npm run lint",
     "test": "./test.sh",
-    "lint-staged": "lint-staged",
-    "lint": "eslint --max-warnings=0 ."
+    "lint-staged": "lint-staged"
   },
   "lint-staged": {
     "*.@(js|jsx)": [
-      "eslint --fix",
+      "eslint --fix --max-warnings=0",
       "git add"
     ]
   },

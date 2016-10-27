@@ -3,7 +3,7 @@ Please add this settings to package.json:
 
   {
     "lint-staged": {
-      "*.@(js|jsx)": "eslint"
+      "*.@(js|jsx)": "eslint --max-warnings=0"
     },
     "pre-commit": [
       "lint-staged"
@@ -15,7 +15,7 @@ Please add this settings to package.json:
   {
     "lint-staged": {
       "*.@(js|jsx)": [
-        "eslint --fix",
+        "eslint --fix --max-warnings=0",
         "git add"
       ]
     },

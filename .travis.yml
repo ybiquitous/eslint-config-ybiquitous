@@ -8,5 +8,4 @@ install:
   - yarn
 
 script:
-  - yarn eslint:all
   - yarn test
