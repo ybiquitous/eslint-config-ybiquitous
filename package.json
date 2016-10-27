@@ -35,6 +35,7 @@
   },
   "scripts": {
     "postinstall": "node ./postinstall.js",
+    "test": "./test.sh",
     "lint-staged": "lint-staged",
     "eslint:all": "eslint ."
   },
@@ -45,6 +46,7 @@
     ]
   },
   "pre-commit": [
-    "lint-staged"
+    "lint-staged",
+    "test"
   ]
 }
