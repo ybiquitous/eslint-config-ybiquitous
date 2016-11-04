@@ -38,3 +38,6 @@ jspm_packages
 
 # Tern.el
 .tern-*
+
+# Temp
+tmp
