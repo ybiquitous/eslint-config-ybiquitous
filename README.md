@@ -4,11 +4,13 @@ My ESLint configuration. See [ESLint Shareable Configs documentation](http://esl
 
 ## Install
 
+via NPM:
+
 ```sh
 npm install --save-dev eslint github:ybiquitous/eslint-config-ybiquitous
 ```
 
-or
+via Yarn:
 
 ```sh
 yarn add --dev eslint github:ybiquitous/eslint-config-ybiquitous
