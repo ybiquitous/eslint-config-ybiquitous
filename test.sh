@@ -10,7 +10,7 @@ cd $WORKDIR
 npm init -y
 
 # test local
-npm install --save-dev --cache-min 99999999 eslint ..
+npm install --save-dev eslint ..
 echo '{"extends":"ybiquitous"}' > .eslintrc
 echo 'process.stdout.write(1)' > test.js
 $(npm bin)/eslint .
