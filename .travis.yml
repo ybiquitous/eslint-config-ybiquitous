@@ -1,7 +1,15 @@
 language: node_js
 
 node_js:
-  - "node"
+  - node
 
 script:
   - yarn test
+
+deploy:
+  provider: npm
+  email: 10koba01@gmail.com
+  api_key:
+    secure: CMeSWsWpWwj1lLLlGbfYAka1pBVmaqvY2o/EdSBb37wCYSbBGh1At5EDuLjvVuDmev7IGwRgzCgNR5cAhUPTbqc6il6ETTVpoEUHOVigu/sh0wZTDs+JeeEKrC0pg0wCjGWxO1XCxDv6u3S3KJxqxLxAeRF3jLxsxkrH8Rw0DWy+z10qGLuEraIvNEef7b+YC+R/ZeLj+0GHxBTJzMrPL6lbqnFIXYR88/ctiTViecZvZC6SCi5MU7BRWp24OAZhwd4cyG6M7or6RyzRcpVJOR49Dh1mu9XueU67nb3o5Lt8dR6VBbzCXK57+XJT/8cgiqSIda5sdNHz5sL9UgDntHq4VtbXinACuB90QtxsOSLUycU7tBgQuvHnBRBMve2Xj4PE0+BvFjILTqz5NU3iLI2iI12+3eZTNRveEdk8Icj0Ml4cSrZlGFhNba8fvf34cGJVh1m9uNEdPGZTzEqX+AtiFuHEuPEMSAJ6uousAEZFcb6P36t5vq/ktqj4+Im1p6yGG/1snUlKgI2CRlzxdISK9qS7VSHBGzQE8yJt/qPMZMgTNVawT8EZw5rXy4iss1VdgE7IvoU1z0Rqnp2O084C5AQOnCDuJwkJljvSNC925R5ainJe53YBCN8CtO+DY8XiAwMvIUkmHlc7gTdGVI/XXSuoqBumPKmEb0honVM=
+  on:
+    tags: true
