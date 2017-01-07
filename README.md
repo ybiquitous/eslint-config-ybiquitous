@@ -3,18 +3,20 @@
 
 # eslint-config-ybiquitous
 
-My ESLint configuration. See [ESLint Shareable Configs documentation](http://eslint.org/docs/developer-guide/shareable-configs).
+[ybiquitous](https://github.com/ybiquitous)'s ESLint configuration. See [ESLint Shareable Configs documentation](http://eslint.org/docs/developer-guide/shareable-configs).
+
+This package borrows almost from [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb).
 
 ## Install
 
 via NPM:
 
 ```sh
-npm install --save-dev eslint github:ybiquitous/eslint-config-ybiquitous
+npm install --save-dev eslint eslint-config-ybiquitous
 ```
 
 via Yarn:
 
 ```sh
-yarn add --dev eslint github:ybiquitous/eslint-config-ybiquitous
+yarn add --dev eslint eslint-config-ybiquitous
 ```
