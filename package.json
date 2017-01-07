@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-ybiquitous",
   "version": "1.0.0",
-  "description": "My ESLint configuration",
+  "description": "ybiquitous's ESLint configuration",
   "main": "index.js",
   "author": "ybiquitous <10koba01@gmail.com>",
   "license": "MIT",
