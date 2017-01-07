@@ -20,3 +20,13 @@ via Yarn:
 ```sh
 yarn add --dev eslint eslint-config-ybiquitous
 ```
+
+## Release
+
+```sh
+yarn version --new-version [version]
+```
+
+## License
+
+See [LICENSE](LICENSE).
