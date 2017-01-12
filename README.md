@@ -25,6 +25,8 @@ yarn add --dev eslint eslint-config-ybiquitous
 
 ```sh
 yarn version --new-version [version]
+git push
+git push --tags
 ```
 
 ## License
