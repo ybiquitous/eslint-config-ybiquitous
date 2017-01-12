@@ -30,3 +30,7 @@ yarn version --new-version [version]
 ## License
 
 See [LICENSE](LICENSE).
+
+## Changelog
+
+See [CHANGELOG](CHANGELOG.md).

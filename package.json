@@ -10,6 +10,7 @@
     "eslintconfig"
   ],
   "files": [
+    "CHANGELOG.md",
     "LICENSE",
     "README.md",
     "index.js",
