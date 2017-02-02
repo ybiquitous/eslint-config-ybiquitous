@@ -21,6 +21,12 @@ via Yarn:
 yarn add --dev eslint eslint-config-ybiquitous
 ```
 
+`.eslintrc`:
+
+``` json
+{"extends": "ybiquitous"}
+```
+
 ## Release
 
 ```sh
