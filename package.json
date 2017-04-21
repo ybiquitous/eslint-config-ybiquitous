@@ -28,7 +28,7 @@
     "eslint-plugin-react": "^6.9.0"
   },
   "devDependencies": {
-    "eslint": ">=3",
+    "eslint": ">=3.13.0",
     "lint-staged": "*",
     "pre-commit": "*"
   },
