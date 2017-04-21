@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "eslint": ">=3",
-    "lint-staged": "*",
+    "lint-staged": "3.2.5",
     "pre-commit": "*"
   },
   "peerDependencies": {
