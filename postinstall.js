@@ -1,27 +1,38 @@
+const { EOL } = require('os')
+
+const examples = [
+  {
+    scripts: {
+      precommit: 'lint-staged',
+    },
+    'lint-staged': {
+      '*.@(js|jsx)': 'eslint --max-warnings=0',
+    },
+  },
+  {
+    scripts: {
+      precommit: 'lint-staged',
+    },
+    'lint-staged': {
+      '*.@(js|jsx)': [
+        'eslint --fix --max-warnings=0',
+        'git add',
+      ],
+    },
+  },
+]
+
+const exampleMessage = examples
+  .map(example => JSON.stringify(example, null, 2))
+  .join(`${EOL}${EOL}-------------------- OR --------------------${EOL}${EOL}`)
+
 process.stdout.write(`
-Please add this settings to package.json:
+1. Install lint-staged and husky:
 
-  {
-    "lint-staged": {
-      "*.@(js|jsx)": "eslint --max-warnings=0"
-    },
-    "pre-commit": [
-      "lint-staged"
-    ]
-  }
+> npm install --D lint-staged husky
 
--------------------- Or --------------------
 
-  {
-    "lint-staged": {
-      "*.@(js|jsx)": [
-        "eslint --fix --max-warnings=0",
-        "git add"
-      ]
-    },
-    "pre-commit": [
-      "lint-staged"
-    ]
-  }
+2. Add this settings to package.json:
 
+${exampleMessage}
 `)

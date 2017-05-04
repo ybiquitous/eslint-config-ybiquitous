@@ -29,8 +29,8 @@
   },
   "devDependencies": {
     "eslint": ">=3",
-    "lint-staged": "*",
-    "pre-commit": "*"
+    "husky": "*",
+    "lint-staged": "*"
   },
   "peerDependencies": {
     "eslint": ">=3"
@@ -39,16 +39,12 @@
     "postinstall": "node ./postinstall.js",
     "lint": "eslint --max-warnings=0 .",
     "test": "./test.sh && npm run lint",
-    "lint-staged": "lint-staged"
+    "precommit": "lint-staged"
   },
   "lint-staged": {
     "*.@(js|jsx)": [
       "eslint --fix --max-warnings=0",
       "git add"
     ]
-  },
-  "pre-commit": [
-    "lint-staged",
-    "test"
-  ]
+  }
 }
