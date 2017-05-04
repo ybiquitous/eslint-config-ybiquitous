@@ -22,10 +22,10 @@
   },
   "homepage": "https://github.com/ybiquitous/eslint-config-ybiquitous#readme",
   "dependencies": {
-    "eslint-config-airbnb": "^14.0.0",
+    "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
-    "eslint-plugin-react": "^6.9.0"
+    "eslint-plugin-react": "^6.10.3"
   },
   "devDependencies": {
     "eslint": ">=3",
