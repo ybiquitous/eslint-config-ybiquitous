@@ -99,7 +99,7 @@ balanced-match@^0.4.1:
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-0.4.2.tgz#cb3f3e3c732dc0f01ee70b403f302e61d7709838"
 
-brace-expansion@^1.0.0:
+brace-expansion@^1.1.7:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-1.1.7.tgz#3effc3c50e000531fb720eaff80f0ae8ef23cf59"
   dependencies:
@@ -332,8 +332,8 @@ es-to-primitive@^1.1.1:
     is-symbol "^1.0.1"
 
 es5-ext@^0.10.14, es5-ext@^0.10.9, es5-ext@~0.10.14:
-  version "0.10.15"
-  resolved "https://registry.yarnpkg.com/es5-ext/-/es5-ext-0.10.15.tgz#c330a5934c1ee21284a7c081a86e5fd937c91ea6"
+  version "0.10.16"
+  resolved "https://registry.yarnpkg.com/es5-ext/-/es5-ext-0.10.16.tgz#1ef1b04f3d09db6a5d630226d62202f2e425e45a"
   dependencies:
     es6-iterator "2"
     es6-symbol "~3.1"
@@ -835,8 +835,8 @@ js-tokens@^3.0.0:
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.1.tgz#08e9f132484a2c45a30907e9dc4d5567b7f114d7"
 
 js-yaml@^3.4.3, js-yaml@^3.5.1:
-  version "3.8.3"
-  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.8.3.tgz#33a05ec481c850c8875929166fe1beb61c728766"
+  version "3.8.4"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.8.4.tgz#520b4564f86573ba96662af85a8cafa7b4b5a6f6"
   dependencies:
     argparse "^1.0.7"
     esprima "^3.1.1"
@@ -954,10 +954,10 @@ lru-cache@^4.0.1:
     yallist "^2.0.0"
 
 minimatch@^3.0.0, minimatch@^3.0.2, minimatch@^3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.3.tgz#2a4e4090b96b2db06a9d7df01055a62a77c9b774"
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
   dependencies:
-    brace-expansion "^1.0.0"
+    brace-expansion "^1.1.7"
 
 minimist@0.0.8:
   version "0.0.8"
@@ -1234,8 +1234,8 @@ rx-lite@^3.1.2:
   resolved "https://registry.yarnpkg.com/rx-lite/-/rx-lite-3.1.2.tgz#19ce502ca572665f3b647b10939f97fd1615f102"
 
 rxjs@^5.0.0-beta.11:
-  version "5.3.1"
-  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.3.1.tgz#9ecc9e722247e4f4490d30a878577a3740fd0cb7"
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.4.0.tgz#a7db14ab157f9d7aac6a56e655e7a3860d39bf26"
   dependencies:
     symbol-observable "^1.0.1"
 
