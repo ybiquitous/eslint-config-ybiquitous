@@ -1,3 +1,7 @@
+# v1.4.0 (2017-05-15)
+
+- Upgrade eslint-config-airbnb to version 15.0.0
+
 # v1.3.0 (2017-05-05)
 
 - New ESLint plugin: `eslint-plugin-compat`
