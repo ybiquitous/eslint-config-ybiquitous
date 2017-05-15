@@ -31,6 +31,8 @@ yarn add --dev eslint eslint-config-ybiquitous
 
 ## Release
 
+Update [CHANGELOG](CHANGELOG.md), then run following commands.
+
 ```sh
 yarn version
 git push
