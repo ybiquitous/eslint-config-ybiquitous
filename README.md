@@ -32,7 +32,7 @@ yarn add --dev eslint eslint-config-ybiquitous
 ## Release
 
 ```sh
-yarn version --new-version [version]
+yarn version
 git push
 git push --tags
 ```
