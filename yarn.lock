@@ -142,8 +142,8 @@ caniuse-db@1.0.30000671:
   resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000671.tgz#9f071bbc7b96994638ccbaf47829d58a1577a8ed"
 
 caniuse-lite@^1.0.30000670:
-  version "1.0.30000673"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000673.tgz#4f1c5fefb304f712c526614d83b19476c16e662a"
+  version "1.0.30000674"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000674.tgz#3eabc5e40ae2dce6375dd292f116b9e25bd505a7"
 
 chalk@^1.0.0, chalk@^1.1.0, chalk@^1.1.1, chalk@^1.1.3:
   version "1.1.3"
@@ -695,8 +695,8 @@ hosted-git-info@^2.1.4:
   resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.4.2.tgz#0076b9f46a270506ddbaaea56496897460612a67"
 
 husky@*:
-  version "0.13.3"
-  resolved "https://registry.yarnpkg.com/husky/-/husky-0.13.3.tgz#bc2066080badc8b8fe3516e881f5bc68a57052ff"
+  version "0.13.4"
+  resolved "https://registry.yarnpkg.com/husky/-/husky-0.13.4.tgz#48785c5028de3452a51c48c12c4f94b2124a1407"
   dependencies:
     chalk "^1.1.3"
     find-parent-dir "^0.3.0"
@@ -892,8 +892,8 @@ levn@^0.3.0, levn@~0.3.0:
     type-check "~0.3.2"
 
 lint-staged@*:
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-3.5.0.tgz#e8a8900b863e85051a3769e0a11ccb4a7dfa9f83"
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-3.5.1.tgz#a9a2b0c161b436f8dce4bb27265e34d97a56ed82"
   dependencies:
     app-root-path "^2.0.0"
     cosmiconfig "^1.1.0"
