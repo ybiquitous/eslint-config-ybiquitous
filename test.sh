@@ -4,13 +4,14 @@ set -e
 WORKDIR=tmp
 
 # setup
+tarball=$(npm pack)
 rm -rf $WORKDIR
 mkdir $WORKDIR
 cd $WORKDIR
 npm init -y
 
 # test local
-npm install --save-dev eslint ..
+npm install --save-dev eslint "file:../${tarball}"
 echo '{"extends":"ybiquitous"}' > .eslintrc
 echo 'process.stdout.write(1)' > test.js
 $(npm bin)/eslint .
