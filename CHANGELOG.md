@@ -1,3 +1,7 @@
+# v1.4.1 (2017-06-10)
+
+- Support Node.js v8
+
 # v1.4.0 (2017-05-15)
 
 - Upgrade eslint-config-airbnb to version 15.0.0
