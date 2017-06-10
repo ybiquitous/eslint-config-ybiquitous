@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ybiquitous",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "ybiquitous's ESLint configuration",
   "main": "index.js",
   "author": "ybiquitous <10koba01@gmail.com>",
