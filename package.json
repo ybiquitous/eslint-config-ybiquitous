@@ -13,13 +13,8 @@
     "index.js",
     "postinstall.js"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ybiquitous/eslint-config-ybiquitous.git"
-  },
-  "bugs": {
-    "url": "https://github.com/ybiquitous/eslint-config-ybiquitous/issues"
-  },
+  "repository": "ybiquitous/eslint-config-ybiquitous",
+  "bugs": "https://github.com/ybiquitous/eslint-config-ybiquitous/issues",
   "homepage": "https://github.com/ybiquitous/eslint-config-ybiquitous#readme",
   "dependencies": {
     "eslint-config-airbnb": "^15.0.0",
