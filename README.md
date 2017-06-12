@@ -5,25 +5,26 @@
 
 # eslint-config-ybiquitous
 
-[ybiquitous](https://github.com/ybiquitous)'s ESLint configuration. See [ESLint Shareable Configs documentation](http://eslint.org/docs/developer-guide/shareable-configs).
+This package is [ybiquitous](https://github.com/ybiquitous)'s ESLint configuration.
+For details, please see ["Shareable Configs"](http://eslint.org/docs/developer-guide/shareable-configs) in ESLint documentation.
 
-This package borrows almost from [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb).
+*This package depends almost on [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb).*
 
 ## Install
 
-via NPM:
+via [npm](https://www.npmjs.com/):
 
 ```sh
-npm install --save-dev eslint@3 eslint-config-ybiquitous
+$ npm install --save-dev eslint@3 eslint-config-ybiquitous
 ```
 
-via Yarn:
+via [yarn](https://yarnpkg.com/):
 
 ```sh
-yarn add --dev eslint@3 eslint-config-ybiquitous
+$ yarn add --dev eslint@3 eslint-config-ybiquitous
 ```
 
-`.eslintrc`:
+Edit `.eslintrc`:
 
 ``` json
 {
@@ -33,12 +34,13 @@ yarn add --dev eslint@3 eslint-config-ybiquitous
 
 ## Release
 
-Update [CHANGELOG](CHANGELOG.md), then run following commands.
+1. Update [CHANGELOG](CHANGELOG.md).
+2. Run following commands.
 
 ```sh
-yarn version
-git push
-git push --tags
+$ yarn version
+$ git push
+$ git push --tags
 ```
 
 ## License
