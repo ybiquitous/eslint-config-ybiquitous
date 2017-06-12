@@ -1,5 +1,3 @@
-const { EOL } = require('os')
-
 const examples = [
   {
     scripts: {
@@ -24,15 +22,20 @@ const examples = [
 
 const exampleMessage = examples
   .map(example => JSON.stringify(example, null, 2))
-  .join(`${EOL}${EOL}-------------------- OR --------------------${EOL}${EOL}`)
+  .map(example => example.replace(/^/gm, '    '))
+  .join(`
+
+    -------------------- OR --------------------
+
+`)
 
 process.stdout.write(`
 1. Install lint-staged and husky:
 
-> npm install --D lint-staged husky
-
+    $ npm install --save-dev lint-staged husky
 
 2. Add this settings to package.json:
 
 ${exampleMessage}
+
 `)
