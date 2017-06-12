@@ -34,7 +34,8 @@
   "scripts": {
     "postinstall": "node ./postinstall.js",
     "lint": "eslint --max-warnings=0 .",
-    "test": "./test.sh && npm run lint",
+    "pretest": "npm run lint",
+    "test": "./test.sh",
     "precommit": "lint-staged"
   },
   "lint-staged": {
