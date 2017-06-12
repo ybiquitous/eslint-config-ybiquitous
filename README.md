@@ -14,19 +14,21 @@ This package borrows almost from [eslint-config-airbnb](https://www.npmjs.com/pa
 via NPM:
 
 ```sh
-npm install --save-dev eslint eslint-config-ybiquitous
+npm install --save-dev eslint@3 eslint-config-ybiquitous
 ```
 
 via Yarn:
 
 ```sh
-yarn add --dev eslint eslint-config-ybiquitous
+yarn add --dev eslint@3 eslint-config-ybiquitous
 ```
 
 `.eslintrc`:
 
 ``` json
-{"extends": "ybiquitous"}
+{
+  "extends": "ybiquitous"
+}
 ```
 
 ## Release

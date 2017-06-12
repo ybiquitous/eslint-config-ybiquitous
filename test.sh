@@ -12,7 +12,7 @@ mv "../${tarball}" .
 npm init -y
 
 # test local
-npm install --save-dev eslint "file:./${tarball}"
+npm install --save-dev eslint@3 "file:./${tarball}"
 echo '{"extends":"ybiquitous"}' > .eslintrc
 echo 'process.stdout.write(1)' > test.js
 $(npm bin)/eslint .
