@@ -1,3 +1,7 @@
+# v1.4.2 (2017-06-12)
+
+- Restrict to ESLint v3 (ESLint v4 is not yet supported)
+
 # v1.4.1 (2017-06-10)
 
 - Support Node.js v8
