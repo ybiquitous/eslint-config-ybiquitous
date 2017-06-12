@@ -1,3 +1,8 @@
+# v1.4.3 (2017-06-12)
+
+- Improve postinstall message
+- Improve README
+
 # v1.4.2 (2017-06-12)
 
 - Restrict to ESLint v3 (ESLint v4 is not yet supported)
