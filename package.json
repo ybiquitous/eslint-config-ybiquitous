@@ -24,12 +24,12 @@
     "eslint-plugin-react": "^7.0.1"
   },
   "devDependencies": {
-    "eslint": ">=3",
+    "eslint": ">=3 <4",
     "husky": "*",
     "lint-staged": "*"
   },
   "peerDependencies": {
-    "eslint": ">=3"
+    "eslint": ">=3 <4"
   },
   "scripts": {
     "postinstall": "node ./postinstall.js",
