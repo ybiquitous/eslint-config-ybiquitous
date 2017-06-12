@@ -26,7 +26,8 @@
   "devDependencies": {
     "eslint": ">=3 <4",
     "husky": "*",
-    "lint-staged": "*"
+    "lint-staged": "*",
+    "validate-commit-msg": "*"
   },
   "peerDependencies": {
     "eslint": ">=3 <4"
@@ -36,12 +37,18 @@
     "lint": "eslint --max-warnings=0 .",
     "pretest": "npm run lint",
     "test": "./test.sh",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "commitmsg": "validate-commit-msg"
   },
   "lint-staged": {
     "*.@(js|jsx)": [
       "eslint --fix --max-warnings=0",
       "git add"
     ]
+  },
+  "config": {
+    "validate-commit-msg": {
+      "types": "conventional-commit-types"
+    }
   }
 }
