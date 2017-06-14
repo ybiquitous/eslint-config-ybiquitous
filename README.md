@@ -34,14 +34,9 @@ Edit `.eslintrc`:
 
 ## Release
 
-1. Update [CHANGELOG](CHANGELOG.md).
-2. Run following commands.
-
-```sh
-$ yarn version
-$ git push
-$ git push --tags
-```
+1. `git checkout master; git pull origin master`
+2. `yarn release`
+3. `git push --follow-tags origin master`
 
 ## License
 

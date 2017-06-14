@@ -27,6 +27,7 @@
     "eslint": ">=3 <4",
     "husky": "*",
     "lint-staged": "*",
+    "standard-version": "*",
     "validate-commit-msg": "*"
   },
   "peerDependencies": {
@@ -38,7 +39,8 @@
     "pretest": "npm run lint",
     "test": "./test.sh",
     "precommit": "lint-staged",
-    "commitmsg": "validate-commit-msg"
+    "commitmsg": "validate-commit-msg",
+    "release": "standard-version"
   },
   "lint-staged": {
     "*.@(js|jsx)": [
