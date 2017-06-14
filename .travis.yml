@@ -7,7 +7,7 @@ script:
 
 deploy:
   provider: npm
-  email: 10koba01@gmail.com
+  email: ybiquitous@gmail.com
   api_key: $NPM_TOKEN
   on:
     tags: true
