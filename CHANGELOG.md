@@ -1,31 +1,46 @@
-# v1.4.3 (2017-06-12)
+# Change Log
+
+<a name="1.4.3"></a>
+## [1.4.3](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v1.4.2...v1.4.3) (2017-06-12)
 
 - Improve postinstall message
 - Improve README
 
-# v1.4.2 (2017-06-12)
+
+<a name="1.4.2"></a>
+## [1.4.2](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v1.4.1...v1.4.2) (2017-06-12)
 
 - Restrict to ESLint v3 (ESLint v4 is not yet supported)
 
-# v1.4.1 (2017-06-10)
+
+<a name="1.4.1"></a>
+## [1.4.1](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v1.4.0...v1.4.1) (2017-06-10)
 
 - Support Node.js v8
 
-# v1.4.0 (2017-05-15)
+
+<a name="1.4.0"></a>
+## [1.4.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v1.3.0...v1.4.0) (2017-05-15)
 
 - Upgrade eslint-config-airbnb to version 15.0.0
 
-# v1.3.0 (2017-05-05)
+
+<a name="1.3.0"></a>
+## [1.3.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v1.2.0...v1.3.0) (2017-05-05)
 
 - New ESLint plugin: `eslint-plugin-compat`
 
 - Update postinstall example: `pre-commit` => `husky`
 
-# v1.2.0 (2017-02-26)
+
+<a name="1.2.0"></a>
+## [1.2.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v1.1.0...v1.2.0) (2017-02-26)
 
 - Update eslint-plugin-jsx-a11y to version 4.0.0
 
-# v1.1.0 (2017-01-12)
+
+<a name="1.1.0"></a>
+## [1.1.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v1.0.2...v1.1.0) (2017-01-12)
 
 - Update eslint-config-airbnb to version 14.0.0
 
