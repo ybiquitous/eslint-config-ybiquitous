@@ -5,6 +5,8 @@ All notable changes to this project will be documented in this file. See [standa
 <a name="1.4.4"></a>
 ## [1.4.4](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v1.4.3...v1.4.4) (2017-06-15)
 
+- Introduce `standard-version`
+
 
 
 <a name="1.4.3"></a>
@@ -14,10 +16,12 @@ All notable changes to this project will be documented in this file. See [standa
 - Improve README
 
 
+
 <a name="1.4.2"></a>
 ## [1.4.2](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v1.4.1...v1.4.2) (2017-06-12)
 
 - Restrict to ESLint v3 (ESLint v4 is not yet supported)
+
 
 
 <a name="1.4.1"></a>
@@ -26,10 +30,12 @@ All notable changes to this project will be documented in this file. See [standa
 - Support Node.js v8
 
 
+
 <a name="1.4.0"></a>
 ## [1.4.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v1.3.0...v1.4.0) (2017-05-15)
 
 - Upgrade eslint-config-airbnb to version 15.0.0
+
 
 
 <a name="1.3.0"></a>
@@ -40,10 +46,12 @@ All notable changes to this project will be documented in this file. See [standa
 - Update postinstall example: `pre-commit` => `husky`
 
 
+
 <a name="1.2.0"></a>
 ## [1.2.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v1.1.0...v1.2.0) (2017-02-26)
 
 - Update eslint-plugin-jsx-a11y to version 4.0.0
+
 
 
 <a name="1.1.0"></a>
