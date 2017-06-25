@@ -40,10 +40,6 @@ Edit `.eslintrc`:
 
 (`npm publish` does not need, because it will be executed in CI)
 
-## License
+## [License](LICENSE)
 
-See [LICENSE](LICENSE).
-
-## Changelog
-
-See [CHANGELOG](CHANGELOG.md).
+## [Changelog](CHANGELOG.md)
