@@ -42,4 +42,4 @@ Edit `.eslintrc`:
 
 ## [License](LICENSE)
 
-## [Changelog](CHANGELOG.md)
+## [Change Log](CHANGELOG.md)
