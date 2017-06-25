@@ -38,6 +38,8 @@ Edit `.eslintrc`:
 2. `yarn release`
 3. `git push --follow-tags origin master`
 
+(`npm publish` does not need, because it will be executed in CI)
+
 ## License
 
 See [LICENSE](LICENSE).
