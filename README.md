@@ -35,7 +35,7 @@ Edit `.eslintrc`:
 ## Release
 
 1. `git checkout master; git pull origin master`
-2. `yarn release` (or you can try `yarn release -- --dry-run` without no changes)
+2. `yarn release` (or you can try `yarn release -- --dry-run` without any changes)
 3. `git push --follow-tags origin master`
 
 (`npm publish` does not need, because it will be executed in CI)
