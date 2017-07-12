@@ -4,7 +4,7 @@ const examples = [
       precommit: 'lint-staged',
     },
     'lint-staged': {
-      '*.@(js|jsx)': 'eslint --max-warnings=0',
+      '*.{js,jsx}': 'eslint --max-warnings=0',
     },
   },
   {
@@ -12,7 +12,7 @@ const examples = [
       precommit: 'lint-staged',
     },
     'lint-staged': {
-      '*.@(js|jsx)': [
+      '*.{js,jsx}': [
         'eslint --fix --max-warnings=0',
         'git add',
       ],
