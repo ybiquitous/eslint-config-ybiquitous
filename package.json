@@ -44,7 +44,7 @@
     "release": "standard-version"
   },
   "lint-staged": {
-    "*.@(js|jsx)": [
+    "*.js": [
       "eslint --fix --max-warnings=0",
       "git add"
     ]
