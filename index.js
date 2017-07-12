@@ -1,6 +1,13 @@
 module.exports = {
   extends: ['airbnb'],
+
   plugins: ['compat', 'eslint-comments'],
+
+  env: {
+    browser: true,
+    node: true,
+  },
+
   rules: {
     semi: ['error', 'never'],
     'compat/compat': 'error',
@@ -10,9 +17,5 @@ module.exports = {
     'eslint-comments/no-unused-disable': 'error',
     'eslint-comments/no-unused-enable': 'error',
     'eslint-comments/no-use': 'off',
-  },
-  env: {
-    browser: true,
-    node: true,
   },
 }
