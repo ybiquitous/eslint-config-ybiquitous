@@ -25,14 +25,14 @@
     "eslint-plugin-react": "^7.0.1"
   },
   "devDependencies": {
-    "eslint": ">=3 <4",
+    "eslint": "3",
     "husky": "*",
     "lint-staged": "*",
     "standard-version": "*",
     "validate-commit-msg": "*"
   },
   "peerDependencies": {
-    "eslint": ">=3 <4"
+    "eslint": "3"
   },
   "scripts": {
     "postinstall": "node ./postinstall.js",
