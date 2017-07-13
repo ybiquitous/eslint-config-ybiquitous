@@ -10,6 +10,7 @@
     "eslintconfig"
   ],
   "files": [
+    "base.js",
     "index.js",
     "postinstall.js"
   ],
@@ -36,7 +37,7 @@
   },
   "scripts": {
     "postinstall": "node ./postinstall.js",
-    "lint": "eslint --max-warnings=0 .",
+    "lint": "eslint --max-warnings=0 --ignore-path=.gitignore .",
     "pretest": "npm run lint",
     "test": "./test.sh",
     "precommit": "lint-staged",

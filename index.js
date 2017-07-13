@@ -1,21 +1,9 @@
 module.exports = {
-  extends: ['airbnb'],
+  extends: ['./base.js'],
 
-  plugins: ['compat', 'eslint-comments'],
-
-  env: {
-    browser: true,
-    node: true,
-  },
+  plugins: ['compat'],
 
   rules: {
-    semi: ['error', 'never'],
     'compat/compat': 'error',
-    'eslint-comments/disable-enable-pair': 'error',
-    'eslint-comments/no-duplicate-disable': 'error',
-    'eslint-comments/no-unlimited-disable': 'error',
-    'eslint-comments/no-unused-disable': 'error',
-    'eslint-comments/no-unused-enable': 'error',
-    'eslint-comments/no-use': 'off',
   },
 }

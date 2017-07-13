@@ -24,12 +24,18 @@ via [yarn](https://yarnpkg.com/):
 $ yarn add --dev eslint@3 eslint-config-ybiquitous
 ```
 
+## Use
+
 Edit `.eslintrc`:
 
 ``` json
-{
-  "extends": "ybiquitous"
-}
+{"extends": "ybiquitous"}
+```
+
+Or, if you do not need `eslint-plugin-compat`:
+
+``` json
+{"extends": "ybiquitous/base"}
 ```
 
 ## Release

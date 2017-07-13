@@ -1,5 +1,5 @@
 #!/bin/sh
-set -e
+set -eu
 
 WORKDIR=tmp
 
@@ -15,9 +15,9 @@ NPM_OPTS='--no-progress --save-dev --prefer-offline'
 
 # test local
 npm install $NPM_OPTS eslint@3 "file:./${tarball}"
-echo '{"extends":"ybiquitous"}' > .eslintrc
 echo 'process.stdout.write(1)' > test.js
-eslint .
+echo '{"extends":"ybiquitous/base"}' > .eslintrc && eslint .
+echo '{"extends":"ybiquitous"}' > .eslintrc && eslint .
 
 # test remote
 npm install $NPM_OPTS "github:ybiquitous/eslint-config-ybiquitous"
