@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.6.0"></a>
+# [1.6.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v1.5.2...v1.6.0) (2017-07-13)
+
+
+### Features
+
+* new entry point `ybiquitous/base` ([a782676](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/a782676))
+
+
+
 <a name="1.5.2"></a>
 ## [1.5.2](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v1.5.1...v1.5.2) (2017-07-12)
 
