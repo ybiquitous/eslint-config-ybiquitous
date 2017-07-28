@@ -15,13 +15,13 @@ For details, please see ["Shareable Configs"](http://eslint.org/docs/developer-g
 via [npm](https://www.npmjs.com/):
 
 ```sh
-$ npm install --save-dev eslint@3 eslint-config-ybiquitous
+$ npm install --save-dev eslint eslint-config-ybiquitous
 ```
 
 via [yarn](https://yarnpkg.com/):
 
 ```sh
-$ yarn add --dev eslint@3 eslint-config-ybiquitous
+$ yarn add --dev eslint eslint-config-ybiquitous
 ```
 
 ## Use
