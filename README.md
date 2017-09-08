@@ -46,11 +46,11 @@ Or, if you do not need [eslint-plugin-compat](https://www.npmjs.com/package/esli
 
 ## Release
 
-1. `git checkout master; git pull origin master`
-2. `yarn release` (or you can try `yarn release:dry-run` without any changes)
-3. `git push --follow-tags origin master`
-
-(`npm publish` does not need, because it will be executed in CI)
+1. `git checkout master`
+1. `git pull origin master`
+1. `yarn release` (or `yarn release:dry-run` without any changes)
+1. `git push --follow-tags origin master`
+   (`npm publish` does not need, because it will be executed in CI)
 
 ## License
 
