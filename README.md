@@ -34,7 +34,7 @@ Edit `.eslintrc`:
 }
 ```
 
-Or, if you do not need `eslint-plugin-compat`:
+Or, if you do not need [eslint-plugin-compat](https://www.npmjs.com/package/eslint-plugin-compat):
 
 ```json
 {
