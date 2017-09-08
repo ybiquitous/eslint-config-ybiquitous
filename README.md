@@ -1,9 +1,9 @@
+# eslint-config-ybiquitous
+
 [![npm version](https://badge.fury.io/js/eslint-config-ybiquitous.svg)](https://badge.fury.io/js/eslint-config-ybiquitous)
 [![Build Status](https://travis-ci.org/ybiquitous/eslint-config-ybiquitous.svg?branch=master)](https://travis-ci.org/ybiquitous/eslint-config-ybiquitous)
 [![dependencies Status](https://david-dm.org/ybiquitous/eslint-config-ybiquitous/status.svg)](https://david-dm.org/ybiquitous/eslint-config-ybiquitous)
 [![devDependencies Status](https://david-dm.org/ybiquitous/eslint-config-ybiquitous/dev-status.svg)](https://david-dm.org/ybiquitous/eslint-config-ybiquitous?type=dev)
-
-# eslint-config-ybiquitous
 
 This package is [ybiquitous](https://github.com/ybiquitous)'s ESLint configuration.
 For details, please see ["Shareable Configs"](http://eslint.org/docs/developer-guide/shareable-configs) in ESLint documentation.
