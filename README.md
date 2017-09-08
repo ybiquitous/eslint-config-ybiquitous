@@ -24,6 +24,8 @@ via [yarn](https://yarnpkg.com/):
 yarn add --dev eslint eslint-config-ybiquitous
 ```
 
+For details, please see [changelog](CHANGELOG.md).
+
 ## Use
 
 Edit `.eslintrc`:
@@ -53,5 +55,3 @@ Or, if you do not need [eslint-plugin-compat](https://www.npmjs.com/package/esli
 ## License
 
 [MIT](LICENSE) © ybiquitous
-
-## [Change Log](CHANGELOG.md)
