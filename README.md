@@ -50,6 +50,8 @@ Or, if you do not need [eslint-plugin-compat](https://www.npmjs.com/package/esli
 
 (`npm publish` does not need, because it will be executed in CI)
 
-## [License](LICENSE)
+## License
+
+[MIT](LICENSE) © ybiquitous
 
 ## [Change Log](CHANGELOG.md)
