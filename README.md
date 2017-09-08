@@ -24,7 +24,7 @@ via [yarn](https://yarnpkg.com/):
 yarn add --dev eslint eslint-config-ybiquitous
 ```
 
-For details, please see [changelog](CHANGELOG.md).
+For past releases, please see [changelog](CHANGELOG.md).
 
 ## Use
 
