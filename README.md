@@ -15,27 +15,31 @@ For details, please see ["Shareable Configs"](http://eslint.org/docs/developer-g
 via [npm](https://www.npmjs.com/):
 
 ```sh
-$ npm install --save-dev eslint eslint-config-ybiquitous
+npm install --save-dev eslint eslint-config-ybiquitous
 ```
 
 via [yarn](https://yarnpkg.com/):
 
 ```sh
-$ yarn add --dev eslint eslint-config-ybiquitous
+yarn add --dev eslint eslint-config-ybiquitous
 ```
 
 ## Use
 
 Edit `.eslintrc`:
 
-``` json
-{"extends": "ybiquitous"}
+```json
+{
+  "extends": "ybiquitous"
+}
 ```
 
 Or, if you do not need `eslint-plugin-compat`:
 
-``` json
-{"extends": "ybiquitous/base"}
+```json
+{
+  "extends": "ybiquitous/base"
+}
 ```
 
 ## Release
