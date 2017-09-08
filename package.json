@@ -11,8 +11,7 @@
   ],
   "files": [
     "base.js",
-    "index.js",
-    "postinstall.js"
+    "index.js"
   ],
   "repository": "ybiquitous/eslint-config-ybiquitous",
   "bugs": "https://github.com/ybiquitous/eslint-config-ybiquitous/issues",
@@ -36,7 +35,6 @@
     "eslint": "4"
   },
   "scripts": {
-    "postinstall": "node ./postinstall.js",
     "lint": "eslint --max-warnings=0 --ignore-path=.gitignore .",
     "pretest": "npm run lint",
     "test": "./test.sh",
