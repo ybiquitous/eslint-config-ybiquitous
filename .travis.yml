@@ -3,6 +3,7 @@ language: node_js
 cache: yarn
 
 script:
+  - yarn run commitlint --from=HEAD~1
   - yarn test
 
 deploy:
