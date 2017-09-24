@@ -12,19 +12,19 @@ For details, please see ["Shareable Configs"](http://eslint.org/docs/developer-g
 
 ## Install
 
-via [npm](https://www.npmjs.com/):
+[npm](https://www.npmjs.com/):
 
 ```sh
 npm install --save-dev eslint eslint-config-ybiquitous
 ```
 
-via [yarn](https://yarnpkg.com/):
+or [Yarn](https://yarnpkg.com/):
 
 ```sh
 yarn add --dev eslint eslint-config-ybiquitous
 ```
 
-For past releases, please see [changelog](CHANGELOG.md).
+For past releases, please see [Change Log](CHANGELOG.md).
 
 ## Use
 
