@@ -25,11 +25,12 @@
     "eslint-plugin-react": "^7.1.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "*",
+    "@commitlint/config-angular": "*",
     "eslint": "4",
     "husky": "*",
     "lint-staged": "*",
-    "standard-version": "*",
-    "validate-commit-msg": "*"
+    "standard-version": "*"
   },
   "peerDependencies": {
     "eslint": "4"
@@ -39,7 +40,7 @@
     "pretest": "npm run lint",
     "test": "./test.sh",
     "precommit": "lint-staged",
-    "commitmsg": "validate-commit-msg",
+    "commitmsg": "commitlint -e",
     "release": "standard-version",
     "release:dry-run": "standard-version --dry-run"
   },
@@ -48,10 +49,5 @@
       "eslint --fix --max-warnings=0",
       "git add"
     ]
-  },
-  "config": {
-    "validate-commit-msg": {
-      "types": "conventional-commit-types"
-    }
   }
 }
