@@ -2,7 +2,11 @@ language: node_js
 
 cache: yarn
 
+before_script:
+  - git fetch --unshallow
+
 script:
+  - yarn run commitlint -- --from=HEAD~1
   - yarn test
 
 deploy:
