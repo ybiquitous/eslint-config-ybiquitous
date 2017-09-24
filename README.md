@@ -4,9 +4,10 @@
 [![Build Status](https://travis-ci.org/ybiquitous/eslint-config-ybiquitous.svg?branch=master)](https://travis-ci.org/ybiquitous/eslint-config-ybiquitous)
 [![dependencies Status](https://david-dm.org/ybiquitous/eslint-config-ybiquitous/status.svg)](https://david-dm.org/ybiquitous/eslint-config-ybiquitous)
 [![devDependencies Status](https://david-dm.org/ybiquitous/eslint-config-ybiquitous/dev-status.svg)](https://david-dm.org/ybiquitous/eslint-config-ybiquitous?type=dev)
+[![Conventional Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
 This package is [ybiquitous](https://github.com/ybiquitous)'s ESLint configuration.
-For details, please see ["Shareable Configs"](http://eslint.org/docs/developer-guide/shareable-configs)
+For details, please see *"[Shareable Configs](http://eslint.org/docs/developer-guide/shareable-configs)"*
 in ESLint documentation.
 
 This package depends almost on [*eslint-config-airbnb*](https://www.npmjs.com/package/eslint-config-airbnb).
