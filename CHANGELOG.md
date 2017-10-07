@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v2.1.0...v3.0.0) (2017-10-07)
+
+
+### Features
+
+* **package:** update `eslint-config-airbnb` to `^16.0.0` ([#97](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/97)) ([807c843](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/807c843))
+* **package:** update `eslint-plugin-compat` from `^1.0.2` to `^2.0.1` ([#95](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/95)) ([4b24c63](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/4b24c63))
+
+
+### BREAKING CHANGES
+
+* **package:** major update of `eslint-config-airbnb`
+
+
+
 <a name="2.1.0"></a>
 # [2.1.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v2.0.2...v2.1.0) (2017-09-24)
 
