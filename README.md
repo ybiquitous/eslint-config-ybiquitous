@@ -14,13 +14,13 @@ This package depends almost on [*eslint-config-airbnb*](https://www.npmjs.com/pa
 
 ## Install
 
-[npm](https://www.npmjs.com/):
+[npm](https://npmjs.com/):
 
 ```sh
 npm install --save-dev eslint eslint-config-ybiquitous
 ```
 
-or [Yarn](https://yarnpkg.com/):
+[Yarn](https://yarnpkg.com/):
 
 ```sh
 yarn add --dev eslint eslint-config-ybiquitous
