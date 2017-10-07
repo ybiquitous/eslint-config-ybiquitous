@@ -17,23 +17,23 @@
   "bugs": "https://github.com/ybiquitous/eslint-config-ybiquitous/issues",
   "homepage": "https://github.com/ybiquitous/eslint-config-ybiquitous#readme",
   "dependencies": {
-    "eslint-config-airbnb": "^15.1.0",
+    "eslint-config-airbnb": "^16.0.0",
     "eslint-plugin-compat": "^2.0.1",
     "eslint-plugin-eslint-comments": "^1.0.3",
     "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jsx-a11y": "^5.1.1",
-    "eslint-plugin-react": "^7.1.0"
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0"
   },
   "devDependencies": {
     "@commitlint/cli": "*",
     "@commitlint/config-angular": "*",
-    "eslint": "4",
+    "eslint": "^4.8.0",
     "husky": "*",
     "lint-staged": "*",
     "standard-version": "*"
   },
   "peerDependencies": {
-    "eslint": "4"
+    "eslint": "^4.8.0"
   },
   "scripts": {
     "lint": "eslint --max-warnings=0 --ignore-path=.gitignore .",
