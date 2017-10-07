@@ -7,7 +7,7 @@
 [![Conventional Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
 This package is [ybiquitous](https://github.com/ybiquitous)'s personal ESLint configuration.
-For details, please see "[*Shareable Configs*](http://eslint.org/docs/developer-guide/shareable-configs)" in ESLint documentation.
+For details, please see "[*Shareable Configs*](https://eslint.org/docs/developer-guide/shareable-configs)" in ESLint documentation.
 
 This package depends almost on [`eslint-config-airbnb`](https://www.npmjs.com/package/eslint-config-airbnb) package.
 
