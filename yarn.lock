@@ -276,12 +276,12 @@ camelcase@^4.1.0:
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-4.1.0.tgz#d545635be1e33c542649c69173e5de6acfae34dd"
 
 caniuse-db@^1.0.30000741:
-  version "1.0.30000751"
-  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000751.tgz#1919a40bc17e91d87c8c09869577c680f9f1befd"
+  version "1.0.30000755"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000755.tgz#a08c547c39dbe4ad07dcca9763fcbbff0c891de0"
 
 caniuse-lite@^1.0.30000744:
-  version "1.0.30000751"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000751.tgz#298ad34182ca4359757b4a93afc681b7b917e358"
+  version "1.0.30000755"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000755.tgz#9ce5f6e06bd75ec8209abe8853c3beef02248d65"
 
 center-align@^0.1.1:
   version "0.1.3"
@@ -790,8 +790,8 @@ eslint-plugin-compat@^2.0.1:
     requireindex "^1.1.0"
 
 eslint-plugin-eslint-comments@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-eslint-comments/-/eslint-plugin-eslint-comments-1.0.3.tgz#29443862c1a27219bf41342099ee951f9966004c"
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-eslint-comments/-/eslint-plugin-eslint-comments-1.1.0.tgz#98e3784f0508b185260ea54491024bbaad54c5fa"
   dependencies:
     escape-string-regexp "^1.0.5"
 
@@ -843,8 +843,8 @@ eslint-scope@^3.7.1:
     estraverse "^4.1.1"
 
 eslint@^4.8.0, eslint@^4.9.0:
-  version "4.9.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-4.9.0.tgz#76879d274068261b191fe0f2f56c74c2f4208e8b"
+  version "4.10.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-4.10.0.tgz#f25d0d7955c81968c2309aa5c9a229e045176bb7"
   dependencies:
     ajv "^5.2.0"
     babel-code-frame "^6.22.0"
@@ -1437,8 +1437,8 @@ js-yaml@^3.4.3, js-yaml@^3.9.0, js-yaml@^3.9.1:
     esprima "^4.0.0"
 
 jschardet@^1.4.2:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/jschardet/-/jschardet-1.5.1.tgz#c519f629f86b3a5bedba58a88d311309eec097f9"
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/jschardet/-/jschardet-1.6.0.tgz#c7d1a71edcff2839db2f9ec30fc5d5ebd3c1a678"
 
 json-schema-traverse@^0.3.0:
   version "0.3.1"
