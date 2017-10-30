@@ -3,6 +3,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.0.1"></a>
+## [3.0.1](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v3.0.0...v3.0.1) (2017-10-30)
+
+
+### Bug Fixes
+
+* **package:** update `eslint-plugin-comments` to `^2.0.1` ([#110](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/110)) ([7ecb73c](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/7ecb73c))
+
+
+
 <a name="3.0.0"></a>
 # [3.0.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v2.1.0...v3.0.0) (2017-10-07)
 
