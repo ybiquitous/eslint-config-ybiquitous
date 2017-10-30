@@ -11,7 +11,7 @@ cd $workdir
 mv "../${tarball}" .
 npm init -y
 export PATH="$(npm bin):${PATH}"
-npm_opts='--no-progress --save-dev --prefer-offline'
+npm_opts='--no-progress --save-dev'
 
 # test local
 npm install $npm_opts eslint "file:./${tarball}"
