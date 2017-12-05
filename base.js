@@ -15,6 +15,13 @@ module.exports = {
     'eslint-comments/no-unused-disable': 'error',
     'eslint-comments/no-unused-enable': 'error',
     'eslint-comments/no-use': 'off',
-    'prettier/prettier': 'error',
+    'prettier/prettier': [
+      'error',
+      {
+        semi: false,
+        singleQuote: true,
+        trailingComma: 'all',
+      },
+    ],
   },
 }

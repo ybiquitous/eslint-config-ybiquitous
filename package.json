@@ -46,11 +46,6 @@
     "release": "standard-version",
     "release:dry-run": "standard-version --dry-run"
   },
-  "prettier": {
-    "semi": false,
-    "singleQuote": true,
-    "trailingComma": "all"
-  },
   "lint-staged": {
     "*.{js,jsx}": [
       "eslint --fix --no-ignore",
