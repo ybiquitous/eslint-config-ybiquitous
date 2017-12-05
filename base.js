@@ -1,7 +1,12 @@
 module.exports = {
-  extends: ['airbnb', 'plugin:eslint-comments/recommended', 'prettier', 'prettier/react'],
+  extends: [
+    'airbnb',
+    'plugin:eslint-comments/recommended',
+    'prettier',
+    'prettier/react',
+  ],
 
-  plugins: ['eslint-comments', 'prettier'],
+  plugins: ['prettier'],
 
   env: {
     browser: true,
