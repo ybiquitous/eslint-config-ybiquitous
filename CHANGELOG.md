@@ -3,6 +3,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.0.0"></a>
+# [4.0.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v3.0.1...v4.0.0) (2017-12-05)
+
+
+### Features
+
+* integrate with Prettier ([#125](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/125)) ([54bd8e8](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/54bd8e8))
+* use `plugin:eslint-comments/recommended` configuration ([#126](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/126)) ([1ea089a](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/1ea089a))
+
+
+### BREAKING CHANGES
+
+* Although keeping the lint rules as far as possible, this integration may change your code style a lot.
+And installing `prettier` (peer dependency) becomes necessary.
+
+
+
 <a name="3.0.1"></a>
 ## [3.0.1](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v3.0.0...v3.0.1) (2017-10-30)
 
