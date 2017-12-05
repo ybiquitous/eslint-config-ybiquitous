@@ -22,13 +22,13 @@ About other packages, please check `dependencies` in [package.json](package.json
 [npm](https://npm.im/):
 
 ```sh
-npm install --save-dev eslint eslint-config-ybiquitous
+npm install --save-dev eslint eslint-config-ybiquitous prettier
 ```
 
 [Yarn](https://yarnpkg.com/):
 
 ```sh
-yarn add --dev eslint eslint-config-ybiquitous
+yarn add --dev eslint eslint-config-ybiquitous prettier
 ```
 
 For past releases, please see [Change Log](CHANGELOG.md).
