@@ -10,21 +10,25 @@ This package is [ybiquitous](https://github.com/ybiquitous)'s personal ESLint co
 For details, please see "[*Shareable Configs*](https://eslint.org/docs/developer-guide/shareable-configs)"
 in ESLint documentation.
 
-This package depends almost on
-[`eslint-config-airbnb`](https://npmjs.com/eslint-config-airbnb) package.
+This package depends almost on following packages:
+
+- [`eslint-config-airbnb`](https://npm.im/eslint-config-airbnb)
+- [`eslint-config-prettier`](https://npm.im/eslint-config-prettier)
+
+About other packages, please check `dependencies` in [package.json](package.json).
 
 ## Install
 
-[npm](https://npmjs.com/):
+[npm](https://npm.im/):
 
 ```sh
-npm install --save-dev eslint eslint-config-ybiquitous
+npm install --save-dev eslint eslint-config-ybiquitous prettier
 ```
 
 [Yarn](https://yarnpkg.com/):
 
 ```sh
-yarn add --dev eslint eslint-config-ybiquitous
+yarn add --dev eslint eslint-config-ybiquitous prettier
 ```
 
 For past releases, please see [Change Log](CHANGELOG.md).
@@ -39,7 +43,7 @@ Edit `.eslintrc`:
 }
 ```
 
-Or, if you do not need [`eslint-plugin-compat`](https://npmjs.com/eslint-plugin-compat):
+Or, if you do not need [`eslint-plugin-compat`](https://npm.im/eslint-plugin-compat):
 
 ```json
 {
