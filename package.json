@@ -27,13 +27,13 @@
     "eslint-plugin-react": "^7.4.0"
   },
   "devDependencies": {
-    "eslint": "^4.8.0",
-    "prettier": "^1.8.2",
+    "eslint": "^4.13.1",
+    "prettier": "^1.9.2",
     "ybiq": "*"
   },
   "peerDependencies": {
-    "eslint": "^4.8.0",
-    "prettier": "^1.8.2"
+    "eslint": "4",
+    "prettier": "1"
   },
   "scripts": {
     "lint:js": "eslint --ignore-path .gitignore --ext .js,.jsx .",
