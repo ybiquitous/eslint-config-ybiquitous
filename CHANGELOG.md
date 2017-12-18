@@ -3,6 +3,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.1.0"></a>
+# [4.1.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v4.0.0...v4.1.0) (2017-12-18)
+
+
+### Features
+
+* more rough versions of peer dependencies ([#133](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/133)) ([a804aa7](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/a804aa7))
+
+
+
 <a name="4.0.0"></a>
 # [4.0.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v3.0.1...v4.0.0) (2017-12-05)
 
