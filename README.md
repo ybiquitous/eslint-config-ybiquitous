@@ -19,19 +19,18 @@ About other packages, please check `dependencies` in [package.json](package.json
 
 ## Install
 
-[npm](https://npm.im/):
+via [npm](https://npm.im/) / [Yarn](https://yarnpkg.com/):
 
 ```sh
 npm install --save-dev eslint eslint-config-ybiquitous prettier
-```
 
-[Yarn](https://yarnpkg.com/):
-
-```sh
+# or
 yarn add --dev eslint eslint-config-ybiquitous prettier
 ```
 
-For past releases, please see [Change Log](CHANGELOG.md).
+## Change Log
+
+Please see [here](CHANGELOG.md).
 
 ## Use
 
@@ -43,7 +42,8 @@ Edit `.eslintrc`:
 }
 ```
 
-Or, if you do not need [`eslint-plugin-compat`](https://npm.im/eslint-plugin-compat):
+If you do not need [`eslint-plugin-compat`](https://npm.im/eslint-plugin-compat),
+`ybiquitous/base` is recommended:
 
 ```json
 {
@@ -52,6 +52,8 @@ Or, if you do not need [`eslint-plugin-compat`](https://npm.im/eslint-plugin-com
 ```
 
 ## Release
+
+Run the following commands:
 
 1. `git checkout master`
 1. `git pull`
