@@ -6,7 +6,7 @@ before_script:
   - git fetch --unshallow
 
 script:
-  - yarn run commitlint -- --from=HEAD~1
+  - yarn run commitlint --from=HEAD~1
   - yarn lint
   - yarn test
 
