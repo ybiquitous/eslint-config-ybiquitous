@@ -51,6 +51,14 @@ If you do not need [`eslint-plugin-compat`](https://npm.im/eslint-plugin-compat)
 }
 ```
 
+If you use this package only on Node.js, `ybiquitous/node` is recommended:
+
+```json
+{
+  "extends": "ybiquitous/node"
+}
+```
+
 ## Release
 
 Run the following commands:
