@@ -51,7 +51,7 @@ If you do not need [`eslint-plugin-compat`](https://npm.im/eslint-plugin-compat)
 }
 ```
 
-If you use this pacckage only on Node.js, `ybiquitous/node` is recommended:
+If you use this package only on Node.js, `ybiquitous/node` is recommended:
 
 ```json
 {
