@@ -3,6 +3,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.2.0"></a>
+# [4.2.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v4.1.0...v4.2.0) (2017-12-19)
+
+
+### Features
+
+* new option `ybiquitous/node` for Node.js environment ([#136](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/136)) ([d929f5c](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/d929f5c))
+
+
+
 <a name="4.1.0"></a>
 # [4.1.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v4.0.0...v4.1.0) (2017-12-18)
 
