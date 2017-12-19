@@ -3,6 +3,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.2.1"></a>
+## [4.2.1](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v4.2.0...v4.2.1) (2017-12-19)
+
+
+### Bug Fixes
+
+* change `trailingComma` to `es5` following minimum Node version ([#137](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/137)) ([bf85cba](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/bf85cba))
+
+
+
 <a name="4.2.0"></a>
 # [4.2.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v4.1.0...v4.2.0) (2017-12-19)
 
