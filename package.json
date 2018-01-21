@@ -50,7 +50,7 @@
     "precommit": "lint-staged",
     "commitmsg": "commitlint -e",
     "release": "standard-version",
-    "release:dry-run": "standard-version --dry-run"
+    "release:dry-run": "npm run release -- --dry-run"
   },
   "lint-staged": {
     "*.{js,jsx,mjs}": [
