@@ -60,9 +60,6 @@
     "*.md": "markdownlint --ignore CHANGELOG.md"
   },
   "standard-version": {
-    "scripts": {
-      "postchangelog": "prepend CHANGELOG.md \"<!-- markdownlint-disable -->\n\""
-    },
     "message": "chore(release): new version %s"
   }
 }
