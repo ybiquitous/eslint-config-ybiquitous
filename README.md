@@ -65,8 +65,8 @@ Run the following commands:
 
 1. `git checkout master`
 1. `git pull`
-1. `yarn release:dry-run`
-1. `yarn release`
+1. `npm run release:dry-run`
+1. `npm run release`
 1. `git push --follow-tags`
    (`npm publish` does not need, because it will be executed in CI)
 
