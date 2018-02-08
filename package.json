@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ybiquitous",
-  "version": "4.2.1",
+  "version": "4.2.2",
   "description": "ybiquitous's ESLint configuration",
   "author": "ybiquitous <ybiquitous@gmail.com>",
   "license": "MIT",
