@@ -3,5 +3,9 @@
     "config:js-lib",
     "schedule:nonOfficeHours"
   ],
-  "timezone": "Asia/Tokyo"
+  "timezone": "Asia/Tokyo",
+  "lockFileMaintenance": {
+    "enabled": true,
+    "extends": "schedule:daily"
+  }
 }
