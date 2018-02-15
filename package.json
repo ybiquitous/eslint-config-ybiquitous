@@ -33,6 +33,7 @@
   },
   "devDependencies": {
     "eslint": "4.17.0",
+    "eslint-find-rules": "3.1.1",
     "prettier": "1.10.2",
     "ybiq": "1.4.1"
   },
@@ -50,7 +51,11 @@
     "precommit": "lint-staged",
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "release": "standard-version",
-    "release:dry-run": "npm run release -- --dry-run"
+    "release:dry-run": "npm run release -- --dry-run",
+    "find-new-rules": "npm-run-all --parallel find-new-rules:*",
+    "find-new-rules:base": "eslint-find-rules --unused base.js",
+    "find-new-rules:index": "eslint-find-rules --unused index.js",
+    "find-new-rules:node": "eslint-find-rules --unused node.js"
   },
   "lint-staged": {
     "*.{js,jsx,mjs}": [
