@@ -52,10 +52,7 @@
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "release": "standard-version",
     "release:dry-run": "npm run release -- --dry-run",
-    "find-new-rules": "npm-run-all --parallel find-new-rules:*",
-    "find-new-rules:base": "eslint-find-rules --unused base.js",
-    "find-new-rules:index": "eslint-find-rules --unused index.js",
-    "find-new-rules:node": "eslint-find-rules --unused node.js"
+    "find-new-rules": "eslint-find-rules --unused node.js"
   },
   "lint-staged": {
     "*.{js,jsx,mjs}": [
