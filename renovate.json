@@ -1,11 +1,8 @@
 {
   "extends": [
     "config:js-lib",
+    ":maintainLockFilesWeekly",
     "schedule:nonOfficeHours"
   ],
-  "timezone": "Asia/Tokyo",
-  "lockFileMaintenance": {
-    "enabled": true,
-    "extends": "schedule:daily"
-  }
+  "timezone": "Asia/Tokyo"
 }
