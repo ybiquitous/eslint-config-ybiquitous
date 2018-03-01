@@ -52,7 +52,8 @@
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "release": "standard-version",
     "release:dry-run": "npm run release -- --dry-run",
-    "find-new-rules": "eslint-find-rules --unused node.js"
+    "find-new-rules": "eslint-find-rules node.js --unused",
+    "find-deprecated-rules": "eslint-find-rules node.js --deprecated"
   },
   "lint-staged": {
     "*.{js,jsx,mjs}": [
