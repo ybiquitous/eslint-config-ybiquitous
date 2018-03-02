@@ -1,1 +1,3 @@
-module.exports = require("./node");
+module.exports = {
+  extends: ["./node.js"],
+};

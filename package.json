@@ -1,8 +1,8 @@
 {
   "name": "eslint-config-ybiquitous",
   "version": "4.2.2",
-  "description": "ybiquitous's ESLint configuration",
-  "author": "ybiquitous <ybiquitous@gmail.com>",
+  "description": "Personal ESLint configuration",
+  "author": "Masafumi Koba <ybiquitous@gmail.com>",
   "license": "MIT",
   "keywords": [
     "eslint",
@@ -10,16 +10,17 @@
   ],
   "main": "index.js",
   "files": [
-    "base.js",
     "index.js",
-    "node.js"
+    "node.js",
+    "browser.js",
+    "react.js",
+    "rules"
   ],
   "repository": "ybiquitous/eslint-config-ybiquitous",
   "engines": {
     "node": ">=8"
   },
   "dependencies": {
-    "eslint-config-airbnb": "^16.0.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-compat": "^2.0.1",
     "eslint-plugin-eslint-comments": "^2.0.1",
@@ -27,7 +28,8 @@
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-node": "^6.0.0",
     "eslint-plugin-prettier": "^2.3.1",
-    "eslint-plugin-react": "^7.4.0"
+    "eslint-plugin-react": "^7.4.0",
+    "eslint-restricted-globals": "^0.1.1"
   },
   "devDependencies": {
     "eslint-find-rules": "3.2.3",
@@ -51,8 +53,9 @@
     "commitmsg": "commitlint -E GIT_PARAMS",
     "release": "standard-version",
     "release:dry-run": "npm run release -- --dry-run",
-    "find-new-rules": "eslint-find-rules node.js --unused",
-    "find-deprecated-rules": "eslint-find-rules node.js --deprecated"
+    "print-config": "eslint --print-config",
+    "find-new-rules": "eslint-find-rules --unused",
+    "find-deprecated-rules": "eslint-find-rules --deprecated"
   },
   "lint-staged": {
     "linters": {
@@ -69,8 +72,5 @@
     "ignore": [
       "CHANGELOG.md"
     ]
-  },
-  "standard-version": {
-    "message": "chore(release): new version %s"
   }
 }

@@ -1,0 +1,48 @@
+module.exports = {
+  extends: ["plugin:react/recommended"],
+
+  rules: {
+    "react/boolean-prop-naming": "off",
+    "react/button-has-type": "off",
+    "react/default-props-match-prop-types": "error",
+    "react/destructuring-assignment": "off",
+    "react/forbid-component-props": "off",
+    "react/forbid-dom-props": "off",
+    "react/forbid-elements": "off",
+    "react/forbid-foreign-prop-types": "error",
+    "react/forbid-prop-types": [
+      "error",
+      { checkChildContextTypes: true, checkContextTypes: true },
+    ],
+    "react/no-access-state-in-setstate": "error",
+    "react/no-array-index-key": "error",
+    "react/no-danger": "warn",
+    "react/no-did-mount-set-state": "error",
+    "react/no-did-update-set-state": "error",
+    "react/no-multi-comp": ["error", { ignoreStateless: true }],
+    "react/no-redundant-should-component-update": "error",
+    "react/no-set-state": "error",
+    "react/no-this-in-sfc": "error",
+    "react/no-typos": "error",
+    "react/no-unused-prop-types": "error",
+    "react/no-unused-state": "error",
+    "react/no-will-update-set-state": "error",
+    "react/prefer-es6-class": "error",
+    "react/prefer-stateless-function": [
+      "error",
+      { ignorePureComponents: true },
+    ],
+    "react/require-default-props": [
+      "error",
+      {
+        forbidDefaultForRequired: true,
+      },
+    ],
+    "react/require-optimization": "off",
+    "react/self-closing-comp": "error",
+    "react/sort-comp": "error",
+    "react/sort-prop-types": "off",
+    "react/style-prop-object": "error",
+    "react/void-dom-elements-no-children": "error",
+  },
+};

@@ -6,69 +6,44 @@
 [![dependencies Status](https://david-dm.org/ybiquitous/eslint-config-ybiquitous/status.svg)](https://david-dm.org/ybiquitous/eslint-config-ybiquitous)
 [![Conventional Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
-This package is [ybiquitous](https://github.com/ybiquitous)'s personal ESLint configuration.
-For details, please see "[*Shareable Configs*](https://eslint.org/docs/developer-guide/shareable-configs)"
-in ESLint documentation.
+> My personal ESLint configuration.
 
-This package depends almost on following packages:
+This package purpose is to collect some tips and plugins.
 
-- [`eslint-config-airbnb`](https://npm.im/eslint-config-airbnb)
-- [`eslint-config-prettier`](https://npm.im/eslint-config-prettier)
-
-About other packages, please check `dependencies` in [package.json](package.json).
+For more details about plugins used in this package,
+please check `dependencies` field in [package.json](package.json).
 
 ## Install
 
-via [npm](https://npm.im/) / [Yarn](https://yarnpkg.com/):
-
 ```sh
 npm install --save-dev eslint eslint-config-ybiquitous prettier
-
-# or
-yarn add --dev eslint eslint-config-ybiquitous prettier
 ```
 
 ## Change Log
 
 Please see [here](CHANGELOG.md).
 
-## Use
+## Usage
 
-Edit `.eslintrc`:
+Edit `.eslintrc` according to some following cases:
 
-```json
-{
-  "extends": "ybiquitous"
-}
-```
-
-If you do not need [`eslint-plugin-compat`](https://npm.im/eslint-plugin-compat),
-`ybiquitous/base` is recommended:
-
-```json
-{
-  "extends": "ybiquitous/base"
-}
-```
-
-If you use this package only on Node.js, `ybiquitous/node` is recommended:
-
-```json
-{
-  "extends": "ybiquitous/node"
-}
-```
+| Case    | Setting                             |
+| ------- | ----------------------------------- |
+| Basic   | `{"extends": "ybiquitous"}`         |
+| Node.js | `{"extends": "ybiquitous/node"}`    |
+| Browser | `{"extends": "ybiquitous/browser"}` |
+| React   | `{"extends": "ybiquitous/react"}`   |
 
 ## Release
 
 Run the following commands:
 
-1. `git checkout master`
-1. `git pull`
-1. `npm run release:dry-run`
-1. `npm run release`
-1. `git push --follow-tags`
-   (`npm publish` does not need, because it will be executed in CI)
+1.  `git checkout master`
+1.  `git pull`
+1.  `npm run release:dry-run`
+1.  `npm run release`
+1.  `git push --follow-tags`
+    (`npm publish` does not need, because it will be executed in CI)
 
 ## License
 

@@ -1,9 +1,19 @@
 module.exports = {
-  extends: ["./base.js"],
-
-  plugins: ["compat"],
-
-  rules: {
-    "compat/compat": "error",
+  parserOptions: {
+    ecmaVersion: 2018,
+    sourceType: "module",
   },
+
+  extends: [
+    "./rules/core/possible-errors.js",
+    "./rules/core/best-practices.js",
+    "./rules/core/strict.js",
+    "./rules/core/variables.js",
+    "./rules/core/styles.js",
+    "./rules/core/es6.js",
+    "./rules/core/node-disable-all.js",
+    "./rules/plugins/prettier.js",
+    "./rules/plugins/eslint-comments.js",
+    "./rules/plugins/import.js",
+  ],
 };
