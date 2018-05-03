@@ -1,9 +1,9 @@
 module.exports = {
-  extends: ['./base.js'],
+  extends: ["./base.js"],
 
-  plugins: ['compat'],
+  plugins: ["compat"],
 
   rules: {
-    'compat/compat': 'error',
+    "compat/compat": "error",
   },
-}
+};
