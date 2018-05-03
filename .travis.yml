@@ -5,12 +5,20 @@ node_js:
   - 8
   - 6
 
-cache: yarn
+cache:
+  directories:
+    - "$HOME/.npm"
+
+before_install:
+  - npm install -g npm@latest
+
+install:
+  - npm ci
 
 script:
   - commitlint-travis
-  - yarn lint
-  - yarn test
+  - npm run lint
+  - npm test
 
 deploy:
   provider: npm
