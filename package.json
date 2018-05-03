@@ -34,7 +34,9 @@
   "devDependencies": {
     "eslint": "4.19.1",
     "eslint-find-rules": "3.2.3",
+    "execa": "0.10.0",
     "prettier": "1.12.1",
+    "tape": "4.9.0",
     "ybiq": "2.0.0"
   },
   "peerDependencies": {
@@ -47,7 +49,7 @@
     "lint:md": "markdownlint --ignore node_modules --ignore CHANGELOG.md \"**/*.md\"",
     "lint": "npm-run-all --print-name --print-label --parallel lint:*",
     "pretest": "eslint --print-config .eslintrc* | eslint-config-prettier-check",
-    "test": "./test.sh",
+    "test": "tape \"test/**/*.test.js\"",
     "precommit": "lint-staged",
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "release": "standard-version",
