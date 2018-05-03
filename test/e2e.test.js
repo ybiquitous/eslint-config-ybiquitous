@@ -15,7 +15,7 @@ const writeLintTargetFile = content =>
 
 test("End-to-End", t => {
   t.test("local", t => {
-    const tarball = $("npm", ["pack"]);
+    const tarball = $("npm", "pack");
     const tarballPath = `file:${path.join(baseDir, tarball)}`;
 
     sandbox(() => {
