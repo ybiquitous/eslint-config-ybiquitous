@@ -15,8 +15,6 @@
     "node.js"
   ],
   "repository": "ybiquitous/eslint-config-ybiquitous",
-  "bugs": "https://github.com/ybiquitous/eslint-config-ybiquitous/issues",
-  "homepage": "https://github.com/ybiquitous/eslint-config-ybiquitous#readme",
   "engines": {
     "node": ">=6"
   },
