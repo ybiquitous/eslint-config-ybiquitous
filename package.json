@@ -16,7 +16,7 @@
   ],
   "repository": "ybiquitous/eslint-config-ybiquitous",
   "engines": {
-    "node": ">=6"
+    "node": ">=8"
   },
   "dependencies": {
     "eslint-config-airbnb": "^16.0.0",
