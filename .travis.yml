@@ -14,10 +14,9 @@ before_install:
       npm i -g npm@latest;
     fi
 
-script:
+before_script:
   - commitlint-travis
   - npm run lint
-  - npm test
 
 deploy:
   provider: npm
