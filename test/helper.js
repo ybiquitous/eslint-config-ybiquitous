@@ -29,13 +29,14 @@ const sandbox = callback => {
   const workDir = fs.mkdtempSync(tmpDir);
   try {
     process.chdir(workDir);
-    callback(workDir);
+    return callback(workDir);
   } finally {
     process.chdir(baseDir);
     $("rm", "-rf", workDir);
   }
 };
 
-const lintConfigFiles = [pkg.main, ...pkg.files];
+const isJs = name => name.endsWith(".js");
+const lintConfigFiles = [pkg.main, ...pkg.files.filter(isJs)];
 
 module.exports = { $, sandbox, lintConfigFiles };

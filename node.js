@@ -1,5 +1,3 @@
 module.exports = {
-  extends: ["./base.js", "plugin:node/recommended"],
-
-  plugins: ["node"],
+  extends: ["./index.js", "./rules/core/node.js", "./rules/plugins/node.js"],
 };
