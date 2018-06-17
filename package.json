@@ -35,7 +35,7 @@
     "eslint-find-rules": "3.2.3",
     "execa": "0.10.0",
     "tape": "4.9.1",
-    "ybiq": "3.1.1"
+    "ybiq": "3.2.0"
   },
   "peerDependencies": {
     "eslint": "4",
