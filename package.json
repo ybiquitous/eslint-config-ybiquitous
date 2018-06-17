@@ -71,5 +71,8 @@
     "ignore": [
       "CHANGELOG.md"
     ]
+  },
+  "prettier": {
+    "trailingComma": "es5"
   }
 }
