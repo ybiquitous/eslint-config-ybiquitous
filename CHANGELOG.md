@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.0.1"></a>
+## [5.0.1](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v5.0.0...v5.0.1) (2018-06-17)
+
+
+### Bug Fixes
+
+* **node:** set `ecmaVersion: 2018` forcibly ([#230](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/230)) ([8ee3e8e](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/8ee3e8e))
+
+
+
 <a name="5.0.0"></a>
 # [5.0.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v4.2.2...v5.0.0) (2018-06-17)
 
