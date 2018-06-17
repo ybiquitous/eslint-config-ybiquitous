@@ -1,9 +1,10 @@
 const test = require("tape");
 const { $, lintConfigFiles } = require("./helper");
 
-lintConfigFiles.forEach(file => {
-  test(`no unused rules: ${file}`, t => {
+test("no unused rules", t => {
+  lintConfigFiles.forEach(file => {
     $("eslint-find-rules", "--unused", file);
-    t.end();
+    t.pass(file);
   });
+  t.end();
 });

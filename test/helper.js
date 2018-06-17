@@ -38,7 +38,7 @@ const sandbox = callback => {
     return callback(workDir);
   } finally {
     process.chdir(baseDir);
-    $("rm", "-rf", workDir);
+    $("rm", "-rf", tmpDir);
   }
 };
 

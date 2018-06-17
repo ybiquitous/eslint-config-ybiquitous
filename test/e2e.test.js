@@ -13,53 +13,45 @@ const writeESLintConfig = config =>
 const writeLintTargetFile = content =>
   fs.writeFileSync("test.js", `${content}${EOL}`);
 
+const npmrc = `
+progress=false
+loglevel=warn
+cache-max=0
+cache-min=9999
+`;
+
 test("End-to-End", t => {
-  t.test("local", t => {
-    const tarball = $("npm", "pack");
-    const tarballPath = `file:${path.join(baseDir, tarball)}`;
+  const tarball = $("npm", "pack");
+  const tarballPath = `file:${path.join(baseDir, tarball)}`;
 
-    sandbox(() => {
-      fs.writeFileSync(
-        ".npmrc",
-        [
-          "progress=false",
-          "loglevel=warn",
-          "cache-max=0",
-          "cache-min=9999",
-        ].join(EOL)
+  sandbox(() => {
+    fs.writeFileSync(".npmrc", npmrc);
+
+    $("npm", "init", "--yes");
+    $("npm", "install", ...Object.keys(pkg.peerDependencies), tarballPath);
+
+    writeESLintConfig({ extends: "ybiquitous" });
+    writeLintTargetFile("process.stdout.write(1);");
+    $("eslint", ".");
+    t.pass("default configuration");
+
+    lintConfigFiles.filter(file => file !== pkg.main).forEach(file => {
+      const configName = `ybiquitous/${path.basename(file, ".js")}`;
+      writeESLintConfig({ extends: configName });
+      writeLintTargetFile("process.stdout.write(1);");
+      $("eslint", ".");
+      t.pass(`${configName} configuration`);
+    });
+
+    lintConfigFiles.forEach(file => {
+      $(
+        "eslint",
+        "--print-config",
+        path.join("node_modules", "eslint-config-ybiquitous", file)
       );
-      $("npm", "init", "--yes");
-      $("npm", "install", ...Object.keys(pkg.peerDependencies), tarballPath);
-
-      t.test("default configuration", t => {
-        writeESLintConfig({ extends: "ybiquitous" });
-        writeLintTargetFile("process.stdout.write(1);");
-        $("eslint", ".");
-        t.end();
-      });
-
-      lintConfigFiles.filter(file => file !== pkg.main).forEach(file => {
-        const configName = `ybiquitous/${path.basename(file, ".js")}`;
-        t.test(`configuration for ${configName}`, t => {
-          writeESLintConfig({ extends: configName });
-          writeLintTargetFile("process.stdout.write(1);");
-          $("eslint", ".");
-          t.end();
-        });
-      });
-
-      lintConfigFiles.forEach(file => {
-        t.test(`verify configuration file: ${file}`, t => {
-          $(
-            "eslint",
-            "--print-config",
-            path.join("node_modules/eslint-config-ybiquitous", file)
-          );
-          t.end();
-        });
-      });
-
-      t.end();
+      t.pass(`verify configuration for ${file}`);
     });
   });
+
+  t.end();
 });
