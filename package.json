@@ -49,6 +49,7 @@
     "lint": "npm-run-all --print-name --print-label --parallel lint:*",
     "pretest": "eslint --print-config .eslintrc* | eslint-config-prettier-check",
     "test": "tape \"test/**/*.test.js\"",
+    "test:debug": "DEBUG=true npm test",
     "precommit": "lint-staged",
     "commitmsg": "commitlint -E GIT_PARAMS",
     "release": "standard-version",

@@ -6,18 +6,24 @@ const pkg = require("../package.json");
 
 const baseDir = path.join(__dirname, "..");
 const tmpDir = path.join(baseDir, "tmp") + path.sep;
+const debug = process.env.DEBUG === "true";
+const log = msg => {
+  if (debug) {
+    process.stdout.write(`${msg}${EOL}`);
+  }
+};
 
 const $ = (cmd, ...args) => {
-  process.stdout.write(`> ${[cmd, ...args].join(" ")}${EOL}`);
+  log(`> ${[cmd, ...args].join(" ")}`);
   const { stdout } = execa.sync(cmd, args, { shell: true });
   const maxLines = 20;
   const lines = stdout.split(EOL);
   if (lines.length < maxLines) {
-    process.stdout.write(`${stdout}${EOL}`);
+    log(stdout);
     return stdout;
   }
   const trimmed = lines.slice(0, maxLines).join(EOL);
-  process.stdout.write(`${trimmed + EOL}(...)${EOL}${EOL}`);
+  log(`${trimmed + EOL}(...)${EOL}`);
   return stdout;
 };
 
