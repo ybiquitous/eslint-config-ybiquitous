@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.0.0"></a>
+# [5.0.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v4.2.2...v5.0.0) (2018-06-17)
+
+
+### Features
+
+* **prettier:** follow Prettier default settings as possible ([#203](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/203)) ([09d2590](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/09d2590))
+* drop `eslint-config-airbnb` ([#227](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/227)) ([47a0d25](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/47a0d25))
+* drop Node 6 support ([#226](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/226)) ([78220d9](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/78220d9))
+
+
+### BREAKING CHANGES
+
+* Re-arrange all rules without Airbnb's settings
+* Now minimum support version is Node 8
+
+
+
 <a name="4.2.2"></a>
 ## [4.2.2](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v4.2.1...v4.2.2) (2018-02-08)
 
