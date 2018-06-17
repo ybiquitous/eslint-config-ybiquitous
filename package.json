@@ -53,7 +53,6 @@
     "commitmsg": "commitlint -E GIT_PARAMS",
     "release": "standard-version",
     "release:dry-run": "npm run release -- --dry-run",
-    "print-config": "eslint --print-config",
     "find-new-rules": "eslint-find-rules --unused",
     "find-deprecated-rules": "eslint-find-rules --deprecated"
   },
