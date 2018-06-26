@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.1.0"></a>
+# [5.1.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v5.0.1...v5.1.0) (2018-06-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-eslint-comments to v3 ([#233](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/233)) ([af75000](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/af75000))
+
+
+### Features
+
+* **deps:** update dependency eslint to v5 ([#232](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/232)) ([7b49eac](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/7b49eac))
+
+
+
 <a name="5.0.1"></a>
 ## [5.0.1](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v5.0.0...v5.0.1) (2018-06-17)
 
