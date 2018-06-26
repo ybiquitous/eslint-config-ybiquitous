@@ -38,7 +38,7 @@
     "ybiq": "3.2.0"
   },
   "peerDependencies": {
-    "eslint": "4",
+    "eslint": "4 || 5",
     "prettier": "1"
   },
   "scripts": {
