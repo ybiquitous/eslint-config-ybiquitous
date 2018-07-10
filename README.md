@@ -27,12 +27,12 @@ Please see [here](CHANGELOG.md).
 
 Edit `.eslintrc` according to some following cases:
 
-| Case    | Setting                             |
-| ------- | ----------------------------------- |
-| Basic   | `{"extends": "ybiquitous"}`         |
-| Node.js | `{"extends": "ybiquitous/node"}`    |
-| Browser | `{"extends": "ybiquitous/browser"}` |
-| React   | `{"extends": "ybiquitous/react"}`   |
+| Case    | Setting                         |
+| ------- | ------------------------------- |
+| Basic   | `extends: "ybiquitous"`         |
+| Node.js | `extends: "ybiquitous/node"`    |
+| Browser | `extends: "ybiquitous/browser"` |
+| React   | `extends: "ybiquitous/react"`   |
 
 ## Release
 
