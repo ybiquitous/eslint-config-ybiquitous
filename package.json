@@ -26,19 +26,21 @@
     "eslint-plugin-eslint-comments": "^3.0.0",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
-    "eslint-plugin-node": "^6.0.0",
+    "eslint-plugin-node": "^7.0.0",
     "eslint-plugin-prettier": "^2.3.1",
     "eslint-plugin-react": "^7.4.0",
     "eslint-restricted-globals": "^0.1.1"
   },
   "devDependencies": {
+    "eslint": "5.1.0",
     "eslint-find-rules": "3.3.1",
     "execa": "0.10.0",
+    "prettier": "1.13.7",
     "tape": "4.9.1",
     "ybiq": "3.4.0"
   },
   "peerDependencies": {
-    "eslint": "4 || 5",
+    "eslint": "5",
     "prettier": "1"
   },
   "scripts": {
