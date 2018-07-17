@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.0.0"></a>
+# [6.0.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v5.1.0...v6.0.0) (2018-07-17)
+
+
+### Features
+
+* **deps:** update dependency eslint-plugin-node to v7 ([#253](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/253)) ([f9148a8](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/f9148a8))
+
+
+### BREAKING CHANGES
+
+* **deps:** update to `eslint@5` as peer dependency, and update `ecmaVersion` to `2019`
+
+
+
 <a name="5.1.0"></a>
 # [5.1.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v5.0.1...v5.1.0) (2018-06-26)
 
