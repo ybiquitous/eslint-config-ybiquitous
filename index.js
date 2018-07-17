@@ -1,9 +1,4 @@
 module.exports = {
-  parserOptions: {
-    ecmaVersion: 2018,
-    sourceType: "module",
-  },
-
   extends: [
     "./rules/core/possible-errors.js",
     "./rules/core/best-practices.js",
