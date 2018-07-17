@@ -90,13 +90,6 @@ module.exports = {
         object: "Math",
         property: "pow",
       },
-
-      // TODO: Enable when spread syntax (...) becomes commonly used
-      // {
-      //   message: "Please use spread syntax (...) instead",
-      //   object: "Object",
-      //   property: "assign",
-      // },
     ],
     "no-return-assign": ["error", "always"],
     "no-return-await": "error",
