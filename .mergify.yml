@@ -1,0 +1,9 @@
+rules:
+  default:
+    merge_strategy:
+      method: squash
+    protection:
+      required_pull_request_reviews: null
+      required_status_checks:
+        contexts:
+        - continuous-integration/travis-ci
