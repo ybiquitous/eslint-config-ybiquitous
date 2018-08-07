@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.1.0"></a>
+# [6.1.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v6.0.0...v6.1.0) (2018-08-07)
+
+
+### Features
+
+* add new rules since ESLint 5.3.0 ([#261](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/261)) ([f6ad84f](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/f6ad84f))
+* more restrict versions of `peerDependencies` ([#262](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/262)) ([128abbb](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/128abbb))
+
+
+
 <a name="6.0.0"></a>
 # [6.0.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v5.1.0...v6.0.0) (2018-07-17)
 
