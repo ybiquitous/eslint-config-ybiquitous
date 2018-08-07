@@ -40,8 +40,8 @@
     "ybiq": "4.0.0"
   },
   "peerDependencies": {
-    "eslint": "5",
-    "prettier": "1"
+    "eslint": ">=5.3.0 <6",
+    "prettier": ">=1.14.0 <2"
   },
   "scripts": {
     "lint:js": "eslint --ignore-path .gitignore --ext .js,.jsx,.mjs .",
