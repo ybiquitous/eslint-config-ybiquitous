@@ -112,6 +112,7 @@ module.exports = {
     "prefer-promise-reject-errors": "error",
     radix: "error",
     "require-await": "error",
+    "require-unicode-regexp": "error",
     "vars-on-top": "error",
     "wrap-iife": "error",
     yoda: "error",
