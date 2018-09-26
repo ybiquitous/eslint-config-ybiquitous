@@ -52,12 +52,16 @@
     "pretest": "eslint --print-config .eslintrc* | eslint-config-prettier-check",
     "test": "tape \"test/**/*.test.js\"",
     "test:debug": "DEBUG=true npm test",
-    "precommit": "lint-staged",
-    "commitmsg": "commitlint -E GIT_PARAMS",
     "release": "standard-version --sign",
     "release:dry-run": "npm run release -- --dry-run",
     "find-new-rules": "eslint-find-rules --unused",
     "find-deprecated-rules": "eslint-find-rules --deprecated"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
   },
   "lint-staged": {
     "linters": {
