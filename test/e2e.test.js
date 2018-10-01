@@ -27,7 +27,7 @@ test("End-to-End", t => {
   sandbox(() => {
     fs.writeFileSync(".npmrc", npmrc);
 
-    $("npm", "init", "--yes");
+    $("npm", "init", "--yes", "--no-init-module");
     $("npm", "install", ...Object.keys(pkg.peerDependencies), tarballPath);
 
     writeESLintConfig({ extends: "ybiquitous" });
