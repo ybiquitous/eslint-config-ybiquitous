@@ -5,7 +5,6 @@ module.exports = {
 
   rules: {
     "react/jsx-boolean-value": "error",
-    "react/jsx-child-element-spacing": "error",
     "react/jsx-curly-brace-presence": "error",
     "react/jsx-filename-extension": ["error", { extensions: [".js", ".jsx"] }],
     "react/jsx-handler-names": "error",
@@ -25,7 +24,6 @@ module.exports = {
         allowAllCaps: true,
       },
     ],
-    "react/jsx-props-no-multi-spaces": "error",
     "react/jsx-sort-default-props": "off",
     "react/jsx-sort-props": "off",
   },
