@@ -10,7 +10,6 @@
   ],
   "main": "index.js",
   "files": [
-    "index.js",
     "node.js",
     "browser.js",
     "react.js",
