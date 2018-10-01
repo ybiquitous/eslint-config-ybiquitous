@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.2.0"></a>
+# [6.2.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v6.1.0...v6.2.0) (2018-10-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-config-prettier to v3 ([#268](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/268)) ([e7c0615](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/e7c0615))
+* **deps:** update dependency eslint-plugin-prettier to v3 ([#284](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/284)) ([18eac49](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/18eac49))
+
+
+### Features
+
+* remove some customized JSX rules ([#287](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/287)) ([86d2b6d](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/86d2b6d))
+
+
+
 <a name="6.1.0"></a>
 # [6.1.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v6.0.0...v6.1.0) (2018-08-07)
 
