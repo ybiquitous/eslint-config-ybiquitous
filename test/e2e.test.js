@@ -35,13 +35,15 @@ test("End-to-End", t => {
     $("eslint", ".");
     t.pass("default configuration");
 
-    lintConfigFiles.filter(file => file !== pkg.main).forEach(file => {
-      const configName = `ybiquitous/${path.basename(file, ".js")}`;
-      writeESLintConfig({ extends: configName });
-      writeLintTargetFile("process.stdout.write(1);");
-      $("eslint", ".");
-      t.pass(`${configName} configuration`);
-    });
+    lintConfigFiles
+      .filter(file => file !== pkg.main)
+      .forEach(file => {
+        const configName = `ybiquitous/${path.basename(file, ".js")}`;
+        writeESLintConfig({ extends: configName });
+        writeLintTargetFile("process.stdout.write(1);");
+        $("eslint", ".");
+        t.pass(`${configName} configuration`);
+      });
 
     lintConfigFiles.forEach(file => {
       $(
