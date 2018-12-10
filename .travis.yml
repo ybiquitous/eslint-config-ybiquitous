@@ -4,9 +4,7 @@ node_js:
   - 10
   - 8
 
-cache:
-  directories:
-    - "$HOME/.npm"
+cache: npm
 
 before_script:
   - commitlint-travis
