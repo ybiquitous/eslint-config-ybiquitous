@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.0.0"></a>
+# [7.0.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v6.2.0...v7.0.0) (2018-12-25)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-node to v8 ([#293](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/293)) ([7e0a561](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/7e0a561))
+* **deps:** update dependency eslint-restricted-globals to ^0.2.0 ([#295](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/295)) ([78ca5a0](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/78ca5a0))
+
+
+### Features
+
+* **deps:** update ESLint to v5.11.0 and add a rule `no-useless-catch` ([#312](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/312)) ([5966724](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/5966724))
+
+
+### BREAKING CHANGES
+
+* **deps:** requires ESLint minimum version 5.11.0
+
+
+
 <a name="6.2.0"></a>
 # [6.2.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v6.1.0...v6.2.0) (2018-10-01)
 
