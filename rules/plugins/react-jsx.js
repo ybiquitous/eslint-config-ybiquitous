@@ -7,6 +7,7 @@ module.exports = {
     "react/jsx-boolean-value": "error",
     "react/jsx-curly-brace-presence": "error",
     "react/jsx-filename-extension": ["error", { extensions: [".js", ".jsx"] }],
+    "react/jsx-fragments": ["error", "syntax"],
     "react/jsx-handler-names": "error",
     "react/jsx-max-depth": ["error", { max: 5 }],
     "react/jsx-no-bind": [
