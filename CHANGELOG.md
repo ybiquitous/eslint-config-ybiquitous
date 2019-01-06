@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.1.0"></a>
+# [7.1.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v7.0.0...v7.1.0) (2019-01-06)
+
+
+### Features
+
+* update React JSX rules ([#317](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/317)) ([68e2fd9](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/68e2fd9))
+
+
+
 <a name="7.0.0"></a>
 # [7.0.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v6.2.0...v7.0.0) (2018-12-25)
 
