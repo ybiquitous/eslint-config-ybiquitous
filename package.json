@@ -34,7 +34,7 @@
     "eslint": "5.12.1",
     "eslint-find-rules": "3.3.1",
     "execa": "1.0.0",
-    "prettier": "1.16.0",
+    "prettier": "1.16.1",
     "tape": "4.9.2",
     "ybiq": "6.0.0"
   },
