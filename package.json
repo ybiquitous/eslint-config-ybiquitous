@@ -24,10 +24,10 @@
     "eslint-plugin-compat": "^2.0.1",
     "eslint-plugin-eslint-comments": "^3.0.0",
     "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-jsx-a11y": "^6.0.2",
-    "eslint-plugin-node": "^8.0.0",
-    "eslint-plugin-prettier": "^3.0.0",
-    "eslint-plugin-react": "^7.12.3",
+    "eslint-plugin-jsx-a11y": "^6.2.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
     "eslint-restricted-globals": "^0.2.0"
   },
   "devDependencies": {
@@ -36,7 +36,7 @@
     "execa": "1.0.0",
     "prettier": "1.16.3",
     "tape": "4.9.2",
-    "ybiq": "7.2.0"
+    "ybiq": "7.2.1"
   },
   "peerDependencies": {
     "eslint": ">=5.11.0 <6",
@@ -46,7 +46,7 @@
     "lint:js": "eslint --ignore-path .gitignore --ext .js,.jsx,.mjs .",
     "lint:js:fix": "npm run lint:js -- --fix",
     "lint:md": "remark . --frail",
-    "lint:md:fix": "npm run lint:md -- --output",
+    "lint:md:fix": "remark . --output",
     "lint": "npm-run-all --print-label --parallel lint:*",
     "pretest": "eslint --print-config .eslintrc* | eslint-config-prettier-check",
     "test": "tape \"test/**/*.test.js\"",
@@ -99,6 +99,10 @@
       "remark-preset-lint-recommended",
       "remark-lint-first-heading-level",
       "remark-lint-no-tabs",
+      [
+        "remark-lint-list-item-spacing",
+        false
+      ],
       [
         "remark-lint-ordered-list-marker-value",
         "ordered"
