@@ -36,7 +36,7 @@
     "execa": "1.0.0",
     "prettier": "1.16.3",
     "tape": "4.9.2",
-    "ybiq": "6.0.0"
+    "ybiq": "7.2.0"
   },
   "peerDependencies": {
     "eslint": ">=5.11.0 <6",
