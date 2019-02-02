@@ -36,7 +36,7 @@
     "execa": "1.0.0",
     "prettier": "1.16.3",
     "tape": "4.9.2",
-    "ybiq": "6.0.0"
+    "ybiq": "7.2.0"
   },
   "peerDependencies": {
     "eslint": ">=5.11.0 <6",
@@ -45,8 +45,8 @@
   "scripts": {
     "lint:js": "eslint --ignore-path .gitignore --ext .js,.jsx,.mjs .",
     "lint:js:fix": "npm run lint:js -- --fix",
-    "lint:md": "markdownlint --ignore node_modules --ignore CHANGELOG.md \"**/*.md\"",
-    "lint:md:fix": "prettier --write \"**/*.md\"",
+    "lint:md": "remark . --frail",
+    "lint:md:fix": "npm run lint:md -- --output",
     "lint": "npm-run-all --print-label --parallel lint:*",
     "pretest": "eslint --print-config .eslintrc* | eslint-config-prettier-check",
     "test": "tape \"test/**/*.test.js\"",
@@ -54,7 +54,11 @@
     "release": "standard-version --sign",
     "release:dry-run": "npm run release -- --dry-run",
     "find-new-rules": "eslint-find-rules --unused",
-    "find-deprecated-rules": "eslint-find-rules --deprecated"
+    "find-deprecated-rules": "eslint-find-rules --deprecated",
+    "prettier": "prettier --ignore-path .gitignore \"**/*.{css,html,js,json,jsx,md,mjs,scss,ts,tsx,yaml,yml}\"",
+    "prettier:check": "npm run prettier -- --check",
+    "prettier:write": "npm run prettier -- --write",
+    "format": "npm-run-all --print-label --parallel lint:*:fix prettier:write"
   },
   "husky": {
     "hooks": {
@@ -69,8 +73,11 @@
         "git add"
       ],
       "*.md": [
+        "remark --output --",
+        "git add"
+      ],
+      "*.{css,html,js,json,jsx,md,mjs,scss,ts,tsx,yaml,yml}": [
         "prettier --write",
-        "markdownlint",
         "git add"
       ]
     },
@@ -80,5 +87,28 @@
   },
   "prettier": {
     "trailingComma": "es5"
+  },
+  "standard-version": {
+    "scripts": {
+      "postchangelog": "prettier --write CHANGELOG.md"
+    }
+  },
+  "remarkConfig": {
+    "plugins": [
+      "remark-preset-lint-markdown-style-guide",
+      "remark-preset-lint-recommended",
+      "remark-lint-first-heading-level",
+      "remark-lint-no-tabs",
+      [
+        "remark-lint-ordered-list-marker-value",
+        "ordered"
+      ],
+      "remark-validate-links"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   }
 }

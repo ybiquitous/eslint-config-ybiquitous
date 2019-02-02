@@ -39,10 +39,14 @@ Edit `.eslintrc` according to some following cases:
 Run the following commands:
 
 1.  `git checkout master`
-1.  `git pull`
-1.  `npm run release:dry-run`
-1.  `npm run release`
-1.  `git push --follow-tags`
+
+2.  `git pull`
+
+3.  `npm run release:dry-run`
+
+4.  `npm run release`
+
+5.  `git push --follow-tags`
     (`npm publish` does not need, because it will be executed in CI)
 
 ## License
