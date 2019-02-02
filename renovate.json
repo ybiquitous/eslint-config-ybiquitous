@@ -1,9 +1,0 @@
-{
-  "extends": [
-    "config:js-lib",
-    ":preserveSemverRanges",
-    ":maintainLockFilesMonthly",
-    "schedule:nonOfficeHours"
-  ],
-  "timezone": "Asia/Tokyo"
-}
