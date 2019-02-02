@@ -43,6 +43,7 @@ module.exports = {
     "import/no-internal-modules": "warn",
     "import/no-mutable-exports": "error",
     "import/no-named-default": "error",
+    "import/no-named-export": "off",
     "import/no-namespace": "error",
     "import/no-nodejs-modules": "off",
     "import/no-relative-parent-imports": "off",
