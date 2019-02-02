@@ -13,6 +13,7 @@
     "node.js",
     "browser.js",
     "react.js",
+    "typescript.js",
     "rules"
   ],
   "repository": "ybiquitous/eslint-config-ybiquitous",
@@ -20,6 +21,7 @@
     "node": ">=8"
   },
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^1.2.0",
     "eslint-config-prettier": "^4.0.0",
     "eslint-plugin-compat": "^2.0.1",
     "eslint-plugin-eslint-comments": "^3.0.0",
@@ -36,11 +38,13 @@
     "execa": "1.0.0",
     "prettier": "1.16.3",
     "tape": "4.9.2",
+    "typescript": "3.3.1",
     "ybiq": "7.2.1"
   },
   "peerDependencies": {
     "eslint": ">=5.13.0 <6",
-    "prettier": ">=1.16.3 <2"
+    "prettier": ">=1.16.3 <2",
+    "typescript": ">=3.3.1 <4"
   },
   "scripts": {
     "lint:js": "eslint --ignore-path .gitignore --ext .js,.jsx,.mjs .",
