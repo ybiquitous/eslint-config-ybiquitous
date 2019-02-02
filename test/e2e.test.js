@@ -7,11 +7,9 @@ const { sandbox, $, lintConfigFiles } = require("./helper");
 
 const baseDir = path.join(__dirname, "..");
 
-const writeESLintConfig = config =>
-  fs.writeFileSync(".eslintrc", JSON.stringify(config));
+const writeESLintConfig = config => fs.writeFileSync(".eslintrc", JSON.stringify(config));
 
-const writeLintTargetFile = content =>
-  fs.writeFileSync("test.js", `${content}${EOL}`);
+const writeLintTargetFile = content => fs.writeFileSync("test.js", `${content}${EOL}`);
 
 const npmrc = `
 progress=false
@@ -46,11 +44,7 @@ test("End-to-End", t => {
       });
 
     lintConfigFiles.forEach(file => {
-      $(
-        "eslint",
-        "--print-config",
-        path.join("node_modules", "eslint-config-ybiquitous", file)
-      );
+      $("eslint", "--print-config", path.join("node_modules", "eslint-config-ybiquitous", file));
       t.pass(`verify configuration for ${file}`);
     });
   });

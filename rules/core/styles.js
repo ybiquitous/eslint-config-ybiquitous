@@ -41,12 +41,7 @@ module.exports = {
     "no-nested-ternary": "off",
     "no-new-object": "error",
     "no-plusplus": ["error", { allowForLoopAfterthoughts: true }],
-    "no-restricted-syntax": [
-      "error",
-      "ForInStatement",
-      "LabeledStatement",
-      "WithStatement",
-    ],
+    "no-restricted-syntax": ["error", "ForInStatement", "LabeledStatement", "WithStatement"],
     "no-ternary": "off",
     "no-underscore-dangle": [
       "error",

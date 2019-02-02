@@ -10,10 +10,7 @@ module.exports = {
     "react/forbid-dom-props": "off",
     "react/forbid-elements": "off",
     "react/forbid-foreign-prop-types": "error",
-    "react/forbid-prop-types": [
-      "error",
-      { checkChildContextTypes: true, checkContextTypes: true },
-    ],
+    "react/forbid-prop-types": ["error", { checkChildContextTypes: true, checkContextTypes: true }],
     "react/no-access-state-in-setstate": "error",
     "react/no-array-index-key": "error",
     "react/no-danger": "warn",
@@ -28,10 +25,7 @@ module.exports = {
     "react/no-unused-state": "error",
     "react/no-will-update-set-state": "error",
     "react/prefer-es6-class": "error",
-    "react/prefer-stateless-function": [
-      "error",
-      { ignorePureComponents: true },
-    ],
+    "react/prefer-stateless-function": ["error", { ignorePureComponents: true }],
     "react/require-default-props": [
       "error",
       {
