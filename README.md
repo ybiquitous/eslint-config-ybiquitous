@@ -16,7 +16,13 @@ please check `dependencies` field in [package.json](package.json).
 ## Install
 
 ```sh
-npm install --save-dev eslint eslint-config-ybiquitous prettier
+npm install --save-dev eslint-config-ybiquitous
+
+# peer deps (required)
+npm install --save-dev eslint prettier
+
+# peer deps (optional)
+npm install --save-dev typescript
 ```
 
 ## Change Log
@@ -27,12 +33,13 @@ Please see [here](CHANGELOG.md).
 
 Edit `.eslintrc` according to some following cases:
 
-| Case    | Setting                         |
-| ------- | ------------------------------- |
-| Basic   | `extends: "ybiquitous"`         |
-| Node.js | `extends: "ybiquitous/node"`    |
-| Browser | `extends: "ybiquitous/browser"` |
-| React   | `extends: "ybiquitous/react"`   |
+| Case       | Setting                            |
+| ---------- | ---------------------------------- |
+| Basic      | `extends: "ybiquitous"`            |
+| Node.js    | `extends: "ybiquitous/node"`       |
+| Browser    | `extends: "ybiquitous/browser"`    |
+| React      | `extends: "ybiquitous/react"`      |
+| TypeScript | `extends: "ybiquitous/typescript"` |
 
 ## Release
 
