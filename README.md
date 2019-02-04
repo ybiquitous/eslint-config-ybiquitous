@@ -8,7 +8,6 @@
 [![Conventional Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 [![Changelog](https://img.shields.io/badge/changelog-here-blue.svg)](CHANGELOG.md)
 
-
 > My personal ESLint configuration.
 
 This package purpose is to collect some tips and plugins.
