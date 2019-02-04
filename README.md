@@ -4,7 +4,10 @@
 [![node](https://img.shields.io/node/v/eslint-config-ybiquitous.svg)](https://github.com/ybiquitous/eslint-config-ybiquitous)
 [![Build Status](https://travis-ci.org/ybiquitous/eslint-config-ybiquitous.svg?branch=master)](https://travis-ci.org/ybiquitous/eslint-config-ybiquitous)
 [![dependencies Status](https://david-dm.org/ybiquitous/eslint-config-ybiquitous/status.svg)](https://david-dm.org/ybiquitous/eslint-config-ybiquitous)
+[![MIT License](https://img.shields.io/github/license/ybiquitous/ybiq.svg)](LICENSE)
 [![Conventional Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+[![Changelog](https://img.shields.io/badge/changelog-here-blue.svg)](CHANGELOG.md)
+
 
 > My personal ESLint configuration.
 
@@ -24,10 +27,6 @@ npm install --save-dev eslint prettier
 # peer deps (optional)
 npm install --save-dev typescript
 ```
-
-## Change Log
-
-Please see [here](CHANGELOG.md).
 
 ## Usage
 
@@ -51,7 +50,3 @@ Run the following commands:
 4.  `npm run release`
 5.  `git push --follow-tags`
     (`npm publish` does not need, because it will be executed in CI)
-
-## License
-
-[MIT](LICENSE) © ybiquitous
