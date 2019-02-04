@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.2.0"></a>
+
+# [7.2.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v7.1.0...v7.2.0) (2019-02-04)
+
+### Bug Fixes
+
+- **deps:** update dependency eslint-config-prettier to v4 ([#321](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/321)) ([519f887](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/519f887))
+- **deps:** update peer-deps versions ([#336](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/336)) ([4b9e5b2](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/4b9e5b2))
+
+### Features
+
+- support TypeScript ([#338](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/338)) ([898ff8a](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/898ff8a))
+
 <a name="7.1.0"></a>
 
 # [7.1.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v7.0.0...v7.1.0) (2019-01-06)
