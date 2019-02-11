@@ -23,7 +23,7 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^1.2.0",
     "eslint-config-prettier": "^4.0.0",
-    "eslint-plugin-compat": "^2.0.1",
+    "eslint-plugin-compat": "^2.7.0",
     "eslint-plugin-eslint-comments": "^3.0.0",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
