@@ -24,7 +24,7 @@
     "@typescript-eslint/eslint-plugin": "^1.2.0",
     "eslint-config-prettier": "^4.0.0",
     "eslint-plugin-compat": "^2.0.1",
-    "eslint-plugin-eslint-comments": "^3.0.0",
+    "eslint-plugin-eslint-comments": "^3.1.0",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-node": "^8.0.1",
@@ -38,13 +38,13 @@
     "execa": "1.0.0",
     "prettier": "1.16.4",
     "tape": "4.10.0",
-    "typescript": "3.3.1",
+    "typescript": "3.3.3",
     "ybiq": "7.2.2"
   },
   "peerDependencies": {
     "eslint": ">=5.13.0 <6",
     "prettier": ">=1.16.4 <2",
-    "typescript": ">=3.3.1 <4"
+    "typescript": ">=3.3.3 <4"
   },
   "scripts": {
     "lint:js": "eslint --ignore-path .gitignore --ext .js,.jsx,.mjs .",
