@@ -39,7 +39,7 @@
     "prettier": "1.16.4",
     "tape": "4.10.1",
     "typescript": "3.3.3",
-    "ybiq": "7.2.2"
+    "ybiq": "7.3.0"
   },
   "peerDependencies": {
     "eslint": ">=5.13.0 <6",
