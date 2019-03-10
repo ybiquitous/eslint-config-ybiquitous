@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.3.0"></a>
+
+# [7.3.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v7.2.0...v7.3.0) (2019-03-10)
+
+### Features
+
+- **deps:** update dependency eslint to v5.15.1 ([#361](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/361)) ([b0a1fde](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/b0a1fde))
+- **react:** disable `jsx-boolean-value` rule ([#362](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/362)) ([144d554](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/144d554))
+
 <a name="7.2.0"></a>
 
 # [7.2.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v7.1.0...v7.2.0) (2019-02-04)
