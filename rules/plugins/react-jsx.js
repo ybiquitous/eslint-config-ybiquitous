@@ -4,7 +4,7 @@ module.exports = {
   extends: ["prettier/react"],
 
   rules: {
-    "react/jsx-boolean-value": "error",
+    "react/jsx-boolean-value": "off",
     "react/jsx-curly-brace-presence": "error",
     "react/jsx-filename-extension": ["error", { extensions: [".js", ".jsx"] }],
     "react/jsx-fragments": ["error", "syntax"],
