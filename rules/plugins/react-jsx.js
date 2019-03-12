@@ -18,7 +18,7 @@ module.exports = {
         ignoreRefs: true,
       },
     ],
-    "react/jsx-no-literals": ["error", { noStrings: true }],
+    "react/jsx-no-literals": "off",
     "react/jsx-pascal-case": [
       "error",
       {
