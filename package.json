@@ -33,7 +33,7 @@
     "eslint-restricted-globals": "^0.2.0"
   },
   "devDependencies": {
-    "eslint": "^5.15.2",
+    "eslint": "^5.16.0",
     "eslint-find-rules": "3.3.1",
     "execa": "1.0.0",
     "prettier": "1.16.4",
@@ -42,7 +42,7 @@
     "ybiq": "7.3.0"
   },
   "peerDependencies": {
-    "eslint": ">=5.15.2 <6",
+    "eslint": ">=5.16.0 <6",
     "prettier": ">=1.16.4 <2",
     "typescript": ">=3.3.3333 <4"
   },
