@@ -50,6 +50,7 @@ module.exports = {
     "import/no-restricted-paths": "off",
     "import/no-self-import": "error",
     "import/no-unassigned-import": "off",
+    "import/no-unused-modules": "warn",
     "import/no-useless-path-segments": "error",
     "import/no-webpack-loader-syntax": "error",
     "import/order": "error",
