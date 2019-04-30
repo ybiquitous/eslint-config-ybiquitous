@@ -38,13 +38,13 @@
     "execa": "1.0.0",
     "prettier": "1.17.0",
     "tape": "4.10.1",
-    "typescript": "3.4.3",
+    "typescript": "3.4.5",
     "ybiq": "7.3.0"
   },
   "peerDependencies": {
     "eslint": ">=5.16.0 <6",
     "prettier": ">=1.17.0 <2",
-    "typescript": ">=3.4.3 <4"
+    "typescript": ">=3.4.5 <4"
   },
   "scripts": {
     "lint:js": "eslint --ignore-path .gitignore --ext .js,.jsx,.mjs .",
