@@ -25,6 +25,7 @@ module.exports = {
     "react/no-unused-state": "error",
     "react/no-will-update-set-state": "error",
     "react/prefer-es6-class": "error",
+    "react/prefer-read-only-props": "off",
     "react/prefer-stateless-function": ["error", { ignorePureComponents: true }],
     "react/require-default-props": [
       "error",
@@ -36,6 +37,8 @@ module.exports = {
     "react/self-closing-comp": "error",
     "react/sort-comp": "error",
     "react/sort-prop-types": "off",
+    "react/state-in-constructor": "off",
+    "react/static-property-placement": "warn",
     "react/style-prop-object": "error",
     "react/void-dom-elements-no-children": "error",
   },
