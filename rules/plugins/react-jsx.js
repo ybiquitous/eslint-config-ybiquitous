@@ -25,6 +25,7 @@ module.exports = {
         allowAllCaps: true,
       },
     ],
+    "react/jsx-props-no-spreading": "off",
     "react/jsx-sort-default-props": "off",
     "react/jsx-sort-props": "off",
   },
