@@ -44,7 +44,7 @@
   "peerDependencies": {
     "eslint": ">=5.16.0 <6",
     "prettier": ">=1.18.2 <2",
-    "typescript": ">=3.4.5 <4"
+    "typescript": ">=3.5.1 <4"
   },
   "scripts": {
     "lint:js": "eslint --ignore-path .gitignore --ext .js,.jsx,.mjs .",
