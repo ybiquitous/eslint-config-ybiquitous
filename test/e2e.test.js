@@ -1,6 +1,7 @@
 const path = require("path");
 const fs = require("fs");
 const { EOL } = require("os");
+const semver = require("semver");
 const test = require("tape");
 const pkg = require("../package.json");
 const { sandbox, $, lintConfigFiles } = require("./helper");
@@ -21,16 +22,22 @@ cache-min=9999
 test("End-to-End", t => {
   const tarball = $("npm", "pack");
   const tarballPath = `file:${path.join(baseDir, tarball)}`;
+  const peerDeps = Object.entries(pkg.peerDependencies).map(([name, verRange]) => {
+    const ver = semver.valid(semver.coerce(verRange));
+    return `${name}@${ver}`;
+  });
 
-  sandbox(() => {
+  sandbox(cwd => {
     fs.writeFileSync(".npmrc", npmrc);
 
     $("npm", "init", "--yes", "--no-init-module");
-    $("npm", "install", ...Object.keys(pkg.peerDependencies), tarballPath);
+    $("npm", "install", ...peerDeps, tarballPath);
+
+    const eslint = path.join(cwd, "node_modules", ".bin", "eslint");
 
     writeESLintConfig({ extends: "ybiquitous" });
     writeLintTargetFile("process.stdout.write(1);");
-    $("eslint", ".");
+    $(eslint, ".");
     t.pass("default configuration");
 
     lintConfigFiles
@@ -39,12 +46,12 @@ test("End-to-End", t => {
         const configName = `ybiquitous/${path.basename(file, ".js")}`;
         writeESLintConfig({ extends: configName });
         writeLintTargetFile("process.stdout.write(1);");
-        $("eslint", ".");
+        $(eslint, ".");
         t.pass(`${configName} configuration`);
       });
 
     lintConfigFiles.forEach(file => {
-      $("eslint", "--print-config", path.join("node_modules", "eslint-config-ybiquitous", file));
+      $(eslint, "--print-config", path.join("node_modules", "eslint-config-ybiquitous", file));
       t.pass(`verify configuration for ${file}`);
     });
   });
