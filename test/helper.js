@@ -14,8 +14,8 @@ const log = msg => {
 };
 
 const $ = (cmd, ...args) => {
-  log(`> ${[cmd, ...args].join(" ")}`);
-  const { stdout } = execa.sync(cmd, args, { shell: true });
+  log(`> ${cmd} '${args.join("' '")}'`);
+  const { stdout } = execa.sync(cmd, args);
   const maxLines = 20;
   const lines = stdout.split(EOL);
   if (lines.length < maxLines) {
