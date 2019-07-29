@@ -38,7 +38,7 @@
     "eslint-find-rules": "3.3.1",
     "execa": "2.0.3",
     "prettier": "1.18.2",
-    "semver": "^6.2.0",
+    "semver": "^6.3.0",
     "tape": "4.11.0",
     "typescript": "3.5.3",
     "ybiq": "8.0.0"
