@@ -1,6 +1,34 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [8.0.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v7.3.0...v8.0.0) (2019-08-20)
+
+### Bug Fixes
+
+- **react:** add missing `.tsx` extension for JSX ([#363](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/363)) ([3ba9ae9](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/3ba9ae9))
+
+### Features
+
+- **deps:** bump eslint-plugin-compat from 2.7.0 to 3.0.1 ([#365](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/365)) ([6aaf415](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/6aaf415))
+- **deps:** bump eslint-plugin-import from 2.16.0 to 2.17.2 ([#382](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/382)) ([9db61e3](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/9db61e3))
+- **deps:** bump eslint-plugin-node from 8.0.1 to 9.0.1 ([#385](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/385)) ([5bd7ca9](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/5bd7ca9))
+- **deps:** bump eslint-plugin-react from 7.12.4 to 7.13.0 ([#386](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/386)) ([daf4633](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/daf4633))
+- **deps:** bump prettier from 1.16.4 to 1.17.0 ([#379](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/379)) ([7fa5f86](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/7fa5f86))
+- **deps:** update to ESLint 6 ([#434](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/434)) ([f70e045](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/f70e045))
+- **react:** add `eslint-plugin-react-hooks` ([#407](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/407)) ([ad0fc25](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/ad0fc25))
+- **react:** disable too strict `jsx-no-literals` rule ([#364](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/364)) ([fd38ce8](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/fd38ce8))
+- **typescript:** list all TypeScript rules ([#435](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/435)) ([3246efc](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/3246efc))
+- **typescript:** update @typescript-eslint/eslint-plugin to v2 ([#431](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/431)) ([642be88](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/642be88))
+
+### Tests
+
+- improve E2E test ([#412](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/412)) ([8a1ad29](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/8a1ad29))
+
+### BREAKING CHANGES
+
+- **deps:** requires ESLint minimum version 6.2.0
+- **deps:** require minimum Node version `>=10`
 
 <a name="7.3.0"></a>
 
