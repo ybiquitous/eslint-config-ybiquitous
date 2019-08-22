@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [8.1.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v8.0.0...v8.1.0) (2019-08-22)
+
+### Features
+
+- **deps:** bump eslint-plugin-react-hooks from 1.7.0 to 2.0.1 ([#439](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/439)) ([019ac25](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/019ac25))
+
 ## [8.0.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v7.3.0...v8.0.0) (2019-08-20)
 
 ### Bug Fixes
