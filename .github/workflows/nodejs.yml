@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: Commitlint CLI
-        uses: bennypowers/commitlint-gh-actions@v1
+        uses: bennypowers/commitlint-gh-actions@v1.0.0
       - name: npm install, build, and test
         run: |
           npm ci
