@@ -3,6 +3,7 @@ module.exports = {
   rules: {
     "node/exports-style": ["error", "module.exports"],
     "node/file-extension-in-import": "off",
+    "node/no-callback-literal": "off",
     "node/prefer-global/buffer": "error",
     "node/prefer-global/console": "error",
     "node/prefer-global/process": "error",
