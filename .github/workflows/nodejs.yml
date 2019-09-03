@@ -16,10 +16,11 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
+      - name: Commitlint CLI
+        uses: bennypowers/commitlint-gh-actions@v1
       - name: npm install, build, and test
         run: |
           npm ci
-          commitlint-travis
           npm run lint
           npm run prettier:check
           npm run release:dry-run
