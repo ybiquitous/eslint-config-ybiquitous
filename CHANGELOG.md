@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [8.2.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v8.1.0...v8.2.0) (2019-09-09)
+
+### Features
+
+- **deps:** bump eslint-plugin-node from 9.2.0 to 10.0.0 ([#450](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/450)) ([42c3975](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/42c3975))
+
 ## [8.1.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v8.0.0...v8.1.0) (2019-08-22)
 
 ### Features
