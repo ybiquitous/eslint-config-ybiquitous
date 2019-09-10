@@ -112,6 +112,22 @@
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
-    ]
+    ],
+    "rules": {
+      "scope-enum": [
+        2,
+        "always",
+        [
+          "",
+          "browser",
+          "core",
+          "import",
+          "node",
+          "prettier",
+          "react",
+          "typescript"
+        ]
+      ]
+    }
   }
 }
