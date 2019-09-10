@@ -1,16 +1,21 @@
 module.exports = {
-  extends: ["plugin:import/errors", "plugin:import/warnings", "plugin:import/react"],
+  extends: [
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/react",
+    "plugin:import/typescript",
+  ],
 
   rules: {
     "import/dynamic-import-chunkname": "off",
-    "import/exports-last": "error",
+    "import/exports-last": "off",
     "import/extensions": [
       "error",
       "always",
       {
         js: "never",
         jsx: "never",
-        mjs: "never",
+        ts: "never",
       },
     ],
     "import/first": "error",
@@ -32,10 +37,10 @@ module.exports = {
           "test/**",
           "spec/**",
           "**/__tests__/**",
-          "test.{js,jsx}",
-          "**/*.{test,spec}.{js,jsx}",
-          "**/webpack.config.js",
-          "**/webpack.config.*.js",
+          "test.{js,jsx,ts,tsx}",
+          "**/*.{test,spec}.{js,jsx,ts,tsx}",
+          "**/webpack.config.{js,ts}",
+          "**/webpack.config.*.{js,ts}",
         ],
         optionalDependencies: false,
       },
@@ -44,7 +49,7 @@ module.exports = {
     "import/no-mutable-exports": "error",
     "import/no-named-default": "error",
     "import/no-named-export": "off",
-    "import/no-namespace": "error",
+    "import/no-namespace": "off",
     "import/no-nodejs-modules": "off",
     "import/no-relative-parent-imports": "off",
     "import/no-restricted-paths": "off",
@@ -59,12 +64,6 @@ module.exports = {
   },
 
   settings: {
-    "import/extensions": [".js", ".jsx", ".mjs"],
     "import/ignore": ["\\.(coffee|scss|css|svg|png|gif|jpg)$"],
-    "import/resolver": {
-      node: {
-        extensions: [".js", ".json", ".mjs"],
-      },
-    },
   },
 };
