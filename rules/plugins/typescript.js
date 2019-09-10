@@ -9,6 +9,7 @@ module.exports = {
     "@typescript-eslint/array-type": "off",
     "@typescript-eslint/await-thenable": "off",
     "@typescript-eslint/consistent-type-definitions": "off",
+    "@typescript-eslint/explicit-function-return-type": ["error", { allowExpressions: true }],
     "@typescript-eslint/explicit-member-accessibility": ["error", { accessibility: "no-public" }],
     "@typescript-eslint/generic-type-naming": "off",
     "@typescript-eslint/member-naming": "off",
