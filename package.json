@@ -122,6 +122,7 @@
           "browser",
           "core",
           "deps",
+          "deps-dev",
           "import",
           "node",
           "prettier",
