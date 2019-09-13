@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [9.0.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v8.2.0...v9.0.0) (2019-09-13)
+
+### ⚠ BREAKING CHANGES
+
+- **import:** The special support for `.json` and `.mjs` has been dropped.
+
+### Features
+
+- **core:** disable `no-undefined` ([#457](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/457)) ([d25cd2c](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/d25cd2c))
+- **core:** loosen rule `func-style` ([#456](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/456)) ([2c15911](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/2c15911))
+- **core:** loosen rule `prefer-destructuring` ([#455](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/455)) ([b6b060f](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/b6b060f))
+- **import:** support TypeScript files ([#459](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/459)) ([9268f4c](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/9268f4c))
+- **typescript:** change settings of `explicit-function-return-type` ([#458](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/458)) ([1a56123](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/1a56123))
+
 ## [8.2.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v8.1.0...v8.2.0) (2019-09-09)
 
 ### Features
