@@ -43,11 +43,5 @@ Edit `.eslintrc` according to some following cases:
 
 Run the following commands:
 
-1.  `git checkout master`
-2.  `git pull`
-3.  `npm ci`
-4.  `npm run release:dry-run`
-5.  `npm run release`
-6.  `git push --follow-tags`
-7.  `git checkout <TAG>`
-8.  `npm publish`
+1.  `npm run release:dry-run`
+2.  `npm run release`
