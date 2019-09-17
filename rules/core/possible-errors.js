@@ -20,6 +20,7 @@ module.exports = {
     "no-extra-parens": "error",
     "no-extra-semi": "error",
     "no-func-assign": "error",
+    "no-import-assign": "error",
     "no-inner-declarations": "error",
     "no-invalid-regexp": "error",
     "no-irregular-whitespace": "error",
