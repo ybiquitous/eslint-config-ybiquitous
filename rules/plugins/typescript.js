@@ -22,6 +22,7 @@ module.exports = {
     "@typescript-eslint/no-parameter-properties": "off",
     "@typescript-eslint/no-require-imports": "error",
     "@typescript-eslint/no-type-alias": "off",
+    "@typescript-eslint/no-unnecessary-condition": "off",
     "@typescript-eslint/no-unnecessary-qualifier": "off",
     "@typescript-eslint/no-unnecessary-type-arguments": "off",
     "@typescript-eslint/no-unnecessary-type-assertion": "off",
