@@ -19,6 +19,7 @@ module.exports = {
       },
     ],
     "react/jsx-no-literals": "off",
+    "react/jsx-no-useless-fragment": "error",
     "react/jsx-pascal-case": [
       "error",
       {
