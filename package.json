@@ -125,6 +125,7 @@
           "core",
           "deps",
           "deps-dev",
+          "github",
           "import",
           "node",
           "prettier",
