@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [10.0.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v9.0.0...v10.0.0) (2019-10-18)
+
+### ⚠ BREAKING CHANGES
+
+- **deps:** requires ESLint minimum version 6.4.0
+
+### Features
+
+- **deps:** bump eslint from 6.3.0 to 6.4.0 ([#466](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/466)) ([38b1d68](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/38b1d68))
+- **deps:** bump eslint-plugin-react from 7.14.3 to 7.15.1 ([#479](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/479)) ([1f18537](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/1f18537))
+
 ## [9.0.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v8.2.0...v9.0.0) (2019-09-13)
 
 ### ⚠ BREAKING CHANGES
