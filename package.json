@@ -41,13 +41,13 @@
     "prettier": "1.18.2",
     "semver": "6.3.0",
     "tape": "4.11.0",
-    "typescript": "3.6.4",
+    "typescript": "3.7.2",
     "ybiq": "9.1.0"
   },
   "peerDependencies": {
     "eslint": ">=6.6.0 <7",
     "prettier": ">=1.18.2 <2",
-    "typescript": ">=3.6.4 <4"
+    "typescript": ">=3.7.2 <4"
   },
   "scripts": {
     "lint:js": "eslint --ignore-path .gitignore --ext .js,.jsx,.mjs,.ts,.tsx .",
