@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [10.1.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v10.0.0...v10.1.0) (2019-11-12)
+
+### Features
+
+- **typescript:** add `no-unused-expressions` rule ([#507](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/507)) ([b087b21](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/b087b21))
+
 ## [10.0.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v9.0.0...v10.0.0) (2019-10-18)
 
 ### ⚠ BREAKING CHANGES
