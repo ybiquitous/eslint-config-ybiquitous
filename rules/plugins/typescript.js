@@ -26,6 +26,8 @@ module.exports = {
     "@typescript-eslint/no-unnecessary-qualifier": "off",
     "@typescript-eslint/no-unnecessary-type-arguments": "off",
     "@typescript-eslint/no-unnecessary-type-assertion": "off",
+    "no-unused-expressions": "off",
+    "@typescript-eslint/no-unused-expressions": "error", // eslint-disable-line sort-keys
     "no-useless-constructor": "off",
     "@typescript-eslint/no-useless-constructor": "error", // eslint-disable-line sort-keys
     "@typescript-eslint/prefer-for-of": "error",
