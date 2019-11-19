@@ -14,6 +14,7 @@ module.exports = {
     "@typescript-eslint/generic-type-naming": "off",
     "@typescript-eslint/member-naming": "off",
     "@typescript-eslint/member-ordering": "off",
+    "@typescript-eslint/no-dynamic-delete": "warn",
     "@typescript-eslint/no-extraneous-class": "error",
     "@typescript-eslint/no-floating-promises": "off",
     "@typescript-eslint/no-for-in-array": "off",
@@ -26,6 +27,7 @@ module.exports = {
     "@typescript-eslint/no-unnecessary-qualifier": "off",
     "@typescript-eslint/no-unnecessary-type-arguments": "off",
     "@typescript-eslint/no-unnecessary-type-assertion": "off",
+    "@typescript-eslint/no-untyped-public-signature": "warn",
     "no-unused-expressions": "off",
     "@typescript-eslint/no-unused-expressions": "error", // eslint-disable-line sort-keys
     "no-useless-constructor": "off",
@@ -40,6 +42,7 @@ module.exports = {
     "@typescript-eslint/require-array-sort-compare": "off",
     "@typescript-eslint/require-await": "off",
     "@typescript-eslint/restrict-plus-operands": "off",
+    "@typescript-eslint/restrict-template-expressions": "off",
     "@typescript-eslint/strict-boolean-expressions": "off",
     "@typescript-eslint/typedef": "off",
     "@typescript-eslint/unbound-method": "off",
