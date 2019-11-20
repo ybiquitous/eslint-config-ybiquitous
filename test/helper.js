@@ -27,6 +27,7 @@ const $ = (cmd, ...args) => {
   return stdout;
 };
 
+// eslint-disable-next-line max-statements
 const sandbox = callback => {
   if (!fs.existsSync(tmpDir)) {
     fs.mkdirSync(tmpDir);
@@ -36,6 +37,14 @@ const sandbox = callback => {
   try {
     process.chdir(workDir);
     return callback(workDir);
+  } catch (err) {
+    const { stderr } = err;
+    if (typeof stderr === "string") {
+      process.stderr.write(`==================================================${EOL}`);
+      process.stderr.write(`${stderr}${EOL}`);
+      process.stderr.write(`==================================================${EOL}`);
+    }
+    throw err;
   } finally {
     process.chdir(baseDir);
     $("rm", "-rf", tmpDir);
