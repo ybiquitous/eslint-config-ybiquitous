@@ -38,8 +38,13 @@ const sandbox = callback => {
     process.chdir(workDir);
     return callback(workDir);
   } catch (err) {
-    const { stderr } = err;
-    if (typeof stderr === "string") {
+    const { stdout, stderr } = err;
+    if (typeof stdout === "string" && stdout !== "") {
+      process.stdout.write(`==================================================${EOL}`);
+      process.stdout.write(`${stdout}${EOL}`);
+      process.stdout.write(`==================================================${EOL}`);
+    }
+    if (typeof stderr === "string" && stderr !== "") {
       process.stderr.write(`==================================================${EOL}`);
       process.stderr.write(`${stderr}${EOL}`);
       process.stderr.write(`==================================================${EOL}`);
