@@ -55,6 +55,7 @@ module.exports = {
     "one-var": "off",
     "operator-assignment": "off",
     "padding-line-between-statements": "off",
+    "prefer-exponentiation-operator": "warn",
     "prefer-object-spread": "error",
     "require-jsdoc": "off",
     "sort-keys": "off",
