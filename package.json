@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "2.8.0",
-    "@typescript-eslint/parser": "2.8.0",
+    "@typescript-eslint/parser": "2.9.0",
     "eslint": "6.7.1",
     "eslint-find-rules": "3.4.0",
     "execa": "3.4.0",
