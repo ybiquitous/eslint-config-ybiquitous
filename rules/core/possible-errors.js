@@ -37,7 +37,6 @@ module.exports = {
     "no-unsafe-negation": "error",
     "require-atomic-updates": "error",
     "use-isnan": "error",
-    "valid-jsdoc": "off",
     "valid-typeof": "error",
   },
 };

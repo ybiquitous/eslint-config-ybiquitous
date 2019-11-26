@@ -13,9 +13,12 @@ const log = msg => {
   }
 };
 
+// eslint-disable-next-line max-statements
 const $ = (cmd, ...args) => {
-  log(`> ${cmd} '${args.join("' '")}'`);
-  const { stdout } = execa.sync(cmd, args);
+  const cmdArgs = args.filter(arg => typeof arg === "string");
+  const options = args.find(arg => typeof arg === "object" && arg !== null) || {};
+  log(`> ${cmd} '${cmdArgs.join("' '")}'`);
+  const { stdout } = execa.sync(cmd, cmdArgs, options);
   const maxLines = 20;
   const lines = stdout.split(EOL);
   if (lines.length < maxLines) {
