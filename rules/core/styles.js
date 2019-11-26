@@ -57,7 +57,6 @@ module.exports = {
     "padding-line-between-statements": "off",
     "prefer-exponentiation-operator": "warn",
     "prefer-object-spread": "error",
-    "require-jsdoc": "off",
     "sort-keys": "off",
     "sort-vars": "off",
     "spaced-comment": "error",
