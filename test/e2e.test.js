@@ -29,8 +29,8 @@ test("End-to-End", t => {
 
   sandbox(cwd => {
     fs.writeFileSync(".npmrc", npmrc);
+    fs.writeFileSync("package.json", "{}");
 
-    $("npm", "init", "--yes", "--no-init-module");
     $("npm", "install", ...peerDeps, tarballPath);
 
     const eslint = path.join(cwd, "node_modules", ".bin", "eslint");

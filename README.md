@@ -17,19 +17,21 @@ please check `dependencies` field in [package.json](package.json).
 
 ## Install
 
+When _not_ using TypeScript:
+
 ```sh
-npm install --save-dev eslint-config-ybiquitous
+npm install --save-dev eslint-config-ybiquitous eslint prettier
+```
 
-# peer deps (required)
-npm install --save-dev eslint prettier
+When using TypeScript:
 
-# peer deps (optional)
-npm install --save-dev typescript
+```sh
+npm install --save-dev eslint-config-ybiquitous eslint prettier typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser
 ```
 
 ## Usage
 
-Edit `.eslintrc` according to some following cases:
+Edit your `.eslintrc.*` file according to some following cases:
 
 | Case       | Setting                            |
 | ---------- | ---------------------------------- |
