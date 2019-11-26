@@ -1,6 +1,8 @@
 rules:
   - id: update-peer-dependencies
     pattern:
-      regexp: '"(eslint|prettier|typescript)": "[0-9.^~]+"'
+      regexp: '"(eslint|prettier|typescript|@typescript-eslint/.+)": "[0-9.^~]+"'
     glob: "package.json"
     message: Don't forget updating `peerDependencies` when updating `devDependencies`.
+    justification:
+      - When not updating `peerDependencies`.
