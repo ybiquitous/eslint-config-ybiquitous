@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [10.3.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v10.2.0...v10.3.0) (2019-11-26)
+
+### Features
+
+- **deps:** bump @typescript-eslint/eslint-plugin to 2.9.0 ([#521](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/521)) ([5f7e583](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/5f7e583))
+- **deps:** bump eslint from 6.6.0 to 6.7.0 ([#516](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/516)) ([562d99b](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/562d99b))
+- **deps:** introduce `peerDependenciesMeta` ([#517](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/517)) ([9807bae](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/9807bae))
+- remove deprecated rules ([#522](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/522)) ([7b9cc9d](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/7b9cc9d))
+
 ## [10.2.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v10.1.0...v10.2.0) (2019-11-20)
 
 ### Features
