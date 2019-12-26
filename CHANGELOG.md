@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [10.4.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v10.3.0...v10.4.0) (2019-12-26)
+
+### Features
+
+- **deps:** bump @typescript-eslint/eslint-plugin from 2.12.0 to 2.13.0 ([#541](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/541)) ([4e9444a](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/4e9444a))
+- **deps:** bump eslint-plugin-react from 7.16.0 to 7.17.0 ([#523](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/523)) ([6681ba6](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/6681ba6))
+- turn off `no-extra-semi` rule ([#545](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/545)) ([b386d8a](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/b386d8a)), closes [/github.com/prettier/eslint-config-prettier/blob/4fdaa044ca252f2f6360dba9d6ef1e43bf03b59a/index.js#L52](https://github.com/ybiquitous//github.com/prettier/eslint-config-prettier/blob/4fdaa044ca252f2f6360dba9d6ef1e43bf03b59a/index.js/issues/L52) [40typescript-eslint.js#L12](https://github.com/ybiquitous/40typescript-eslint.js/issues/L12)
+
 ## [10.3.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v10.2.0...v10.3.0) (2019-11-26)
 
 ### Features
