@@ -16,8 +16,6 @@ module.exports = {
     "@typescript-eslint/member-ordering": "off",
     "@typescript-eslint/no-dynamic-delete": "warn",
     "@typescript-eslint/no-extra-non-null-assertion": "error",
-    "no-extra-semi": "off",
-    "@typescript-eslint/no-extra-semi": "error", // eslint-disable-line sort-keys
     "@typescript-eslint/no-extraneous-class": "error",
     "@typescript-eslint/no-floating-promises": "off",
     "@typescript-eslint/no-for-in-array": "off",
