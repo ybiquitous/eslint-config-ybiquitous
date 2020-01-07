@@ -19,6 +19,7 @@ module.exports = {
     "@typescript-eslint/no-extraneous-class": "error",
     "@typescript-eslint/no-floating-promises": "off",
     "@typescript-eslint/no-for-in-array": "off",
+    "@typescript-eslint/no-implied-eval": "off",
     "@typescript-eslint/no-magic-numbers": "off",
     "@typescript-eslint/no-misused-promises": "off",
     "@typescript-eslint/no-parameter-properties": "off",
