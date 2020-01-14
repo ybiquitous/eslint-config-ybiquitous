@@ -26,21 +26,27 @@ test("no unused rules", t => {
 });
 
 test("deprecated rules", t => {
+  const ignoredRules = [
+    "jsx-a11y/label-has-for",
+    "@typescript-eslint/camelcase",
+    "@typescript-eslint/class-name-casing",
+    "@typescript-eslint/interface-name-prefix",
+  ];
+
   lintConfigFiles.forEach(file => {
     try {
       checkRules(file, "--deprecated", { ESLINT_CONFIG_PRETTIER_NO_DEPRECATED: "true" });
     } catch (err) {
-      if (typeof err.stdout === "string" && err.stdout.includes("jsx-a11y/label-has-for")) {
-        [
-          "",
-          "NOTE: `jsx-a11y/label-has-for` rule is deprecated but included in the recommended config.",
-          "",
-          "See https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/label-has-for.md",
-          "",
-        ].forEach(line => process.stdout.write(line + EOL));
-      } else {
-        throw err;
+      if (typeof err.stdout === "string") {
+        const msgs = ignoredRules
+          .filter(rule => err.stdout.includes(rule))
+          .map(rule => `  => "${rule}" is deprecated but included in the recommended config${EOL}`);
+        if (msgs.length !== -1) {
+          process.stderr.write(msgs.join(""));
+          return;
+        }
       }
+      throw err;
     }
     t.pass(file);
   });
