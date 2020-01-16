@@ -19,6 +19,7 @@ module.exports = {
       },
     ],
     "react/jsx-no-literals": "off",
+    "react/jsx-no-script-url": "error",
     "react/jsx-no-target-blank": ["error", { allowReferrer: true }],
     "react/jsx-no-useless-fragment": "error",
     "react/jsx-pascal-case": [
