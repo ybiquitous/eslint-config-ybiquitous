@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [10.5.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v10.4.0...v10.5.0) (2020-01-17)
+
+### Features
+
+- **core:** set `argsIgnorePattern` to `no-unused-vars` ([#559](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/559)) ([f267d07](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/f267d07))
+- **deps:** bump @typescript-eslint/eslint-plugin from 2.13.0 to 2.15.0 ([#552](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/552)) ([2d931a4](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/2d931a4))
+- **deps:** bump @typescript-eslint/eslint-plugin from 2.15.0 to… ([#557](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/557)) ([c4e8454](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/c4e8454))
+- **deps:** bump eslint-plugin-node from 10.0.0 to 11.0.0 ([#547](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/547)) ([343a293](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/343a293))
+- **deps:** bump eslint-plugin-react from 7.17.0 to 7.18.0 ([#560](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/560)) ([bf37bed](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/bf37bed))
+
 ## [10.4.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v10.3.0...v10.4.0) (2019-12-26)
 
 ### Features
