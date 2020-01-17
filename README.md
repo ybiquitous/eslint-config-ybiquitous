@@ -45,5 +45,7 @@ Edit your `.eslintrc.*` file according to some following cases:
 
 Run the following commands:
 
-1.  `npm run release:dry-run`
-2.  `npm run release`
+1.  `git checkout master; git pull origin master`
+2.  `npm ci`
+3.  `npm run release:dry-run`
+4.  `npm run release`
