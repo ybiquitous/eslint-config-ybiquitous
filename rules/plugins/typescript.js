@@ -13,6 +13,7 @@ module.exports = {
     "@typescript-eslint/default-param-last": "error", // eslint-disable-line sort-keys
     "@typescript-eslint/explicit-function-return-type": ["error", { allowExpressions: true }],
     "@typescript-eslint/explicit-member-accessibility": ["error", { accessibility: "no-public" }],
+    "@typescript-eslint/explicit-module-boundary-types": "warn",
     "@typescript-eslint/member-ordering": "off",
     "@typescript-eslint/naming-convention": "off",
     "@typescript-eslint/no-dynamic-delete": "warn",
@@ -23,6 +24,7 @@ module.exports = {
     "@typescript-eslint/no-implied-eval": "off",
     "@typescript-eslint/no-magic-numbers": "off",
     "@typescript-eslint/no-misused-promises": "off",
+    "@typescript-eslint/no-non-null-asserted-optional-chain": "error",
     "@typescript-eslint/no-parameter-properties": "off",
     "@typescript-eslint/no-require-imports": "error",
     "@typescript-eslint/no-throw-literal": "off",
