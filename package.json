@@ -42,7 +42,7 @@
     "semver": "7.1.1",
     "tape": "4.13.0",
     "typescript": "3.7.5",
-    "ybiq": "9.1.0"
+    "ybiq": "10.0.0"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": ">=2.17.0 <3",
