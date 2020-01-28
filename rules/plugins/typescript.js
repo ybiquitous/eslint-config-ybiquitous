@@ -8,6 +8,7 @@ module.exports = {
   rules: {
     "@typescript-eslint/array-type": "off",
     "@typescript-eslint/await-thenable": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/consistent-type-definitions": "off",
     "default-param-last": "off",
     "@typescript-eslint/default-param-last": "error", // eslint-disable-line sort-keys
@@ -39,6 +40,7 @@ module.exports = {
     "@typescript-eslint/no-unused-vars-experimental": "off",
     "no-useless-constructor": "off",
     "@typescript-eslint/no-useless-constructor": "error", // eslint-disable-line sort-keys
+    "@typescript-eslint/prefer-as-const": "error",
     "@typescript-eslint/prefer-for-of": "error",
     "@typescript-eslint/prefer-function-type": "error",
     "@typescript-eslint/prefer-includes": "off",
