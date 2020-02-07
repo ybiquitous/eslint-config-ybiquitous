@@ -38,11 +38,12 @@ test("deprecated rules", t => {
       checkRules(file, "--deprecated", { ESLINT_CONFIG_PRETTIER_NO_DEPRECATED: "true" });
     } catch (err) {
       if (typeof err.stdout === "string") {
-        const msgs = ignoredRules
+        const msg = ignoredRules
           .filter(rule => err.stdout.includes(rule))
-          .map(rule => `  => "${rule}" is deprecated but included in the recommended config${EOL}`);
-        if (msgs.length !== -1) {
-          process.stderr.write(msgs.join(""));
+          .map(rule => `  => "${rule}" is deprecated but included in the recommended config${EOL}`)
+          .join("");
+        if (msg) {
+          process.stderr.write(msg);
           return;
         }
       }

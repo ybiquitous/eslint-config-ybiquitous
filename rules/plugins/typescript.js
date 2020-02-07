@@ -37,7 +37,6 @@ module.exports = {
     "@typescript-eslint/no-unnecessary-qualifier": "off",
     "@typescript-eslint/no-unnecessary-type-arguments": "off",
     "@typescript-eslint/no-unnecessary-type-assertion": "off",
-    "@typescript-eslint/no-untyped-public-signature": "warn",
     "no-unused-expressions": "off",
     "@typescript-eslint/no-unused-expressions": "error", // eslint-disable-line sort-keys
     "@typescript-eslint/no-unused-vars-experimental": "off",
