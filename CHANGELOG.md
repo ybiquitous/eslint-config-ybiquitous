@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [10.8.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v10.7.0...v10.8.0) (2020-02-07)
+
+### Features
+
+- **deps:** bump @typescript-eslint/eslint-plugin from 2.18.0 to 2.19.0 ([#581](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/581)) ([7ea433f](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/7ea433fa6364b24d082dc3401d651f37fa962499))
+- **typescript:** remove deprecated `no-untyped-public-signature` ([#582](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/582)) ([6f88469](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/6f884695fae1abcc974b95e8e996f04066f10549)), closes [typescript-eslint/typescript-eslint#1020](https://github.com/typescript-eslint/typescript-eslint/issues/1020)
+
 ## [10.7.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v10.6.0...v10.7.0) (2020-01-28)
 
 ### Features
