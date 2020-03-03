@@ -17,6 +17,7 @@ module.exports = {
     "@typescript-eslint/explicit-module-boundary-types": "warn",
     "@typescript-eslint/member-ordering": "off",
     "@typescript-eslint/naming-convention": "off",
+    "@typescript-eslint/no-base-to-string": "off",
     "no-dupe-class-members": "off",
     "@typescript-eslint/no-dupe-class-members": "error", // eslint-disable-line sort-keys
     "@typescript-eslint/no-dynamic-delete": "warn",
@@ -49,6 +50,7 @@ module.exports = {
     "@typescript-eslint/prefer-nullish-coalescing": "off",
     "@typescript-eslint/prefer-optional-chain": "warn",
     "@typescript-eslint/prefer-readonly": "off",
+    "@typescript-eslint/prefer-readonly-parameter-types": "off",
     "@typescript-eslint/prefer-regexp-exec": "off",
     "@typescript-eslint/prefer-string-starts-ends-with": "off",
     "@typescript-eslint/promise-function-async": "off",
