@@ -9,6 +9,7 @@ module.exports = {
     "@typescript-eslint/array-type": "off",
     "@typescript-eslint/await-thenable": "off",
     "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/class-literal-property-style": "off",
     "@typescript-eslint/consistent-type-definitions": "off",
     "default-param-last": "off",
     "@typescript-eslint/default-param-last": "error", // eslint-disable-line sort-keys
