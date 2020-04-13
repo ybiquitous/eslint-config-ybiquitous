@@ -17,6 +17,7 @@ module.exports = {
     "@typescript-eslint/explicit-member-accessibility": ["error", { accessibility: "no-public" }],
     "@typescript-eslint/explicit-module-boundary-types": "warn",
     "@typescript-eslint/member-ordering": "off",
+    "@typescript-eslint/method-signature-style": "error",
     "@typescript-eslint/naming-convention": "off",
     "@typescript-eslint/no-base-to-string": "off",
     "no-dupe-class-members": "off",
