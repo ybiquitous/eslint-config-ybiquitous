@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [10.10.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v10.9.1...v10.10.0) (2020-04-13)
+
+### Features
+
+- **deps:** bump @typescript-eslint/eslint-plugin from 2.26.0 to 2.27.0 ([#615](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/615)) ([ca10615](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/ca10615f6a8f1697e4de47943da85bccacc2b6b9))
+- **deps:** bump eslint-plugin-node from 11.0.0 to 11.1.0 ([#610](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/610)) ([41cea9a](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/41cea9aea4937dc3141e04e98d18c8bb5573de6b))
+- **deps:** bump eslint-plugin-react-hooks from 2.5.1 to 3.0.0 ([#609](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/609)) ([907a0ca](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/907a0ca265a5b9ee8f95456fc4727e6ca148810e))
+
 ### [10.9.1](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v10.9.0...v10.9.1) (2020-03-24)
 
 ### Bug Fixes
