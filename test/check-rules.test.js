@@ -17,15 +17,15 @@ const checkRules = (file, option, env = {}) => {
   }
 };
 
-test("no unused rules", t => {
-  lintConfigFiles.forEach(file => {
+test("no unused rules", (t) => {
+  lintConfigFiles.forEach((file) => {
     checkRules(file, "--unused");
     t.pass(file);
   });
   t.end();
 });
 
-test("deprecated rules", t => {
+test("deprecated rules", (t) => {
   const ignoredRules = [
     "jsx-a11y/label-has-for",
     "@typescript-eslint/camelcase",
@@ -33,14 +33,16 @@ test("deprecated rules", t => {
     "@typescript-eslint/interface-name-prefix",
   ];
 
-  lintConfigFiles.forEach(file => {
+  lintConfigFiles.forEach((file) => {
     try {
       checkRules(file, "--deprecated", { ESLINT_CONFIG_PRETTIER_NO_DEPRECATED: "true" });
     } catch (err) {
       if (typeof err.stdout === "string") {
         const msg = ignoredRules
-          .filter(rule => err.stdout.includes(rule))
-          .map(rule => `  => "${rule}" is deprecated but included in the recommended config${EOL}`)
+          .filter((rule) => err.stdout.includes(rule))
+          .map(
+            (rule) => `  => "${rule}" is deprecated but included in the recommended config${EOL}`
+          )
           .join("");
         if (msg) {
           process.stderr.write(msg);
