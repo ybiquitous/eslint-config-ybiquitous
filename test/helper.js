@@ -7,7 +7,7 @@ const pkg = require("../package.json");
 const baseDir = path.join(__dirname, "..");
 const tmpDir = path.join(baseDir, "tmp") + path.sep;
 const debug = process.env.DEBUG === "true";
-const log = msg => {
+const log = (msg) => {
   if (debug) {
     process.stdout.write(`${msg}${EOL}`);
   }
@@ -15,8 +15,8 @@ const log = msg => {
 
 // eslint-disable-next-line max-statements
 const $ = (cmd, ...args) => {
-  const cmdArgs = args.filter(arg => typeof arg === "string");
-  const options = args.find(arg => typeof arg === "object" && arg !== null) || {};
+  const cmdArgs = args.filter((arg) => typeof arg === "string");
+  const options = args.find((arg) => typeof arg === "object" && arg !== null) || {};
   log(`> ${cmd} '${cmdArgs.join("' '")}'`);
   const { stdout } = execa.sync(cmd, cmdArgs, options);
   const maxLines = 20;
@@ -31,7 +31,7 @@ const $ = (cmd, ...args) => {
 };
 
 // eslint-disable-next-line max-statements
-const sandbox = callback => {
+const sandbox = (callback) => {
   if (!fs.existsSync(tmpDir)) {
     fs.mkdirSync(tmpDir);
   }
@@ -59,7 +59,7 @@ const sandbox = callback => {
   }
 };
 
-const isJs = name => name.endsWith(".js");
+const isJs = (name) => name.endsWith(".js");
 const lintConfigFiles = [pkg.main, ...pkg.files.filter(isJs)];
 
 module.exports = { $, sandbox, lintConfigFiles };

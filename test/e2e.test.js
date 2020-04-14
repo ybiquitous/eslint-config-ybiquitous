@@ -8,9 +8,9 @@ const { sandbox, $, lintConfigFiles } = require("./helper");
 
 const baseDir = path.join(__dirname, "..");
 
-const writeESLintConfig = config => fs.writeFileSync(".eslintrc", JSON.stringify(config));
+const writeESLintConfig = (config) => fs.writeFileSync(".eslintrc", JSON.stringify(config));
 
-const writeLintTargetFile = content => fs.writeFileSync("test.js", `${content}${EOL}`);
+const writeLintTargetFile = (content) => fs.writeFileSync("test.js", `${content}${EOL}`);
 
 const npmrc = `
 progress=false
@@ -19,7 +19,7 @@ cache-max=0
 cache-min=9999
 `;
 
-test("End-to-End", t => {
+test("End-to-End", (t) => {
   const tarball = $("npm", "pack");
   const tarballPath = `file:${path.join(baseDir, tarball)}`;
   const peerDeps = Object.entries(pkg.peerDependencies).map(([name, verRange]) => {
@@ -27,7 +27,7 @@ test("End-to-End", t => {
     return `${name}@${ver}`;
   });
 
-  sandbox(cwd => {
+  sandbox((cwd) => {
     fs.writeFileSync(".npmrc", npmrc);
     fs.writeFileSync("package.json", "{}");
 
@@ -41,8 +41,8 @@ test("End-to-End", t => {
     t.pass("default configuration");
 
     lintConfigFiles
-      .filter(file => file !== pkg.main)
-      .forEach(file => {
+      .filter((file) => file !== pkg.main)
+      .forEach((file) => {
         const configName = `ybiquitous/${path.basename(file, ".js")}`;
         writeESLintConfig({ extends: configName });
         writeLintTargetFile("process.stdout.write(1);");
@@ -50,7 +50,7 @@ test("End-to-End", t => {
         t.pass(`${configName} configuration`);
       });
 
-    lintConfigFiles.forEach(file => {
+    lintConfigFiles.forEach((file) => {
       $(eslint, "--print-config", path.join("node_modules", "eslint-config-ybiquitous", file));
       t.pass(`verify configuration for ${file}`);
     });
