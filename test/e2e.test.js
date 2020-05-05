@@ -44,8 +44,19 @@ test("End-to-End", (t) => {
       .filter((file) => file !== pkg.main)
       .forEach((file) => {
         const configName = `ybiquitous/${path.basename(file, ".js")}`;
-        writeESLintConfig({ extends: configName });
-        writeLintTargetFile("process.stdout.write(1);");
+        if (configName.endsWith("/typescript")) {
+          fs.writeFileSync("tsconfig.json", "{}");
+          writeESLintConfig({
+            extends: configName,
+            parserOptions: {
+              tsconfigRootDir: cwd,
+              project: ["./tsconfig.json"],
+            },
+          });
+        } else {
+          writeESLintConfig({ extends: configName });
+        }
+        writeLintTargetFile("[1, 2].indexOf(1);");
         $(eslint, ".");
         t.pass(`${configName} configuration`);
       });
