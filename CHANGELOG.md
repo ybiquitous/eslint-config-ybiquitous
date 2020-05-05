@@ -7,7 +7,7 @@ All notable changes to this project will be documented in this file. See [standa
 ### Bug Fixes
 
 - **deps:** allow prettier v2 ([#625](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/625)) ([f8ac8cf](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/f8ac8cf3a59cdfaf90a2a150dfd3641dab12ede6))
-- **deps:** bump @typescript-eslint/eslint-plugin from 2.27.0 to… ([#621](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/621)) ([ca39733](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/ca39733db0842a200cbd92b484ec1a87b6033a03))
+- **deps:** bump @typescript-eslint/eslint-plugin from 2.27.0 to 2.28.0 ([#621](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/621)) ([ca39733](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/ca39733db0842a200cbd92b484ec1a87b6033a03))
 
 ## [10.10.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v10.9.1...v10.10.0) (2020-04-13)
 
