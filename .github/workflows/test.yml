@@ -22,3 +22,13 @@ jobs:
       - run: npm run lint
       - run: npm run release:dry-run
       - run: npm test
+  run_next:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - run: npm ci
+      - run: npm install eslint@next
+      - run: npm test
