@@ -5,5 +5,6 @@ module.exports = {
     "./rules/plugins/react-jsx.js",
     "./rules/plugins/react-hooks.js",
     "./rules/plugins/jsx-a11y.js",
+    "plugin:import/react",
   ],
 };

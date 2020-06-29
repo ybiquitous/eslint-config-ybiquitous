@@ -1,10 +1,5 @@
 module.exports = {
-  extends: [
-    "plugin:import/errors",
-    "plugin:import/warnings",
-    "plugin:import/react",
-    "plugin:import/typescript",
-  ],
+  extends: ["plugin:import/errors", "plugin:import/warnings"],
 
   rules: {
     "import/dynamic-import-chunkname": "off",
