@@ -41,7 +41,7 @@
     "prettier": "2.0.5",
     "semver": "7.3.2",
     "tape": "5.0.1",
-    "typescript": "3.9.5",
+    "typescript": "3.9.6",
     "ybiq": "11.0.0"
   },
   "peerDependencies": {
