@@ -18,7 +18,7 @@
   ],
   "repository": "ybiquitous/eslint-config-ybiquitous",
   "engines": {
-    "node": ">=10"
+    "node": "^10.12.0 || >=12.0.0"
   },
   "dependencies": {
     "eslint-config-prettier": "^6.11.0",
@@ -32,9 +32,9 @@
     "eslint-plugin-react-hooks": "^4.0.6"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "2.34.0",
-    "@typescript-eslint/parser": "2.34.0",
-    "eslint": "6.8.0",
+    "@typescript-eslint/eslint-plugin": "3.6.0",
+    "@typescript-eslint/parser": "3.6.0",
+    "eslint": "7.4.0",
     "eslint-find-rules": "3.5.0",
     "execa": "4.0.3",
     "prettier": "2.0.5",
@@ -44,9 +44,9 @@
     "ybiq": "11.0.0"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": ">=2.34.0 <3",
-    "@typescript-eslint/parser": ">=2.34.0 <3",
-    "eslint": ">=6.8.0 <7"
+    "@typescript-eslint/eslint-plugin": ">=3.6.0 <4.0.0",
+    "@typescript-eslint/parser": ">=3.6.0 <4.0.0",
+    "eslint": ">=7.4.0 <8.0.0"
   },
   "peerDependenciesMeta": {
     "@typescript-eslint/eslint-plugin": {
