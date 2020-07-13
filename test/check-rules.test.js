@@ -56,6 +56,7 @@ test("no unused rules", (t) => {
 
 test("deprecated rules", (t) => {
   const ignoredRules = [
+    "no-process-exit",
     "jsx-a11y/label-has-for",
     "@typescript-eslint/camelcase",
     "@typescript-eslint/class-name-casing",
