@@ -8,7 +8,8 @@ const { sandbox, $, lintConfigFiles } = require("./helper");
 
 const baseDir = path.join(__dirname, "..");
 
-const writeESLintConfig = (config) => fs.writeFileSync(".eslintrc", JSON.stringify(config));
+const writeESLintConfig = (config) =>
+  fs.writeFileSync(".eslintrc", JSON.stringify({ root: true, ...config }));
 
 const writeLintTargetFile = (content) => fs.writeFileSync("test.js", `${content}${EOL}`);
 
@@ -36,7 +37,7 @@ test("End-to-End", (t) => {
     const eslint = path.join(cwd, "node_modules", ".bin", "eslint");
 
     writeESLintConfig({ extends: "ybiquitous" });
-    writeLintTargetFile("process.stdout.write(1);");
+    writeLintTargetFile("const func = () => 1;\nfunc();");
     $(eslint, ".");
     t.pass("default configuration");
 
