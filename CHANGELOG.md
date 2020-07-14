@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [11.0.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v10.11.0...v11.0.0) (2020-07-14)
+
+### ⚠ BREAKING CHANGES
+
+- **deps:** the minimum required peer dependencies are bumped.
+- **core:** The `no-restricted-globals` rule will warn fewer global variables.
+
+### Features
+
+- **core:** remove `eslint-restricted-globals` package ([#694](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/694)) ([fd17971](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/fd1797138464278ef6a9f61b8e1ba7d6395fc831))
+- **deps:** bump @typescript-eslint/eslint-plugin from 2.31.0 to 2.33.0 ([#655](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/655)) ([881e84f](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/881e84fbe915dff8938133fc7624040748b60eb7))
+- **deps:** bump eslint to v7 ([#695](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/695)) ([cbf04f0](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/cbf04f09909b17cea4f2017ace7a817c23397ccf))
+- **node:** disable all Node-specific rules ([#645](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/645)) ([795de66](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/795de6615561b47209c07626cb8351112a6392ce))
+
+### Bug Fixes
+
+- **import:** fix invalid usage of `plugin:import/{react,typescript}` ([#680](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/680)) ([40e7667](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/40e7667c6fbc2ccd3729590e0d8e4e94e86adea4))
+- **node:** remove core Node.js rules ([#678](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/678)) ([920e80b](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/920e80b9dffaec838911c20d6b2874e51893f1d3))
+- **prettier:** remove `prettier` from peer-deps ([#686](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/686)) ([f35e155](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/f35e155ae10437294ff78b8ba945f173a4c520ba))
+- **typescript:** remove `typescript` from peer-deps ([#685](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/685)) ([6214d93](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/6214d939ba49afd81fbdbf5bc609ca61907abb68))
+
 ## [10.11.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v10.10.1...v10.11.0) (2020-05-07)
 
 ### Features
