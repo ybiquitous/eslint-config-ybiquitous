@@ -9,7 +9,9 @@ module.exports = {
   rules: {
     "@typescript-eslint/array-type": "off",
     "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/ban-tslint-comment": "off",
     "@typescript-eslint/class-literal-property-style": "off",
+    "@typescript-eslint/consistent-type-assertions": "off",
     "@typescript-eslint/consistent-type-definitions": "off",
     "default-param-last": "off",
     "@typescript-eslint/default-param-last": "error", // eslint-disable-line sort-keys
@@ -25,6 +27,7 @@ module.exports = {
     "@typescript-eslint/method-signature-style": "error",
     "@typescript-eslint/naming-convention": "off",
     "@typescript-eslint/no-base-to-string": "error",
+    "@typescript-eslint/no-confusing-non-null-assertion": "error",
     "no-dupe-class-members": "off",
     "@typescript-eslint/no-dupe-class-members": "error", // eslint-disable-line sort-keys
     "@typescript-eslint/no-dynamic-delete": "warn",
@@ -34,6 +37,8 @@ module.exports = {
     "@typescript-eslint/no-implied-eval": "error",
     "@typescript-eslint/no-invalid-this": "off",
     "@typescript-eslint/no-invalid-void-type": "error",
+    "no-loss-of-precision": "off",
+    "@typescript-eslint/no-loss-of-precision": ["error"], // eslint-disable-line sort-keys
     "@typescript-eslint/no-magic-numbers": "off",
     "@typescript-eslint/no-non-null-asserted-optional-chain": "error",
     "@typescript-eslint/no-parameter-properties": "off",
@@ -51,16 +56,20 @@ module.exports = {
     "no-unused-expressions": "off",
     "@typescript-eslint/no-unused-expressions": "error", // eslint-disable-line sort-keys
     "@typescript-eslint/no-unused-vars-experimental": "off",
+    "@typescript-eslint/no-use-before-define": "off",
     "no-useless-constructor": "off",
     "@typescript-eslint/no-useless-constructor": "error", // eslint-disable-line sort-keys
     "@typescript-eslint/prefer-as-const": "error",
     "@typescript-eslint/prefer-for-of": "error",
     "@typescript-eslint/prefer-function-type": "error",
+    "@typescript-eslint/prefer-includes": "warn",
+    "@typescript-eslint/prefer-literal-enum-member": "error",
     "@typescript-eslint/prefer-nullish-coalescing": "warn",
     "@typescript-eslint/prefer-optional-chain": "warn",
     "@typescript-eslint/prefer-readonly": "warn",
     "@typescript-eslint/prefer-readonly-parameter-types": "warn",
     "@typescript-eslint/prefer-reduce-type-parameter": "warn",
+    "@typescript-eslint/prefer-string-starts-ends-with": "warn",
     "@typescript-eslint/prefer-ts-expect-error": "off",
     "@typescript-eslint/promise-function-async": "warn",
     "@typescript-eslint/require-array-sort-compare": "warn",
