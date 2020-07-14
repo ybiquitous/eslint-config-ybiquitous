@@ -44,7 +44,7 @@
     "ybiq": "11.0.0"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": ">=3.6.0 <4.0.0",
+    "@typescript-eslint/eslint-plugin": ">=3.6.1 <4.0.0",
     "@typescript-eslint/parser": ">=3.6.1 <4.0.0",
     "eslint": ">=7.4.0 <8.0.0"
   },
