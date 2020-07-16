@@ -1,9 +1,10 @@
 name: Test
 
 on:
-  pull_request:
   push:
-    branches: [master]
+    branches: ["master"]
+  pull_request:
+    branches: ["**"]
     tags: ["**"]
 
 jobs:
@@ -20,5 +21,5 @@ jobs:
       - run: npm ci
       - run: npm run prettier:check
       - run: npm run lint
-      - run: npm run release:dry-run
       - run: npm test
+      - run: npm run release:dry-run
