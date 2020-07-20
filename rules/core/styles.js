@@ -14,7 +14,6 @@ module.exports = {
     ],
     "func-names": ["error", "as-needed"],
     "func-style": "off",
-    "id-blacklist": "off",
     "id-denylist": "off",
     "id-length": "off",
     "id-match": "off",
