@@ -70,7 +70,7 @@
     "test:watch": "tape \"test/**/*.test.js\" --watch",
     "test:coverage": "echo \"unsupported.\" && exit 1",
     "test:debug": "DEBUG=true npm test",
-    "prerelease": "git switch master && git pull && npm ci && npm test",
+    "prerelease": "git switch main && git pull && npm ci && npm test",
     "release": "standard-version",
     "release:dry-run": "standard-version --dry-run",
     "find-new-rules": "eslint-find-rules --unused",
