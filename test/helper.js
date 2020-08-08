@@ -2,7 +2,6 @@ const path = require("path");
 const fs = require("fs");
 const { EOL } = require("os");
 const execa = require("execa");
-const pkg = require("../package.json");
 
 const baseDir = path.join(__dirname, "..");
 const tmpDir = path.join(baseDir, "tmp") + path.sep;
@@ -13,7 +12,6 @@ const log = (msg) => {
   }
 };
 
-// eslint-disable-next-line max-statements
 const $ = (cmd, ...args) => {
   const cmdArgs = args.filter((arg) => typeof arg === "string");
   const options = args.find((arg) => typeof arg === "object" && arg !== null) || {};
@@ -30,7 +28,6 @@ const $ = (cmd, ...args) => {
   return stdout;
 };
 
-// eslint-disable-next-line max-statements
 const sandbox = (callback) => {
   if (!fs.existsSync(tmpDir)) {
     fs.mkdirSync(tmpDir);
@@ -59,7 +56,4 @@ const sandbox = (callback) => {
   }
 };
 
-const isJs = (name) => name.endsWith(".js");
-const lintConfigFiles = [pkg.main, ...pkg.files.filter(isJs)];
-
-module.exports = { $, sandbox, lintConfigFiles };
+module.exports = { $, sandbox };

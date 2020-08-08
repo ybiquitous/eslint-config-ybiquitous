@@ -1,6 +1,5 @@
 const { EOL } = require("os");
-const test = require("tape");
-const { $, lintConfigFiles } = require("./helper");
+const { $ } = require("./helper");
 
 const checkRules = (file, option, env = {}) => {
   try {
@@ -17,7 +16,7 @@ const checkRules = (file, option, env = {}) => {
   }
 };
 
-test("no unused rules", (t) => {
+test("no unused rules", () => {
   const deprecatedRules = [
     // NOTE: Node-specific rules are deprecated and will be removed.
     // See https://eslint.org/docs/user-guide/migrating-to-7.0.0#deprecate-node-rules
@@ -34,9 +33,10 @@ test("no unused rules", (t) => {
     "no-sync",
   ];
 
-  lintConfigFiles.forEach((file) => {
+  const runTest = (file) => {
     try {
       checkRules(file, "--unused");
+      return true;
     } catch (err) {
       if (typeof err.stdout === "string") {
         const msgs = deprecatedRules
@@ -44,17 +44,21 @@ test("no unused rules", (t) => {
           .map((rule) => `  --> "${rule}" is deprecated`);
         if (msgs.length !== 0) {
           process.stderr.write(msgs.join(EOL) + EOL);
-          return;
+          return true;
         }
       }
       throw err;
     }
-    t.pass(file);
-  });
-  t.end();
+  };
+
+  expect(runTest("index.js")).toBeTruthy();
+  expect(runTest("node.js")).toBeTruthy();
+  expect(runTest("browser.js")).toBeTruthy();
+  expect(runTest("react.js")).toBeTruthy();
+  expect(runTest("typescript.js")).toBeTruthy();
 });
 
-test("deprecated rules", (t) => {
+test("deprecated rules", () => {
   const ignoredRules = [
     "no-process-exit",
     "jsx-a11y/label-has-for",
@@ -63,9 +67,10 @@ test("deprecated rules", (t) => {
     "@typescript-eslint/interface-name-prefix",
   ];
 
-  lintConfigFiles.forEach((file) => {
+  const runTest = (file) => {
     try {
       checkRules(file, "--deprecated", { ESLINT_CONFIG_PRETTIER_NO_DEPRECATED: "true" });
+      return true;
     } catch (err) {
       if (typeof err.stdout === "string") {
         const msgs = ignoredRules
@@ -73,12 +78,16 @@ test("deprecated rules", (t) => {
           .map((rule) => `  --> "${rule}" is deprecated but included in the recommended config`);
         if (msgs.length !== 0) {
           process.stderr.write(msgs.join(EOL) + EOL);
-          return;
+          return true;
         }
       }
       throw err;
     }
-    t.pass(file);
-  });
-  t.end();
+  };
+
+  expect(runTest("index.js")).toBeTruthy();
+  expect(runTest("node.js")).toBeTruthy();
+  expect(runTest("browser.js")).toBeTruthy();
+  expect(runTest("react.js")).toBeTruthy();
+  expect(runTest("typescript.js")).toBeTruthy();
 });
