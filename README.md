@@ -37,12 +37,3 @@ Edit your `.eslintrc.*` file according to some following cases:
 | Browser    | `extends: "ybiquitous/browser"`    |
 | React      | `extends: "ybiquitous/react"`      |
 | TypeScript | `extends: "ybiquitous/typescript"` |
-
-## Release
-
-Run the following commands:
-
-1.  `git checkout master; git pull origin master`
-2.  `npm ci`
-3.  `npm run release:dry-run`
-4.  `npm run release`
