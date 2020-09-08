@@ -63,7 +63,8 @@ module.exports = {
     "@typescript-eslint/no-unsafe-return": "error",
     "no-unused-expressions": "off",
     "@typescript-eslint/no-unused-expressions": "error", // eslint-disable-line sort-keys
-    "@typescript-eslint/no-use-before-define": "off",
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": "off", // eslint-disable-line sort-keys
     "no-useless-constructor": "off",
     "@typescript-eslint/no-useless-constructor": "error", // eslint-disable-line sort-keys
     "@typescript-eslint/prefer-as-const": "error",
