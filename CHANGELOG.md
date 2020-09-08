@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [11.2.1](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v11.2.0...v11.2.1) (2020-09-08)
+
+### Bug Fixes
+
+- **deps:** bump the minimum version of `eslint` ([#753](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/753)) ([6e6a83c](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/6e6a83c67d7b91adb5bcef42a7d27458b11486f1))
+- **typescript:** turn off `no-use-before-define` explicitly ([#752](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/752)) ([c70a2c2](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/c70a2c2a18b95e0f22cdb0b069c237586a56a713))
+
 ## [11.2.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v11.1.0...v11.2.0) (2020-09-08)
 
 ### Features
