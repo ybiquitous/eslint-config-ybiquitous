@@ -42,7 +42,7 @@ test("End-to-End", () => {
     const runTest = (file) => {
       const configName = `ybiquitous/${path.basename(file, ".js")}`;
       if (configName.endsWith("/typescript")) {
-        fs.writeFileSync("tsconfig.json", "{}");
+        fs.writeFileSync("tsconfig.json", JSON.stringify({ compilerOptions: { strict: true } }));
         writeESLintConfig({
           extends: configName,
           parserOptions: {

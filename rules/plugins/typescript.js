@@ -13,6 +13,7 @@ module.exports = {
     "@typescript-eslint/class-literal-property-style": "off",
     "@typescript-eslint/consistent-type-assertions": "off",
     "@typescript-eslint/consistent-type-definitions": "off",
+    "@typescript-eslint/consistent-type-imports": "warn",
     "default-param-last": "off",
     "@typescript-eslint/default-param-last": "error", // eslint-disable-line sort-keys
     "dot-notation": "off",
@@ -34,15 +35,22 @@ module.exports = {
     "@typescript-eslint/no-extra-non-null-assertion": "error",
     "@typescript-eslint/no-extraneous-class": "error",
     "@typescript-eslint/no-floating-promises": "off",
+    "@typescript-eslint/no-implicit-any-catch": "error",
     "@typescript-eslint/no-implied-eval": "error",
     "@typescript-eslint/no-invalid-this": "off",
     "@typescript-eslint/no-invalid-void-type": "error",
+    "no-loop-func": "off",
+    "@typescript-eslint/no-loop-func": "error", // eslint-disable-line sort-keys
     "no-loss-of-precision": "off",
-    "@typescript-eslint/no-loss-of-precision": ["error"], // eslint-disable-line sort-keys
+    "@typescript-eslint/no-loss-of-precision": "error", // eslint-disable-line sort-keys
     "@typescript-eslint/no-magic-numbers": "off",
     "@typescript-eslint/no-non-null-asserted-optional-chain": "error",
     "@typescript-eslint/no-parameter-properties": "off",
+    "no-redeclare": "off",
+    "@typescript-eslint/no-redeclare": "error", // eslint-disable-line sort-keys
     "@typescript-eslint/no-require-imports": "error",
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": "error", // eslint-disable-line sort-keys
     "@typescript-eslint/no-throw-literal": "error",
     "@typescript-eslint/no-type-alias": "off",
     "@typescript-eslint/no-unnecessary-boolean-literal-compare": "error",
@@ -55,7 +63,6 @@ module.exports = {
     "@typescript-eslint/no-unsafe-return": "error",
     "no-unused-expressions": "off",
     "@typescript-eslint/no-unused-expressions": "error", // eslint-disable-line sort-keys
-    "@typescript-eslint/no-unused-vars-experimental": "off",
     "@typescript-eslint/no-use-before-define": "off",
     "no-useless-constructor": "off",
     "@typescript-eslint/no-useless-constructor": "error", // eslint-disable-line sort-keys
