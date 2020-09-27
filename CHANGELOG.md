@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [12.0.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v11.2.1...v12.0.0) (2020-09-27)
+
+### ⚠ BREAKING CHANGES
+
+- **prettier:** Use the `prettier --check` command instead of `eslint-plugin-prettier`.
+  See also <https://github.com/prettier/prettier/issues/7828> for the reasons of this removal.
+
+### Features
+
+- **deps:** bump @typescript-eslint/eslint-plugin from 4.1.1 to 4.2.0 ([#766](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/766)) ([0062ff7](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/0062ff7816e7ceb8efd85f5cba17c5a1e139b507))
+- **prettier:** remove `eslint-plugin-prettier` ([#772](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/772)) ([d5386cc](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/d5386cc73fd1b7cf89746c8f110cb9a3a9549236))
+
 ### [11.2.1](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v11.2.0...v11.2.1) (2020-09-08)
 
 ### Bug Fixes
