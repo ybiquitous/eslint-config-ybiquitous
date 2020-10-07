@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [12.1.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v12.0.0...v12.1.0) (2020-10-07)
+
+### Features
+
+- **deps:** bump @typescript-eslint/eslint-plugin from 4.2.0 to 4.4.0 ([#782](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/782)) ([908bc4a](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/908bc4add9728db937829f8f1198f57eda6c5fd6))
+- **import:** use core rule instead of plugin rule ([#786](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/786)) ([0d6546d](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/0d6546dbaae539effe2b0f9e55bc968399a5e238))
+
 ## [12.0.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v11.2.1...v12.0.0) (2020-09-27)
 
 ### ⚠ BREAKING CHANGES
