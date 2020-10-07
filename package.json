@@ -41,7 +41,7 @@
     "prettier": "2.1.2",
     "semver": "7.3.2",
     "typescript": "4.0.3",
-    "ybiq": "11.4.4"
+    "ybiq": "11.6.0"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": ">=4.4.0 <5.0.0",
@@ -64,6 +64,7 @@
     "lint:js:fix": "npm run lint:js -- --fix",
     "lint:md": "remark . --frail",
     "lint:md:fix": "remark . --output",
+    "lint:types": "echo \"do nothing\"",
     "lint": "npm-run-all --print-label --parallel lint:* prettier:check",
     "pretest": "eslint --print-config .eslintrc* | eslint-config-prettier-check",
     "test": "jest",
@@ -119,12 +120,12 @@
       "@commitlint/config-conventional"
     ],
     "rules": {
-      "header-max-length": [
+      "body-max-line-length": [
         1,
         "always",
         100
       ],
-      "body-max-line-length": [
+      "header-max-length": [
         1,
         "always",
         100
