@@ -12,7 +12,7 @@ module.exports = {
     "no-class-assign": "error",
     "no-const-assign": "error",
     "no-dupe-class-members": "error",
-    "no-duplicate-imports": "off", // => `import/no-duplicates`
+    "no-duplicate-imports": "error",
     "no-new-symbol": "error",
     "no-restricted-exports": "off",
     "no-restricted-imports": "off",
