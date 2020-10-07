@@ -11,6 +11,7 @@ module.exports = {
     "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/ban-tslint-comment": "off",
     "@typescript-eslint/class-literal-property-style": "off",
+    "@typescript-eslint/consistent-indexed-object-style": "warn",
     "@typescript-eslint/consistent-type-assertions": "off",
     "@typescript-eslint/consistent-type-definitions": "off",
     "@typescript-eslint/consistent-type-imports": "warn",
@@ -31,6 +32,8 @@ module.exports = {
     "@typescript-eslint/no-confusing-non-null-assertion": "error",
     "no-dupe-class-members": "off",
     "@typescript-eslint/no-dupe-class-members": "error", // eslint-disable-line sort-keys
+    "no-duplicate-imports": "off",
+    "@typescript-eslint/no-duplicate-imports": "error", // eslint-disable-line sort-keys
     "@typescript-eslint/no-dynamic-delete": "warn",
     "@typescript-eslint/no-extra-non-null-assertion": "error",
     "@typescript-eslint/no-extraneous-class": "error",
