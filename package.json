@@ -64,6 +64,7 @@
     "lint:js:fix": "npm run lint:js -- --fix",
     "lint:md": "remark . --frail",
     "lint:md:fix": "remark . --output",
+    "lint:types": "echo \"do nothing\"",
     "lint": "npm-run-all --print-label --parallel lint:* prettier:check",
     "pretest": "eslint --print-config .eslintrc* | eslint-config-prettier-check",
     "test": "jest",
@@ -119,12 +120,12 @@
       "@commitlint/config-conventional"
     ],
     "rules": {
-      "header-max-length": [
+      "body-max-line-length": [
         1,
         "always",
         100
       ],
-      "body-max-line-length": [
+      "header-max-length": [
         1,
         "always",
         100
