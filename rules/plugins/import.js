@@ -24,6 +24,7 @@ module.exports = {
     "import/no-cycle": "error",
     "import/no-default-export": "off",
     "import/no-deprecated": "error",
+    "import/no-duplicates": "off", // use core rule `no-duplicate-imports`
     "import/no-dynamic-require": "warn",
     "import/no-extraneous-dependencies": [
       "error",
