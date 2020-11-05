@@ -1,13 +1,15 @@
 const path = require("path");
 const fs = require("fs");
 const { EOL } = require("os");
-const execa = require("execa");
+const { execFileSync } = require("child_process");
 
-const baseDir = path.join(__dirname, "..");
-const tmpDir = path.join(baseDir, "tmp") + path.sep;
-const debug = process.env.DEBUG === "true";
+const BASE_DIR = path.join(__dirname, "..");
+const TMP_DIR = path.join(BASE_DIR, "tmp") + path.sep;
+const DEBUG = process.env.DEBUG === "true";
+const PATH = path.join(process.cwd(), "node_modules", ".bin") + path.delimiter + process.env.PATH;
+
 const log = (msg) => {
-  if (debug) {
+  if (DEBUG) {
     process.stdout.write(`${msg}${EOL}`);
   }
 };
@@ -16,7 +18,11 @@ const $ = (cmd, ...args) => {
   const cmdArgs = args.filter((arg) => typeof arg === "string");
   const options = args.find((arg) => typeof arg === "object" && arg !== null) || {};
   log(`> ${cmd} '${cmdArgs.join("' '")}'`);
-  const { stdout } = execa.sync(cmd, cmdArgs, options);
+  const stdout = execFileSync(cmd, cmdArgs, {
+    ...options,
+    encoding: "utf8",
+    env: { ...process.env, ...options.env, PATH },
+  }).trim();
   const maxLines = 20;
   const lines = stdout.split(EOL);
   if (lines.length < maxLines) {
@@ -29,11 +35,11 @@ const $ = (cmd, ...args) => {
 };
 
 const sandbox = (callback) => {
-  if (!fs.existsSync(tmpDir)) {
-    fs.mkdirSync(tmpDir);
+  if (!fs.existsSync(TMP_DIR)) {
+    fs.mkdirSync(TMP_DIR);
   }
 
-  const workDir = fs.mkdtempSync(tmpDir);
+  const workDir = fs.mkdtempSync(TMP_DIR);
   try {
     process.chdir(workDir);
     return callback(workDir);
@@ -51,8 +57,8 @@ const sandbox = (callback) => {
     }
     throw err;
   } finally {
-    process.chdir(baseDir);
-    $("rm", "-rf", tmpDir);
+    process.chdir(BASE_DIR);
+    $("rm", "-rf", TMP_DIR);
   }
 };
 
