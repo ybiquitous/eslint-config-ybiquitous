@@ -30,6 +30,10 @@ module.exports = {
     "@typescript-eslint/naming-convention": "off",
     "@typescript-eslint/no-base-to-string": "error",
     "@typescript-eslint/no-confusing-non-null-assertion": "error",
+    "@typescript-eslint/no-confusing-void-expression": [
+      "error",
+      { ignoreArrowShorthand: true, ignoreVoidOperator: true },
+    ],
     "no-dupe-class-members": "off",
     "@typescript-eslint/no-dupe-class-members": "error", // eslint-disable-line sort-keys
     "no-duplicate-imports": "off",
