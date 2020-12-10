@@ -65,7 +65,7 @@
     "lint:md:fix": "remark . --output",
     "lint:types": "echo \"do nothing\"",
     "lint": "npm-run-all --print-label --parallel lint:* prettier:check",
-    "pretest": "eslint --print-config .eslintrc* | eslint-config-prettier-check",
+    "pretest": "eslint-config-prettier .eslintrc.js",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
