@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [12.5.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v12.4.0...v12.5.0) (2020-12-10)
+
+### Features
+
+- **deps:** bump eslint from 7.14.0 to 7.15.0 ([#833](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/833)) ([40573e3](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/40573e38f16e9c19c0b5ddaa86f58db82afe11dd))
+- **deps:** bump eslint-config-prettier from 6.15.0 to 7.0.0 ([#834](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/834)) ([658a425](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/658a4259cfe8bb8c23ea662f9b328291a81ccd7e))
+
 ## [12.4.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v12.3.0...v12.4.0) (2020-11-30)
 
 ### Features
