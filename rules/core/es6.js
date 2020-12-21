@@ -6,7 +6,7 @@ module.exports = {
   },
 
   rules: {
-    "arrow-body-style": "error",
+    "arrow-body-style": "warn",
     "constructor-super": "error",
     "generator-star-spacing": "error",
     "no-class-assign": "error",
