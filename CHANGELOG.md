@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [12.6.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v12.5.0...v12.6.0) (2020-12-21)
+
+### Features
+
+- **core:** loosen `arrow-body-style` (error -> warn) ([#844](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/844)) ([fbb98ed](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/fbb98ed59b1e59441d47894757a466e838aaa13b))
+- **deps:** bump @typescript-eslint/eslint-plugin from 4.9.1 to 4.10.0 ([#842](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/842)) ([0810cb0](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/0810cb094561c2f40cdd7cf6cb2c4d8ab4ed3857))
+
 ## [12.5.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v12.4.0...v12.5.0) (2020-12-10)
 
 ### Features
