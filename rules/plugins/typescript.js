@@ -75,6 +75,7 @@ module.exports = {
     "@typescript-eslint/no-use-before-define": "off", // eslint-disable-line sort-keys
     "no-useless-constructor": "off",
     "@typescript-eslint/no-useless-constructor": "error", // eslint-disable-line sort-keys
+    "@typescript-eslint/non-nullable-type-assertion-style": "warn",
     "@typescript-eslint/prefer-as-const": "error",
     "@typescript-eslint/prefer-enum-initializers": "error",
     "@typescript-eslint/prefer-for-of": "error",
