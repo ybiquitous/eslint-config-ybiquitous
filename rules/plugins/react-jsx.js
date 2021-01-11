@@ -10,6 +10,7 @@ module.exports = {
     "react/jsx-fragments": ["error", "syntax"],
     "react/jsx-handler-names": "error",
     "react/jsx-max-depth": ["error", { max: 5 }],
+    "react/jsx-newline": "off",
     "react/jsx-no-bind": [
       "error",
       {
@@ -18,6 +19,7 @@ module.exports = {
         ignoreRefs: true,
       },
     ],
+    "react/jsx-no-constructed-context-values": "warn",
     "react/jsx-no-literals": "off",
     "react/jsx-no-script-url": "error",
     "react/jsx-no-target-blank": ["error", { allowReferrer: true }],
