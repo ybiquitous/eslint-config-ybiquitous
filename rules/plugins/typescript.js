@@ -95,6 +95,7 @@ module.exports = {
     "@typescript-eslint/restrict-template-expressions": "warn",
     "no-return-await": "off",
     "@typescript-eslint/return-await": "error", // eslint-disable-line sort-keys
+    "@typescript-eslint/sort-type-union-intersection-members": "off",
     "@typescript-eslint/strict-boolean-expressions": "error",
     "@typescript-eslint/switch-exhaustiveness-check": "warn",
     "@typescript-eslint/typedef": "off",
