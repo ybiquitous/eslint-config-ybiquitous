@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [12.7.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v12.6.0...v12.7.0) (2021-01-11)
+
+### Features
+
+- **deps:** bump eslint-plugin-react from 7.21.5 to 7.22.0 ([#852](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/852)) ([3373f00](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/3373f0054bc098dba055810a920cfc66f18785d3))
+
+### Bug Fixes
+
+- **deps:** bump @typescript-eslint/eslint-plugin from 4.10.0 to 4.12.0 ([#855](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/855)) ([2670afe](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/2670afef8266d43fc5af17e913d46f89ef422eaa))
+
 ## [12.6.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v12.5.0...v12.6.0) (2020-12-21)
 
 ### Features
