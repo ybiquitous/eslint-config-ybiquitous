@@ -1,8 +1,6 @@
 // NOTE: Other rules will be disabled by Prettier
 
 module.exports = {
-  extends: ["prettier/react"],
-
   rules: {
     "react/jsx-boolean-value": "off",
     "react/jsx-curly-brace-presence": "error",
