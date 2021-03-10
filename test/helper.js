@@ -58,7 +58,7 @@ const sandbox = (callback) => {
     throw err;
   } finally {
     process.chdir(BASE_DIR);
-    $("rm", "-rf", TMP_DIR);
+    fs.rmdirSync(TMP_DIR, { recursive: true });
   }
 };
 
