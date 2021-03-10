@@ -19,9 +19,20 @@ cache-max=0
 cache-min=9999
 `;
 
+let tarballPath;
+
+beforeAll(() => {
+  $("npm", "pack");
+  tarballPath = path.join(baseDir, `${pkg.name}-${pkg.version}.tgz`);
+});
+
+afterAll(() => {
+  if (fs.existsSync(tarballPath)) {
+    fs.unlinkSync(tarballPath);
+  }
+});
+
 test("End-to-End", () => {
-  const tarball = $("npm", "pack");
-  const tarballPath = `file:${path.join(baseDir, tarball)}`;
   const peerDeps = Object.entries(pkg.peerDependencies).map(([name, verRange]) => {
     const ver = semver.valid(semver.coerce(verRange));
     return `${name}@${ver}`;
@@ -31,7 +42,7 @@ test("End-to-End", () => {
     fs.writeFileSync(".npmrc", npmrc);
     fs.writeFileSync("package.json", "{}");
 
-    $("npm", "install", ...peerDeps, tarballPath);
+    $("npm", "install", ...peerDeps, `file:${tarballPath}`);
 
     const eslint = path.join(cwd, "node_modules", ".bin", "eslint");
 
