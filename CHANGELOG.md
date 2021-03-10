@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [13.0.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v12.7.0...v13.0.0) (2021-03-10)
+
+### ⚠ BREAKING CHANGES
+
+- Node 12+ required now
+
+### Features
+
+- **deps:** simplify peer dependencies ([#899](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/899)) ([ea36a21](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/ea36a21b80096a62d683b21f80758e6155246d94))
+- drop Node 10 support ([#897](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/897)) ([66ceeaa](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/66ceeaaa5c727ed2b7c89622736efa87c69244d1))
+- **deps:** bump eslint-config-prettier from 7.2.0 to 8.1.0 ([#882](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/882)) ([c6f9ff6](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/c6f9ff67deb5d347a9601a0458edb7d7d96532d0))
+
 ## [12.7.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v12.6.0...v12.7.0) (2021-01-11)
 
 ### Features
