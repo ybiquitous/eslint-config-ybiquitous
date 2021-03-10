@@ -38,7 +38,6 @@ test("End-to-End", () => {
     fs.writeFileSync(".npmrc", npmrc);
     fs.writeFileSync("package.json", "{}");
 
-    $("npm", "version");
     $("npm", "install", ...peerDeps, tarballPath);
 
     const eslint = path.join(cwd, "node_modules", ".bin", "eslint");
