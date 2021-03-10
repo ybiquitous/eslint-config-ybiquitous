@@ -20,10 +20,10 @@ When _not_ using TypeScript:
 npm install --save-dev eslint-config-ybiquitous eslint prettier
 ```
 
-When using TypeScript:
+When using TypeScript, install the following in addition:
 
 ```sh
-npm install --save-dev eslint-config-ybiquitous eslint prettier typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser
+npm install --save-dev @typescript-eslint/eslint-plugin
 ```
 
 ## Usage

@@ -1,7 +1,6 @@
 const path = require("path");
 const fs = require("fs");
 const { EOL } = require("os");
-const semver = require("semver");
 const pkg = require("../package.json");
 const { sandbox, $ } = require("./helper");
 
@@ -33,16 +32,13 @@ afterAll(() => {
 });
 
 test("End-to-End", () => {
-  const peerDeps = Object.entries(pkg.peerDependencies).map(([name, verRange]) => {
-    const ver = semver.valid(semver.coerce(verRange));
-    return `${name}@${ver}`;
-  });
+  const peerDeps = ["@typescript-eslint/eslint-plugin@<8"];
 
   sandbox((cwd) => {
     fs.writeFileSync(".npmrc", npmrc);
     fs.writeFileSync("package.json", "{}");
 
-    $("npm", "install", ...peerDeps, `file:${tarballPath}`);
+    $("npm", "install", ...peerDeps, tarballPath);
 
     const eslint = path.join(cwd, "node_modules", ".bin", "eslint");
 
