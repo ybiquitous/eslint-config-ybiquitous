@@ -20,5 +20,8 @@ jobs:
       - run: sudo npm --global install npm
       - run: npm ci
       - run: npm run lint
-      - run: npm test
+      # TODO: - run: npm test
+      - run: ./node_modules/.bin/jest test/e2e.test.js
+        env:
+          DEBUG: true
       - run: npm run release:dry-run
