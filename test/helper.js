@@ -46,14 +46,14 @@ const sandbox = (callback) => {
   } catch (err) {
     const { stdout, stderr } = err;
     if (typeof stdout === "string" && stdout !== "") {
-      process.stdout.write(`==================================================${EOL}`);
+      process.stdout.write(`> STDOUT =========================================${EOL}`);
       process.stdout.write(`${stdout}${EOL}`);
-      process.stdout.write(`==================================================${EOL}`);
+      process.stdout.write(`< STDOUT =========================================${EOL}`);
     }
     if (typeof stderr === "string" && stderr !== "") {
-      process.stderr.write(`==================================================${EOL}`);
+      process.stderr.write(`> STDERR =========================================${EOL}`);
       process.stderr.write(`${stderr}${EOL}`);
-      process.stderr.write(`==================================================${EOL}`);
+      process.stderr.write(`< STDERR =========================================${EOL}`);
     }
     throw err;
   } finally {
