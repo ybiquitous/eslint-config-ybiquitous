@@ -32,7 +32,7 @@ afterAll(() => {
 });
 
 test("End-to-End", () => {
-  const peerDeps = ["@typescript-eslint/eslint-plugin@<8"];
+  const peerDeps = Object.keys(pkg.peerDependencies);
 
   sandbox((cwd) => {
     fs.writeFileSync(".npmrc", npmrc);
