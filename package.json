@@ -40,7 +40,7 @@
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": ">=4.20.0 <5.0.0",
-    "eslint": ">=7.21.0 <8.0.0"
+    "eslint": ">=7.23.0 <8.0.0"
   },
   "peerDependenciesMeta": {
     "@typescript-eslint/eslint-plugin": {
