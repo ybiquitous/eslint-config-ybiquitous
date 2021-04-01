@@ -23,6 +23,7 @@ module.exports = {
     "react/no-set-state": "error",
     "react/no-this-in-sfc": "error",
     "react/no-typos": "error",
+    "react/no-unstable-nested-components": "error",
     "react/no-unused-prop-types": "error",
     "react/no-unused-state": "error",
     "react/no-will-update-set-state": "error",
