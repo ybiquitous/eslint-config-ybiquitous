@@ -1,6 +1,8 @@
 module.exports = {
   root: true,
 
+  reportUnusedDisableDirectives: true,
+
   extends: ["./node.js"],
 
   overrides: [
