@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [13.2.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v13.1.0...v13.2.0) (2021-04-12)
+
+### Features
+
+- **typescript:** add `@typescript-eslint/no-unsafe-argument` rule ([#919](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/919)) ([a5f1f04](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/a5f1f0446d9b81a3a3f30cb8275aed6df73c74d4))
+
 ## [13.1.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v13.0.0...v13.1.0) (2021-04-01)
 
 ### Features
