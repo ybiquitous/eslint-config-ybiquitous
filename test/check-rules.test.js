@@ -16,6 +16,13 @@ const checkRules = (file, option, env = {}) => {
   }
 };
 
+// NOTE: `eslint-file-rules` includes vulnerable dependencies, so it should not be installed into `package.json`.
+//       Also, `npx eslint-file-rules` does not work unfortunately.
+//       See https://github.com/sarbbottam/eslint-find-rules/pull/314
+beforeAll(() => {
+  $("npm", "install", "eslint-find-rules", "--no-save", "--no-package-lock");
+});
+
 test("no unused rules", () => {
   const deprecatedRules = [
     // NOTE: Node-specific rules are deprecated and will be removed.
