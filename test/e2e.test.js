@@ -1,6 +1,6 @@
-const path = require("path");
 const fs = require("fs");
 const { EOL } = require("os");
+const path = require("path");
 const pkg = require("../package.json");
 const { sandbox, $ } = require("./helper");
 

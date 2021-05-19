@@ -1,7 +1,7 @@
-const path = require("path");
+const { execFileSync } = require("child_process");
 const fs = require("fs");
 const { EOL } = require("os");
-const { execFileSync } = require("child_process");
+const path = require("path");
 
 const BASE_DIR = path.join(__dirname, "..");
 const TMP_DIR = path.join(BASE_DIR, "tmp") + path.sep;
