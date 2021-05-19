@@ -56,7 +56,7 @@ module.exports = {
     "import/no-unused-modules": "warn",
     "import/no-useless-path-segments": "error",
     "import/no-webpack-loader-syntax": "error",
-    "import/order": "error",
+    "import/order": ["error", { alphabetize: { order: "asc" } }],
     "import/prefer-default-export": "error",
     "import/unambiguous": "off",
   },

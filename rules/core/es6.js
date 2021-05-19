@@ -30,7 +30,7 @@ module.exports = {
     "prefer-spread": "error",
     "prefer-template": "error",
     "require-yield": "error",
-    "sort-imports": "error",
+    "sort-imports": "off", // Use `import/order` instead.
     "symbol-description": "error",
   },
 };
