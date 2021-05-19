@@ -6,7 +6,7 @@ module.exports = {
     "import/exports-last": "off",
     "import/extensions": [
       "error",
-      "always",
+      "ignorePackages",
       {
         js: "never",
         jsx: "never",
