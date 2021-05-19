@@ -3,6 +3,8 @@ module.exports = {
 
   reportUnusedDisableDirectives: true,
 
+  ignorePatterns: ["coverage", "dist"],
+
   extends: ["./node.js"],
 
   overrides: [
