@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [14.0.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v13.2.0...v14.0.0) (2021-05-21)
+
+### ⚠ BREAKING CHANGES
+
+- **node:** This package now targets ESM, not CommonJS. Also, it requires Node.js 12.20.0+.
+
+### Features
+
+- **deps:** bump peer eslint version `>=7.26.0` ([#933](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/933)) ([fb2b1a7](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/fb2b1a7750d85cbf45ebac280a9447bf39d3dc69))
+- **deps:** bump peer typescript-eslint version `>=4.24.0` ([#930](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/930)) ([2a78d84](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/2a78d8400c28c26ac4494e0382ad1c0e186d8a29))
+- **import:** disable `import/prefer-default-export` ([#935](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/935)) ([3c3c857](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/3c3c857021bed88168e8b989b4f0fcd9df45e88d))
+- **node:** enable rules for ESM ([#937](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/937)) ([ea69c7c](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/ea69c7cbb01726b4ee03a1beb2ffa5bbecc98c20))
+
+### Bug Fixes
+
+- **deps:** bump eslint-plugin-import from 2.22.1 to 2.23.2 ([#932](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/932)) ([42f9b80](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/42f9b800e457387e25cb2e3a85f0a605da168f0d))
+- **import:** better sorting imports ([#934](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/934)) ([ac3f10a](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/ac3f10a0b295290c66571137ce9017318ae2c34a))
+- **import:** set `ignorePackages` to `import/extensions` ([#936](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/936)) ([119bde8](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/119bde83fdb4b4c21a07627c305e914e3b6e2d26))
+
 ## [13.2.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v13.1.0...v13.2.0) (2021-04-12)
 
 ### Features
