@@ -18,7 +18,7 @@
   ],
   "repository": "ybiquitous/eslint-config-ybiquitous",
   "engines": {
-    "node": ">=12.10.0"
+    "node": ">=12.20.0"
   },
   "dependencies": {
     "eslint-config-prettier": "^8.1.0",

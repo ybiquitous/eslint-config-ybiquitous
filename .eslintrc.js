@@ -7,6 +7,13 @@ module.exports = {
 
   extends: ["./node.js"],
 
+  // TODO: Remove this configuration after the migration to ESM will complete.
+  globals: {
+    module: true,
+    require: true,
+    __dirname: true,
+  },
+
   overrides: [
     {
       files: ["rules/**/*.js"],
