@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [14.0.1](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v14.0.0...v14.0.1) (2021-05-21)
+
+### Bug Fixes
+
+- **node:** disable `node/no-extraneous-import` ([#938](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/938)) ([28629e3](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/28629e34dcc336cce773f7b8b20135ae5131d68e))
+
 ## [14.0.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v13.2.0...v14.0.0) (2021-05-21)
 
 ### ⚠ BREAKING CHANGES
