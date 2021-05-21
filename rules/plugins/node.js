@@ -16,6 +16,7 @@ module.exports = {
     "node/global-require": "off",
     "node/handle-callback-err": "warn",
     "node/no-callback-literal": "off",
+    "node/no-extraneous-import": "off", // Use `import/no-extraneous-dependencies` instead.
     "node/no-mixed-requires": "off",
     "node/no-new-require": "warn",
     "node/no-path-concat": "error",
