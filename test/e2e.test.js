@@ -2,7 +2,7 @@ const fs = require("fs");
 const { EOL } = require("os");
 const path = require("path");
 const pkg = require("../package.json");
-const { sandbox, $ } = require("./helper");
+const { sandbox, $ } = require("./helper.js");
 
 const baseDir = path.join(__dirname, "..");
 

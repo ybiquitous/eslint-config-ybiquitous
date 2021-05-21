@@ -1,5 +1,14 @@
 module.exports = {
-  extends: ["plugin:node/recommended"],
+  env: {
+    es2020: true,
+  },
+
+  extends: ["plugin:node/recommended-module"],
+
+  parserOptions: {
+    ecmaVersion: 2020,
+  },
+
   rules: {
     "node/callback-return": "warn",
     "node/exports-style": ["error", "module.exports"],

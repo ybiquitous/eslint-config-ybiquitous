@@ -1,5 +1,5 @@
 const { EOL } = require("os");
-const { $ } = require("./helper");
+const { $ } = require("./helper.js");
 
 const checkRules = (file, option, env = {}) => {
   try {
