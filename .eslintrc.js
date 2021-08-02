@@ -3,7 +3,7 @@ module.exports = {
 
   reportUnusedDisableDirectives: true,
 
-  ignorePatterns: ["coverage", "dist"],
+  ignorePatterns: ["coverage", "dist", "tmp"],
 
   extends: ["./node.js"],
 
