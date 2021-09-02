@@ -87,6 +87,7 @@ module.exports = {
     "@typescript-eslint/prefer-readonly": "warn",
     "@typescript-eslint/prefer-readonly-parameter-types": "warn",
     "@typescript-eslint/prefer-reduce-type-parameter": "warn",
+    "@typescript-eslint/prefer-return-this-type": "error",
     "@typescript-eslint/prefer-string-starts-ends-with": "warn",
     "@typescript-eslint/prefer-ts-expect-error": "off",
     "@typescript-eslint/promise-function-async": "warn",
