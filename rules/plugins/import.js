@@ -14,7 +14,7 @@ module.exports = {
     ],
     "import/first": "error",
     "import/group-exports": "off",
-    "import/max-dependencies": "warn",
+    "import/max-dependencies": ["warn", { ignoreTypeImports: true, max: 20 }],
     "import/newline-after-import": "error",
     "import/no-absolute-path": "error",
     "import/no-amd": "error",
