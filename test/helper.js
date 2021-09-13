@@ -19,13 +19,12 @@ const log = (msg) => {
 
 /**
  * @param {string} cmd
- * @param {Array<string | object>} args
+ * @param {string[]} args
+ * @param {import("child_process").ExecFileSyncOptions} options
  */
-const $ = (cmd, ...args) => {
-  const cmdArgs = args.filter((arg) => typeof arg === "string");
-  const options = args.find((arg) => typeof arg === "object" && arg !== null) || {};
-  log(`> ${cmd} '${cmdArgs.join("' '")}'`);
-  const stdout = execFileSync(cmd, cmdArgs, {
+const $ = (cmd, args = [], options = {}) => {
+  log(`> ${cmd} '${args.join("' '")}'`);
+  const stdout = execFileSync(cmd, args, {
     ...options,
     encoding: "utf8",
     env: { ...process.env, ...options.env, PATH },

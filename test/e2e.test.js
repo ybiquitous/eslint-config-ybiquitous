@@ -21,7 +21,7 @@ cache-min=9999
 let tarballPath;
 
 beforeAll(() => {
-  $("npm", "pack");
+  $("npm", ["pack"]);
   tarballPath = path.join(baseDir, `${pkg.name}-${pkg.version}.tgz`);
 });
 
@@ -38,13 +38,13 @@ test("End-to-End", () => {
     fs.writeFileSync(".npmrc", npmrc);
     fs.writeFileSync("package.json", "{}");
 
-    $("npm", "install", ...peerDeps, tarballPath);
+    $("npm", ["install", ...peerDeps, tarballPath]);
 
     const eslint = path.join(cwd, "node_modules", ".bin", "eslint");
 
     writeESLintConfig({ extends: "ybiquitous" });
     writeLintTargetFile("const func = () => 1;\nfunc();");
-    $(eslint, ".");
+    $(eslint, ["."]);
 
     const runTest = (file) => {
       const configName = `ybiquitous/${path.basename(file, ".js")}`;
@@ -61,7 +61,7 @@ test("End-to-End", () => {
         writeESLintConfig({ extends: configName });
       }
       writeLintTargetFile("[1, 2].indexOf(1);");
-      $(eslint, ".");
+      $(eslint, ["."]);
       return true;
     };
 
@@ -71,7 +71,7 @@ test("End-to-End", () => {
     expect(runTest("typescript.js")).toBeTruthy();
 
     const printConfig = (file) => {
-      $(eslint, "--print-config", path.join("node_modules", "eslint-config-ybiquitous", file));
+      $(eslint, ["--print-config", path.join("node_modules", "eslint-config-ybiquitous", file)]);
       return true;
     };
 

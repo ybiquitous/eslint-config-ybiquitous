@@ -3,7 +3,7 @@ const { $ } = require("./helper.js");
 
 const checkRules = (file, option, env = {}) => {
   try {
-    $("eslint-find-rules", "--verbose", option, file, { env });
+    $("eslint-find-rules", ["--verbose", option, file], { env });
   } catch (err) {
     const { stdout, stderr } = err;
     if (typeof stdout === "string" && stdout !== "") {
