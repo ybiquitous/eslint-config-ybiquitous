@@ -8,17 +8,23 @@ const TMP_DIR = path.join(BASE_DIR, "tmp") + path.sep;
 const DEBUG = process.env.DEBUG === "true";
 const PATH = path.join(process.cwd(), "node_modules", ".bin") + path.delimiter + process.env.PATH;
 
+/**
+ * @param {string} msg
+ */
 const log = (msg) => {
   if (DEBUG) {
     process.stdout.write(`${msg}${EOL}`);
   }
 };
 
-const $ = (cmd, ...args) => {
-  const cmdArgs = args.filter((arg) => typeof arg === "string");
-  const options = args.find((arg) => typeof arg === "object" && arg !== null) || {};
-  log(`> ${cmd} '${cmdArgs.join("' '")}'`);
-  const stdout = execFileSync(cmd, cmdArgs, {
+/**
+ * @param {string} cmd
+ * @param {string[]} args
+ * @param {import("child_process").ExecFileSyncOptions} options
+ */
+const $ = (cmd, args = [], options = {}) => {
+  log(`> ${cmd} '${args.join("' '")}'`);
+  const stdout = execFileSync(cmd, args, {
     ...options,
     encoding: "utf8",
     env: { ...process.env, ...options.env, PATH },
@@ -34,6 +40,9 @@ const $ = (cmd, ...args) => {
   return stdout;
 };
 
+/**
+ * @param {(workDir: string) => void} callback
+ */
 const sandbox = (callback) => {
   mkdirSync(TMP_DIR, { recursive: true });
 

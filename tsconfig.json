@@ -1,0 +1,10 @@
+{
+  "extends": "@tsconfig/node12/tsconfig.json",
+  "compilerOptions": {
+    "checkJs": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "noImplicitAny": false,
+    "useUnknownInCatchVariables": false
+  }
+}
