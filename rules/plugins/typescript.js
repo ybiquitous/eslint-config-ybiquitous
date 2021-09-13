@@ -50,6 +50,7 @@ module.exports = {
     "no-loss-of-precision": "off",
     "@typescript-eslint/no-loss-of-precision": "error", // eslint-disable-line sort-keys
     "@typescript-eslint/no-magic-numbers": "off",
+    "@typescript-eslint/no-meaningless-void-operator": "error",
     "@typescript-eslint/no-non-null-asserted-optional-chain": "error",
     "@typescript-eslint/no-parameter-properties": "off",
     "no-redeclare": "off",
@@ -76,6 +77,7 @@ module.exports = {
     "no-useless-constructor": "off",
     "@typescript-eslint/no-useless-constructor": "error", // eslint-disable-line sort-keys
     "@typescript-eslint/non-nullable-type-assertion-style": "warn",
+    "@typescript-eslint/padding-line-between-statements": "off",
     "@typescript-eslint/prefer-as-const": "error",
     "@typescript-eslint/prefer-enum-initializers": "error",
     "@typescript-eslint/prefer-for-of": "error",
