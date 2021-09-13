@@ -1,7 +1,7 @@
 const { $ } = require("./helper.js");
 
 test("set correct `ecmaVersion`", () => {
-  const runTest = (file) => {
+  const runTest = (/** @type {string} */ file) => {
     const stdout = JSON.parse($("eslint", ["--print-config", file]));
     expect(stdout.parserOptions.ecmaVersion).toEqual(2020);
     expect(stdout.env.es2020).toEqual(true);

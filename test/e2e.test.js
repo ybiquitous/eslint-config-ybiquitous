@@ -1,4 +1,4 @@
-const fs = require("fs");
+const { writeFileSync, existsSync, unlinkSync } = require("fs");
 const { EOL } = require("os");
 const path = require("path");
 const pkg = require("../package.json");
@@ -6,10 +6,16 @@ const { sandbox, $ } = require("./helper.js");
 
 const baseDir = path.join(__dirname, "..");
 
+/**
+ * @param {Record<string, unknown>} config
+ */
 const writeESLintConfig = (config) =>
-  fs.writeFileSync(".eslintrc", JSON.stringify({ root: true, ...config }));
+  writeFileSync(".eslintrc", JSON.stringify({ root: true, ...config }));
 
-const writeLintTargetFile = (content) => fs.writeFileSync("test.js", `${content}${EOL}`);
+/**
+ * @param {string} content
+ */
+const writeLintTargetFile = (content) => writeFileSync("test.js", `${content}${EOL}`);
 
 const npmrc = `
 progress=false
@@ -26,8 +32,8 @@ beforeAll(() => {
 });
 
 afterAll(() => {
-  if (fs.existsSync(tarballPath)) {
-    fs.unlinkSync(tarballPath);
+  if (existsSync(tarballPath)) {
+    unlinkSync(tarballPath);
   }
 });
 
@@ -35,8 +41,8 @@ test("End-to-End", () => {
   const peerDeps = Object.keys(pkg.peerDependencies);
 
   sandbox((cwd) => {
-    fs.writeFileSync(".npmrc", npmrc);
-    fs.writeFileSync("package.json", "{}");
+    writeFileSync(".npmrc", npmrc);
+    writeFileSync("package.json", "{}");
 
     $("npm", ["install", ...peerDeps, tarballPath]);
 
@@ -46,10 +52,10 @@ test("End-to-End", () => {
     writeLintTargetFile("const func = () => 1;\nfunc();");
     $(eslint, ["."]);
 
-    const runTest = (file) => {
+    const runTest = (/** @type {string} */ file) => {
       const configName = `ybiquitous/${path.basename(file, ".js")}`;
       if (configName.endsWith("/typescript")) {
-        fs.writeFileSync("tsconfig.json", JSON.stringify({ compilerOptions: { strict: true } }));
+        writeFileSync("tsconfig.json", JSON.stringify({ compilerOptions: { strict: true } }));
         writeESLintConfig({
           extends: configName,
           parserOptions: {
@@ -70,7 +76,7 @@ test("End-to-End", () => {
     expect(runTest("react.js")).toBeTruthy();
     expect(runTest("typescript.js")).toBeTruthy();
 
-    const printConfig = (file) => {
+    const printConfig = (/** @type {string} */ file) => {
       $(eslint, ["--print-config", path.join("node_modules", "eslint-config-ybiquitous", file)]);
       return true;
     };

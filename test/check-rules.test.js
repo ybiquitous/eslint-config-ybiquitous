@@ -1,6 +1,11 @@
 const { EOL } = require("os");
 const { $ } = require("./helper.js");
 
+/**
+ * @param {string} file
+ * @param {string} option
+ * @param {Record<string, string>} env
+ */
 const checkRules = (file, option, env = {}) => {
   try {
     $("eslint-find-rules", ["--verbose", option, file], { env });
@@ -33,7 +38,7 @@ test("no unused rules", () => {
     "no-sync",
   ];
 
-  const runTest = (file) => {
+  const runTest = (/** @type {string} */ file) => {
     try {
       checkRules(file, "--unused");
       return true;
@@ -67,7 +72,7 @@ test("deprecated rules", () => {
     "@typescript-eslint/interface-name-prefix",
   ];
 
-  const runTest = (file) => {
+  const runTest = (/** @type {string} */ file) => {
     try {
       checkRules(file, "--deprecated", { ESLINT_CONFIG_PRETTIER_NO_DEPRECATED: "true" });
       return true;
