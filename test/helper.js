@@ -1,5 +1,5 @@
 const { execFileSync } = require("child_process");
-const fs = require("fs");
+const { mkdirSync, mkdtempSync, rmdirSync } = require("fs");
 const { EOL } = require("os");
 const path = require("path");
 
@@ -35,11 +35,9 @@ const $ = (cmd, ...args) => {
 };
 
 const sandbox = (callback) => {
-  if (!fs.existsSync(TMP_DIR)) {
-    fs.mkdirSync(TMP_DIR);
-  }
+  mkdirSync(TMP_DIR, { recursive: true });
 
-  const workDir = fs.mkdtempSync(TMP_DIR);
+  const workDir = mkdtempSync(TMP_DIR);
   try {
     process.chdir(workDir);
     return callback(workDir);
@@ -58,7 +56,7 @@ const sandbox = (callback) => {
     throw err;
   } finally {
     process.chdir(BASE_DIR);
-    fs.rmdirSync(TMP_DIR, { recursive: true });
+    rmdirSync(TMP_DIR, { recursive: true });
   }
 };
 
