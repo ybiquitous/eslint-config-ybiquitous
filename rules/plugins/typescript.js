@@ -51,11 +51,14 @@ module.exports = {
     "@typescript-eslint/no-loss-of-precision": "error", // eslint-disable-line sort-keys
     "@typescript-eslint/no-magic-numbers": "off",
     "@typescript-eslint/no-meaningless-void-operator": "error",
+    "@typescript-eslint/no-non-null-asserted-nullish-coalescing": "error",
     "@typescript-eslint/no-non-null-asserted-optional-chain": "error",
     "@typescript-eslint/no-parameter-properties": "off",
     "no-redeclare": "off",
     "@typescript-eslint/no-redeclare": "error", // eslint-disable-line sort-keys
     "@typescript-eslint/no-require-imports": "error",
+    "no-restricted-imports": "off",
+    "@typescript-eslint/no-restricted-imports": "off", // eslint-disable-line sort-keys
     "no-shadow": "off",
     "@typescript-eslint/no-shadow": "error", // eslint-disable-line sort-keys
     "@typescript-eslint/no-throw-literal": "error",
