@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@tsconfig/node12": "^1.0.9",
-    "@types/jest": "^27.0.1",
+    "@types/jest": "^27.0.2",
     "@typescript-eslint/eslint-plugin": "latest",
     "eslint": "latest",
     "eslint-find-rules": "^3.6.1",
