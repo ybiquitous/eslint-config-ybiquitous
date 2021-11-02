@@ -13,6 +13,7 @@ module.exports = {
     "@typescript-eslint/consistent-indexed-object-style": "warn",
     "@typescript-eslint/consistent-type-assertions": "off",
     "@typescript-eslint/consistent-type-definitions": "off",
+    "@typescript-eslint/consistent-type-exports": "warn",
     "@typescript-eslint/consistent-type-imports": "warn",
     "default-param-last": "off",
     "@typescript-eslint/default-param-last": "error", // eslint-disable-line sort-keys
@@ -41,7 +42,6 @@ module.exports = {
     "@typescript-eslint/no-extra-non-null-assertion": "error",
     "@typescript-eslint/no-extraneous-class": "error",
     "@typescript-eslint/no-floating-promises": "off",
-    "@typescript-eslint/no-implicit-any-catch": "error",
     "@typescript-eslint/no-implied-eval": "error",
     "@typescript-eslint/no-invalid-this": "off",
     "@typescript-eslint/no-invalid-void-type": "error",
@@ -92,6 +92,7 @@ module.exports = {
     "@typescript-eslint/prefer-readonly": "warn",
     "@typescript-eslint/prefer-readonly-parameter-types": "warn",
     "@typescript-eslint/prefer-reduce-type-parameter": "warn",
+    "@typescript-eslint/prefer-regexp-exec": "error", // See also `regexp/prefer-regexp-exec`
     "@typescript-eslint/prefer-return-this-type": "error",
     "@typescript-eslint/prefer-string-starts-ends-with": "warn",
     "@typescript-eslint/prefer-ts-expect-error": "off",
