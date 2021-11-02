@@ -42,7 +42,6 @@ module.exports = {
     "@typescript-eslint/no-extra-non-null-assertion": "error",
     "@typescript-eslint/no-extraneous-class": "error",
     "@typescript-eslint/no-floating-promises": "off",
-    "@typescript-eslint/no-implicit-any-catch": "off",
     "@typescript-eslint/no-implied-eval": "error",
     "@typescript-eslint/no-invalid-this": "off",
     "@typescript-eslint/no-invalid-void-type": "error",
