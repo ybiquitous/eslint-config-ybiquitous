@@ -46,6 +46,7 @@ module.exports = {
     "no-underscore-dangle": [
       "error",
       {
+        allow: ["__dirname", "__filename"],
         allowAfterSuper: false,
         allowAfterThis: false,
         enforceInMethodNames: false,
