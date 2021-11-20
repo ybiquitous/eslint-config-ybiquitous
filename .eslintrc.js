@@ -23,7 +23,7 @@ module.exports = {
     },
     {
       files: ["**/test/**/*.js"],
-      extends: ["plugin:jest/recommended"],
+      extends: ["plugin:jest/recommended", "plugin:jest/style"],
       rules: {
         "max-lines-per-function": "off",
         "max-statements": "off",
