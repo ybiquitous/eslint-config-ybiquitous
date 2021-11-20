@@ -35,7 +35,7 @@
     "@tsconfig/node12": "^1.0.9",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "eslint": "^7.32.0",
-    "eslint-find-rules": "^3.6.1",
+    "eslint-find-rules": "^4.0.0",
     "eslint-plugin-jest": "^25.2.4",
     "jest": "^27.3.1",
     "prettier": "^2.4.1",
