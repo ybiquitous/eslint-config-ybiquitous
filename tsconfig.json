@@ -6,5 +6,6 @@
     "resolveJsonModule": true,
     "noImplicitAny": false,
     "useUnknownInCatchVariables": false
-  }
+  },
+  "exclude": ["test/**"]
 }
