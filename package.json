@@ -40,9 +40,9 @@
     "eslint-plugin-jest": "^25.3.0",
     "jest": "^27.3.1",
     "prettier": "^2.4.1",
-    "remark-preset-ybiquitous": "^0.0.5",
+    "remark-preset-ybiquitous": "^0.1.2",
     "typescript": "^4.5.2",
-    "ybiq": "^13.4.0"
+    "ybiq": "^13.7.1"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": ">=5.4.0",
@@ -54,11 +54,11 @@
     }
   },
   "scripts": {
-    "lint:js": "eslint --cache .",
+    "lint:js": "eslint --cache --ext=js,jsx,cjs,mjs,ts,tsx .",
     "lint:js:fix": "npm run lint:js -- --fix",
     "lint:md": "remark . --frail",
     "lint:md:fix": "remark . --output",
-    "lint:types": "tsc",
+    "lint:types": "tsc --noEmit",
     "lint:types:watch": "npm run lint:types -- --watch",
     "lint": "npm-run-all --print-label --parallel lint:* prettier:check",
     "pretest": "eslint-config-prettier .eslintrc.js",
@@ -79,7 +79,7 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.{js,jsx,mjs,ts,tsx}": "eslint --cache --fix",
+    "*.{js,jsx,cjs,mjs,ts,tsx}": "eslint --cache --fix",
     "!(*.snap)": "prettier --write",
     "!(CHANGELOG).md": "remark --frail"
   },
