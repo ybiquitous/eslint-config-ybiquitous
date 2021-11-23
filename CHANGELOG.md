@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [15.0.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v14.3.0...v15.0.0) (2021-11-23)
+
+### ⚠ BREAKING CHANGES
+
+- **deps:** The latest version of 8.x is required and the core ruleset is updated.
+
+### Features
+
+- **deps:** bump @typescript-eslint/eslint-plugin from 4.32.0 to 5.3.0 ([#1004](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1004)) ([e817ed0](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/e817ed068635108876b406c667671d09055e6088))
+- **deps:** bump eslint-plugin-react from 7.26.1 to 7.27.1 ([#1015](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1015)) ([6cf12e6](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/6cf12e629b802273d85606811ac7d8e05b8c9d67))
+- **deps:** bump eslint-plugin-regexp from 1.3.1 to 1.5.0 ([#997](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/997)) ([3b707c7](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/3b707c793303ffe3e931df293d71bb4a8e54b2d8))
+- **deps:** support eslint 8.x ([#1014](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1014)) ([0847359](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/084735962de94576bb4ef7436695559e0cfc3ddc))
+
+### Bug Fixes
+
+- **core:** allow `__dirname` and `__filename` for `no-underscore-dangle` ([#1006](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1006)) ([a5284f8](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/a5284f89dbd41be32dca69d83e807e7dd64fc0b5))
+- **deps:** bump eslint-plugin-compat from 3.13.0 to 4.0.0 ([#1008](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1008)) ([e4ad27b](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/e4ad27b272bdcf746f311f28d11a74a29fe1c55c))
+- **deps:** bump eslint-plugin-jsx-a11y from 6.4.1 to 6.5.1 ([#1012](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1012)) ([2447df6](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/2447df6721240ec1c231208be9ee8d54c21d8315))
+- **deps:** bump eslint-plugin-react-hooks from 4.2.0 to 4.3.0 ([#1010](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1010)) ([92512a1](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/92512a1c9c793aff617f5124459369ae634490f0))
+
 ## [14.3.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v14.2.0...v14.3.0) (2021-09-27)
 
 ### Features
