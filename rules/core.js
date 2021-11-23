@@ -70,15 +70,7 @@ module.exports = {
     "no-lone-blocks": "error",
     "no-lonely-if": "error",
     "no-loop-func": "error",
-    "no-magic-numbers": [
-      "warn",
-      {
-        detectObjects: true,
-        enforceConst: true,
-        ignoreArrayIndexes: true,
-        ignoreDefaultValues: true,
-      },
-    ],
+    "no-magic-numbers": "off",
     "no-multi-assign": "error",
     "no-multi-str": "error",
     "no-negated-condition": "warn",
