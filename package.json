@@ -34,7 +34,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^1.0.4",
     "@tsconfig/node12": "^1.0.9",
-    "@typescript-eslint/eslint-plugin": "^5.5.0",
+    "@typescript-eslint/eslint-plugin": "^5.8.1",
     "eslint": "^8.3.0",
     "eslint-find-rules": "^4.0.0",
     "eslint-plugin-jest": "^25.3.0",
