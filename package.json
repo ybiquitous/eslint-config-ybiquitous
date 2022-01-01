@@ -37,7 +37,7 @@
     "@typescript-eslint/eslint-plugin": "^5.5.0",
     "eslint": "^8.3.0",
     "eslint-find-rules": "^4.0.0",
-    "eslint-plugin-jest": "^25.3.0",
+    "eslint-plugin-jest": "^25.3.3",
     "jest": "^27.4.2",
     "prettier": "^2.5.0",
     "remark-preset-ybiquitous": "^0.1.2",
