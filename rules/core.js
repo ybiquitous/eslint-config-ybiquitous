@@ -144,6 +144,7 @@ module.exports = {
     "prefer-exponentiation-operator": "warn",
     "prefer-named-capture-group": "error",
     "prefer-numeric-literals": "error",
+    "prefer-object-has-own": "warn",
     "prefer-object-spread": "error",
     "prefer-promise-reject-errors": "error",
     "prefer-rest-params": "error",
