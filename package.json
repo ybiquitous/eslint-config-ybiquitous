@@ -41,7 +41,7 @@
     "jest": "^27.4.7",
     "prettier": "^2.5.1",
     "remark-preset-ybiquitous": "^0.1.2",
-    "typescript": "^4.5.5",
+    "typescript": "^4.6.2",
     "ybiq": "^14.0.1"
   },
   "peerDependencies": {
