@@ -56,6 +56,7 @@ module.exports = {
     "@typescript-eslint/no-parameter-properties": "off",
     "no-redeclare": "off",
     "@typescript-eslint/no-redeclare": "error", // eslint-disable-line sort-keys
+    "@typescript-eslint/no-redundant-type-constituents": "warn",
     "@typescript-eslint/no-require-imports": "error",
     "no-restricted-imports": "off",
     "@typescript-eslint/no-restricted-imports": "off", // eslint-disable-line sort-keys
@@ -79,6 +80,7 @@ module.exports = {
     "@typescript-eslint/no-use-before-define": "off", // eslint-disable-line sort-keys
     "no-useless-constructor": "off",
     "@typescript-eslint/no-useless-constructor": "error", // eslint-disable-line sort-keys
+    "@typescript-eslint/no-useless-empty-export": "error",
     "@typescript-eslint/non-nullable-type-assertion-style": "warn",
     "@typescript-eslint/padding-line-between-statements": "off",
     "@typescript-eslint/prefer-as-const": "error",
