@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [15.1.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v15.0.0...v15.1.0) (2022-03-03)
+
+### Features
+
+- **deps:** bump @typescript-eslint/eslint-plugin from 5.10.2 to 5.13.0 ([#1058](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1058)) ([fc45370](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/fc45370dc62d7dd26916b73d4a6317c00e97a8f4))
+- **deps:** bump eslint from 8.3.0 to 8.6.0 ([#1033](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1033)) ([c8a133e](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/c8a133edf77014b31a337c4a84b5ee663bfd6630))
+- **deps:** bump eslint-config-prettier from 8.4.0 to 8.5.0 ([#1059](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1059)) ([09f9828](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/09f98287245a055cf3f4fed86244710900751dcd))
+- **deps:** bump eslint-plugin-react from 7.28.0 to 7.29.2 ([#1052](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1052)) ([248b5c5](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/248b5c57dce5613568ae850111d26250c360f45f))
+
 ## [15.0.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v14.3.0...v15.0.0) (2021-11-23)
 
 ### ⚠ BREAKING CHANGES
