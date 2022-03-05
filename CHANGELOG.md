@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [15.2.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v15.1.0...v15.2.0) (2022-03-05)
+
+### Features
+
+- loosen metrics rules level to `warn` ([#1060](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1060)) ([929b6a6](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/929b6a6d75b95f9f1103e7745f49f7699b2d7427))
+
 ## [15.1.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v15.0.0...v15.1.0) (2022-03-03)
 
 ### Features
