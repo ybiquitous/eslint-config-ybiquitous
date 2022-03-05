@@ -7,7 +7,7 @@ module.exports = {
     "react/jsx-filename-extension": ["error", { extensions: [".js", ".jsx", ".tsx"] }],
     "react/jsx-fragments": ["error", "syntax"],
     "react/jsx-handler-names": "error",
-    "react/jsx-max-depth": ["error", { max: 5 }],
+    "react/jsx-max-depth": ["warn", { max: 5 }],
     "react/jsx-newline": "off",
     "react/jsx-no-bind": [
       "error",
