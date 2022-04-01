@@ -39,7 +39,7 @@
     "eslint-find-rules": "^4.1.0",
     "eslint-plugin-jest": "^26.1.1",
     "jest": "^27.5.1",
-    "prettier": "^2.5.1",
+    "prettier": "^2.6.1",
     "remark-preset-ybiquitous": "^0.1.2",
     "typescript": "^4.6.2",
     "ybiq": "^14.1.0"
