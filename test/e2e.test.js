@@ -20,8 +20,6 @@ const writeLintTargetFile = (content) => writeFileSync("test.js", `${content}${E
 const npmrc = `
 progress=false
 loglevel=warn
-cache-max=0
-cache-min=9999
 `;
 
 let tarballPath;
