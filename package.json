@@ -45,7 +45,7 @@
     "ybiq": "^14.3.0"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": ">=5.13.0",
+    "@typescript-eslint/eslint-plugin": ">=5.21.0",
     "eslint": ">=8.14.0"
   },
   "peerDependenciesMeta": {
@@ -126,6 +126,7 @@
           "prettier",
           "react",
           "regexp",
+          "ts",
           "typescript"
         ]
       ]
