@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [15.3.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v15.2.0...v15.3.0) (2022-05-02)
+
+### Features
+
+- **deps:** bump @typescript-eslint/eslint-plugin from 5.17.0 to 5.21.0 ([#1079](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1079)) ([bcfc382](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/bcfc382c71c9ba3d5df80a689ab6b9618df7754d))
+- **deps:** bump eslint from 8.12.0 to 8.14.0 ([#1081](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1081)) ([fc8ad27](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/fc8ad27171bd893bace02b33432c1d7a3a4df999))
+
 ## [15.2.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v15.1.0...v15.2.0) (2022-03-05)
 
 ### Features
