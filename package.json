@@ -40,7 +40,7 @@
     "eslint-plugin-jest": "^26.1.5",
     "jest": "^28.0.3",
     "prettier": "^2.6.2",
-    "remark-preset-ybiquitous": "^0.1.2",
+    "remark-preset-ybiquitous": "^0.2.1",
     "typescript": "^4.6.4",
     "ybiq": "^14.2.0"
   },
