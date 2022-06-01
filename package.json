@@ -34,7 +34,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^1.3.0",
     "@tsconfig/node12": "^1.0.9",
-    "@typescript-eslint/eslint-plugin": "^5.21.0",
+    "@typescript-eslint/eslint-plugin": "^5.27.0",
     "eslint": "^8.16.0",
     "eslint-find-rules": "^4.1.0",
     "eslint-plugin-jest": "^26.4.6",
@@ -45,7 +45,7 @@
     "ybiq": "^14.3.0"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": ">=5.21.0",
+    "@typescript-eslint/eslint-plugin": ">=5.27.0",
     "eslint": ">=8.14.0"
   },
   "peerDependenciesMeta": {
