@@ -18,6 +18,7 @@ module.exports = {
       },
     ],
     "react/jsx-no-constructed-context-values": "warn",
+    "react/jsx-no-leaked-render": "error",
     "react/jsx-no-literals": "off",
     "react/jsx-no-script-url": "error",
     "react/jsx-no-target-blank": ["error", { allowReferrer: true }],
