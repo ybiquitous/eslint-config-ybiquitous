@@ -36,8 +36,7 @@ module.exports = {
     ],
     "no-dupe-class-members": "off",
     "@typescript-eslint/no-dupe-class-members": "error", // eslint-disable-line sort-keys
-    "no-duplicate-imports": "off",
-    "@typescript-eslint/no-duplicate-imports": "error", // eslint-disable-line sort-keys
+    "@typescript-eslint/no-duplicate-enum-values": "error",
     "@typescript-eslint/no-dynamic-delete": "warn",
     "@typescript-eslint/no-extra-non-null-assertion": "error",
     "@typescript-eslint/no-extraneous-class": "error",
