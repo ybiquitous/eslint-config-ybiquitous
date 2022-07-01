@@ -74,7 +74,7 @@
     "release:dry-run": "standard-version --dry-run",
     "find-new-rules": "eslint-find-rules --unused",
     "find-deprecated-rules": "eslint-find-rules --deprecated",
-    "prettier": "prettier --ignore-path .gitignore .",
+    "prettier": "prettier --cache --ignore-path .gitignore .",
     "prettier:check": "npm run prettier -- --check",
     "prettier:write": "npm run prettier -- --write",
     "format": "npm-run-all --print-label --parallel lint:*:fix",
@@ -82,7 +82,7 @@
   },
   "lint-staged": {
     "*.{js,jsx,cjs,mjs,ts,tsx}": "eslint --cache --fix",
-    "!(*.snap)": "prettier --write",
+    "!(*.snap)": "prettier --cache --write",
     "!(CHANGELOG).md": "remark --frail"
   },
   "standard-version": {
