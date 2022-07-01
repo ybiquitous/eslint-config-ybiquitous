@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [16.0.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v15.4.0...v16.0.0) (2022-07-01)
+
+### ⚠ BREAKING CHANGES
+
+- drop Node.js v12 support (#1109)
+
+### Features
+
+- **deps:** bump @typescript-eslint/eslint-plugin from 5.27.0 to 5.30.0 ([#1107](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1107)) ([a5e1924](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/a5e192475c8162371739c5d7636ea759b45d0063))
+- drop Node.js v12 support ([#1109](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1109)) ([5fe6605](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/5fe6605730c60256fdb04ff3ca2e1d54dadd392d))
+
 ## [15.4.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v15.3.0...v15.4.0) (2022-06-01)
 
 ### Features
