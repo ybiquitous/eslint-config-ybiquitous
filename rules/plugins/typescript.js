@@ -10,6 +10,7 @@ module.exports = {
     "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/ban-tslint-comment": "off",
     "@typescript-eslint/class-literal-property-style": "off",
+    "@typescript-eslint/consistent-generic-constructors": "warn",
     "@typescript-eslint/consistent-indexed-object-style": "warn",
     "@typescript-eslint/consistent-type-assertions": "off",
     "@typescript-eslint/consistent-type-definitions": "off",
