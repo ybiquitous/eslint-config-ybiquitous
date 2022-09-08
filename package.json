@@ -62,7 +62,8 @@
     "lint:types:watch": "npm run lint:types -- --watch",
     "lint:styles": "npm run prettier -- --check",
     "lint:styles:fix": "npm run prettier -- --write",
-    "lint": "npm-run-all --print-label --parallel lint:*",
+    "lint:commit": "commitlint --from HEAD~10",
+    "lint": "npm-run-all --print-label --silent --parallel lint:*",
     "pretest": "npm run lint",
     "test": "jest",
     "test:watch": "jest --watch",
@@ -77,7 +78,7 @@
     "prettier": "prettier --cache --ignore-path .gitignore .",
     "prettier:check": "npm run prettier -- --check",
     "prettier:write": "npm run prettier -- --write",
-    "format": "npm-run-all --print-label --parallel lint:*:fix",
+    "format": "npm-run-all --print-label --silent --parallel lint:*:fix",
     "prepare": "husky install"
   },
   "lint-staged": {
@@ -104,7 +105,7 @@
       "body-max-line-length": [
         1,
         "always",
-        100
+        200
       ],
       "header-max-length": [
         1,
