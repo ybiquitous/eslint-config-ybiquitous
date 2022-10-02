@@ -32,6 +32,7 @@ module.exports = {
     "init-declarations": "off",
     "line-comment-position": "off",
     "lines-between-class-members": "error",
+    "logical-assignment-operators": "off",
     "max-classes-per-file": ["warn", 5],
     "max-depth": "warn",
     "max-lines": "warn",
