@@ -42,7 +42,7 @@
     "prettier": "^2.6.2",
     "remark-preset-ybiquitous": "^0.3.1",
     "typescript": "^4.8.4",
-    "ybiq": "^15.4.1"
+    "ybiq": "^15.5.0"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": ">=5.30.0",
