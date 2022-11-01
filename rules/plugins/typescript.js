@@ -71,6 +71,7 @@ module.exports = {
     "@typescript-eslint/no-unsafe-argument": "error",
     "@typescript-eslint/no-unsafe-assignment": "error",
     "@typescript-eslint/no-unsafe-call": "error",
+    "@typescript-eslint/no-unsafe-declaration-merging": "error",
     "@typescript-eslint/no-unsafe-member-access": "error",
     "@typescript-eslint/no-unsafe-return": "error",
     "no-unused-expressions": "off",
@@ -104,7 +105,7 @@ module.exports = {
     "@typescript-eslint/restrict-template-expressions": "warn",
     "no-return-await": "off",
     "@typescript-eslint/return-await": "error", // eslint-disable-line sort-keys
-    "@typescript-eslint/sort-type-union-intersection-members": "off",
+    "@typescript-eslint/sort-type-constituents": "off",
     "@typescript-eslint/strict-boolean-expressions": "error",
     "@typescript-eslint/switch-exhaustiveness-check": "warn",
     "@typescript-eslint/typedef": "off",
