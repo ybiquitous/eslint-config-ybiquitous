@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [16.2.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v16.1.0...v16.2.0) (2022-12-01)
+
+### Features
+
+- **core:** enable `no-empty-static-block` and `no-new-native-nonconstructor` ([cafc50c](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/cafc50c8826ceaa8e1acacb41d5cdea979d0aa34))
+- **regexp:** enable `no-extra-lookaround-assertions` and `no-missing-g-flag` ([1034b0f](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/1034b0f1f8063165cbc624172eec76af11651595))
+
 ## [16.1.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v16.0.0...v16.1.0) (2022-11-01)
 
 ### Features
