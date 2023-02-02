@@ -1,6 +1,5 @@
 import { EOL } from "node:os";
 import { test, expect } from "vitest";
-
 import { $ } from "./helper.js";
 
 /**
