@@ -24,6 +24,7 @@ module.exports = {
     "@typescript-eslint/explicit-member-accessibility": ["error", { accessibility: "no-public" }],
     "@typescript-eslint/explicit-module-boundary-types": "warn",
     "@typescript-eslint/init-declarations": "off",
+    "@typescript-eslint/key-spacing": "off",
     "lines-between-class-members": "off",
     "@typescript-eslint/lines-between-class-members": "error", // eslint-disable-line sort-keys
     "@typescript-eslint/member-ordering": "off",
