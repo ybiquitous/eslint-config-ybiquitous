@@ -1,8 +1,10 @@
-const { execFileSync } = require("child_process");
-const { mkdirSync, mkdtempSync, rmSync } = require("fs");
-const { EOL } = require("os");
-const path = require("path");
+import { execFileSync } from "node:child_process";
+import { mkdirSync, mkdtempSync, rmSync } from "node:fs";
+import { EOL } from "node:os";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 
+const __dirname = fileURLToPath(new URL(".", import.meta.url));
 const BASE_DIR = path.join(__dirname, "..");
 const TMP_DIR = path.join(BASE_DIR, "tmp") + path.sep;
 const DEBUG = process.env.DEBUG === "true";
@@ -22,7 +24,7 @@ const log = (msg) => {
  * @param {string[]} args
  * @param {import("child_process").ExecFileSyncOptions} options
  */
-const $ = (cmd, args = [], options = {}) => {
+export const $ = (cmd, args = [], options = {}) => {
   log(`> ${cmd} '${args.join("' '")}'`);
   const stdout = execFileSync(cmd, args, {
     ...options,
@@ -43,12 +45,11 @@ const $ = (cmd, args = [], options = {}) => {
 /**
  * @param {(workDir: string) => void} callback
  */
-const sandbox = (callback) => {
+export const sandbox = (callback) => {
   mkdirSync(TMP_DIR, { recursive: true });
 
   const workDir = mkdtempSync(TMP_DIR);
   try {
-    process.chdir(workDir);
     return callback(workDir);
   } catch (err) {
     const { stdout, stderr } = err;
@@ -64,9 +65,6 @@ const sandbox = (callback) => {
     }
     throw err;
   } finally {
-    process.chdir(BASE_DIR);
     rmSync(TMP_DIR, { recursive: true, force: true });
   }
 };
-
-module.exports = { $, sandbox };

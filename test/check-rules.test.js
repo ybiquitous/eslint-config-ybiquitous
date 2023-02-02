@@ -1,5 +1,7 @@
-const { EOL } = require("os");
-const { $ } = require("./helper.js");
+import { EOL } from "node:os";
+import { test, expect } from "vitest";
+
+import { $ } from "./helper.js";
 
 /**
  * @param {string} file

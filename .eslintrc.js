@@ -11,7 +11,6 @@ module.exports = {
   globals: {
     module: true,
     require: true,
-    __dirname: true,
   },
 
   overrides: [
@@ -19,14 +18,6 @@ module.exports = {
       files: ["rules/**/*.js"],
       rules: {
         "sort-keys": "error",
-      },
-    },
-    {
-      files: ["**/test/**/*.js"],
-      extends: ["plugin:jest/recommended", "plugin:jest/style"],
-      rules: {
-        "max-lines-per-function": "off",
-        "max-statements": "off",
       },
     },
   ],

@@ -1,4 +1,6 @@
-const { $ } = require("./helper.js");
+import { test, expect } from "vitest";
+
+import { $ } from "./helper.js";
 
 test("set correct `ecmaVersion`", () => {
   const runTest = (/** @type {string} */ file) => {
