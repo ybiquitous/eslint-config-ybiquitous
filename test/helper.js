@@ -1,5 +1,5 @@
 const { execFileSync } = require("child_process");
-const { mkdirSync, mkdtempSync, rmdirSync } = require("fs");
+const { mkdirSync, mkdtempSync, rmSync } = require("fs");
 const { EOL } = require("os");
 const path = require("path");
 
@@ -65,7 +65,7 @@ const sandbox = (callback) => {
     throw err;
   } finally {
     process.chdir(BASE_DIR);
-    rmdirSync(TMP_DIR, { recursive: true });
+    rmSync(TMP_DIR, { recursive: true, force: true });
   }
 };
 
