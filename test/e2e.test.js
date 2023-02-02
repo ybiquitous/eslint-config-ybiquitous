@@ -1,21 +1,13 @@
-const { writeFileSync, existsSync, unlinkSync } = require("fs");
-const { EOL } = require("os");
-const path = require("path");
-const pkg = require("../package.json");
-const { sandbox, $ } = require("./helper.js");
+import { writeFileSync, existsSync, unlinkSync } from "node:fs";
+import { EOL } from "node:os";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+import { test, expect, beforeAll, afterAll } from "vitest";
+import pkg from "../package.json";
+import { sandbox, $ } from "./helper.js";
 
+const __dirname = fileURLToPath(new URL(".", import.meta.url));
 const baseDir = path.join(__dirname, "..");
-
-/**
- * @param {Record<string, unknown>} config
- */
-const writeESLintConfig = (config) =>
-  writeFileSync(".eslintrc", JSON.stringify({ root: true, ...config }));
-
-/**
- * @param {string} content
- */
-const writeLintTargetFile = (content) => writeFileSync("test.js", `${content}${EOL}`);
 
 const npmrc = `
 progress=false
@@ -39,21 +31,38 @@ test("End-to-End", () => {
   const peerDeps = Object.keys(pkg.peerDependencies);
 
   sandbox((cwd) => {
-    writeFileSync(".npmrc", npmrc);
-    writeFileSync("package.json", "{}");
+    /**
+     * @param {string} file
+     * @param {string} content
+     */
+    const outFile = (file, content) => writeFileSync(path.join(cwd, file), content);
 
-    $("npm", ["install", ...peerDeps, tarballPath]);
+    /**
+     * @param {Record<string, unknown>} config
+     */
+    const writeESLintConfig = (config) =>
+      outFile(".eslintrc", JSON.stringify({ root: true, ...config }));
+
+    /**
+     * @param {string} content
+     */
+    const writeLintTargetFile = (content) => outFile("test.js", `${content}${EOL}`);
+
+    outFile(".npmrc", npmrc);
+    outFile("package.json", "{}");
+
+    $("npm", ["install", ...peerDeps, tarballPath], { cwd });
 
     const eslint = path.join(cwd, "node_modules", ".bin", "eslint");
 
     writeESLintConfig({ extends: "ybiquitous" });
     writeLintTargetFile("const func = () => 1;\nfunc();");
-    $(eslint, ["."]);
+    $(eslint, ["."], { cwd });
 
     const runTest = (/** @type {string} */ file) => {
       const configName = `ybiquitous/${path.basename(file, ".js")}`;
       if (configName.endsWith("/typescript")) {
-        writeFileSync("tsconfig.json", JSON.stringify({ compilerOptions: { strict: true } }));
+        outFile("tsconfig.json", JSON.stringify({ compilerOptions: { strict: true } }));
         writeESLintConfig({
           extends: configName,
           parserOptions: {
@@ -65,7 +74,7 @@ test("End-to-End", () => {
         writeESLintConfig({ extends: configName });
       }
       writeLintTargetFile("[1, 2].indexOf(1);");
-      $(eslint, ["."]);
+      $(eslint, ["."], { cwd });
       return true;
     };
 
@@ -75,7 +84,9 @@ test("End-to-End", () => {
     expect(runTest("typescript.js")).toBeTruthy();
 
     const printConfig = (/** @type {string} */ file) => {
-      $(eslint, ["--print-config", path.join("node_modules", "eslint-config-ybiquitous", file)]);
+      $(eslint, ["--print-config", path.join("node_modules", "eslint-config-ybiquitous", file)], {
+        cwd,
+      });
       return true;
     };
 
