@@ -2,6 +2,7 @@ module.exports = {
   extends: ["plugin:import/errors", "plugin:import/warnings"],
 
   rules: {
+    "import/consistent-type-specifier-style": "off",
     "import/dynamic-import-chunkname": "off",
     "import/exports-last": "off",
     "import/extensions": [
@@ -25,6 +26,7 @@ module.exports = {
     "import/no-deprecated": "error",
     "import/no-duplicates": "off", // use core rule `no-duplicate-imports`
     "import/no-dynamic-require": "warn",
+    "import/no-empty-named-blocks": "error",
     "import/no-extraneous-dependencies": [
       "error",
       {
