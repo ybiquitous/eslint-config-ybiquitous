@@ -8,6 +8,7 @@ module.exports = {
     "regexp/no-control-character": "error",
     "regexp/no-empty-character-class": "error",
     "regexp/no-extra-lookaround-assertions": "error",
+    "regexp/no-misleading-capturing-group": "error",
     "regexp/no-misleading-unicode-character": "error",
     "regexp/no-missing-g-flag": "error",
     "regexp/no-octal": "error",
