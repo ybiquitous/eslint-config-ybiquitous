@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [16.3.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v16.2.0...v16.3.0) (2023-02-02)
+
+### Features
+
+- **deps:** bump eslint-plugin-import from 2.26.0 to 2.27.5 ([#1171](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1171)) ([02ad76e](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/02ad76ec954cf0130825e50f89a2f813bf2d467c))
+- **deps:** bump eslint-plugin-jsx-a11y from 6.6.1 to 6.7.1 ([#1174](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1174)) ([a9bfb34](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/a9bfb34940f9e7c87c461faa17720e2abfe45acc))
+- **deps:** bump eslint-plugin-react from 7.31.11 to 7.32.2 ([#1178](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1178)) ([dcd84c4](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/dcd84c427acd4645c5add1138ac1f4e9b947353b))
+- **deps:** bump eslint-plugin-regexp from 1.11.0 to 1.12.0 ([#1183](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1183)) ([b60d40e](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/b60d40e4ad2dc221c71e6a7285d246102113b6b2))
+
+### Bug Fixes
+
+- **deps:** bump @typescript-eslint/eslint-plugin from 5.48.0 to 5.50.0 ([#1177](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1177)) ([b96410b](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/b96410b74f6370f66589157dab66bb2351c956ed))
+
 ## [16.2.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v16.1.0...v16.2.0) (2022-12-01)
 
 ### Features
