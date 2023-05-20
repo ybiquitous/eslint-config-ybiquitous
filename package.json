@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ybiquitous",
-  "version": "16.3.0",
+  "version": "17.0.0",
   "description": "Personal ESLint configuration",
   "author": "Masafumi Koba <ybiquitous@gmail.com>",
   "license": "MIT",
