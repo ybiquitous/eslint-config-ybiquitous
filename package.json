@@ -41,7 +41,7 @@
     "remark-preset-ybiquitous": "^0.3.1",
     "typescript": "^5.0.4",
     "vitest": "^0.31.1",
-    "ybiq": "^15.6.0"
+    "ybiq": "^16.1.0"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": ">=5.50.0",
