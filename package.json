@@ -77,7 +77,7 @@
     "release:dry-run": "standard-version --dry-run",
     "find-new-rules": "eslint-find-rules --unused",
     "find-deprecated-rules": "eslint-find-rules --deprecated",
-    "prettier": "prettier --cache --ignore-path .gitignore .",
+    "prettier": "prettier --cache .",
     "prettier:check": "npm run prettier -- --check",
     "prettier:write": "npm run prettier -- --write",
     "format": "npm-run-all --print-label --silent --parallel lint:*:fix",
