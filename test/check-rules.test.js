@@ -1,5 +1,5 @@
 import { EOL } from "node:os";
-import { test, expect } from "vitest";
+import { test, expect } from "vitest"; // eslint-disable-line import/named -- False positive.
 import { $ } from "./helper.js";
 
 /**
