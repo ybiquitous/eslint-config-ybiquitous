@@ -6,6 +6,7 @@ module.exports = {
   ],
 
   rules: {
+    "@typescript-eslint/adjacent-overload-signatures": "error",
     "@typescript-eslint/array-type": "off",
     "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/ban-tslint-comment": "off",
@@ -41,11 +42,15 @@ module.exports = {
     "@typescript-eslint/no-duplicate-enum-values": "error",
     "@typescript-eslint/no-duplicate-type-constituents": "error",
     "@typescript-eslint/no-dynamic-delete": "warn",
+    "no-empty-function": "off",
+    "@typescript-eslint/no-empty-function": "error", // eslint-disable-line sort-keys
+    "@typescript-eslint/no-empty-interface": "error",
     "@typescript-eslint/no-extra-non-null-assertion": "error",
     "@typescript-eslint/no-extraneous-class": "error",
     "@typescript-eslint/no-floating-promises": "off",
     "@typescript-eslint/no-implied-eval": "error",
     "@typescript-eslint/no-import-type-side-effects": "error",
+    "@typescript-eslint/no-inferrable-types": "error",
     "@typescript-eslint/no-invalid-this": "off",
     "@typescript-eslint/no-invalid-void-type": "error",
     "no-loop-func": "off",
@@ -57,6 +62,7 @@ module.exports = {
     "@typescript-eslint/no-mixed-enums": "error",
     "@typescript-eslint/no-non-null-asserted-nullish-coalescing": "error",
     "@typescript-eslint/no-non-null-asserted-optional-chain": "error",
+    "@typescript-eslint/no-non-null-assertion": "error",
     "no-redeclare": "off",
     "@typescript-eslint/no-redeclare": "error", // eslint-disable-line sort-keys
     "@typescript-eslint/no-redundant-type-constituents": "warn",
@@ -66,7 +72,6 @@ module.exports = {
     "no-shadow": "off",
     "@typescript-eslint/no-shadow": "error", // eslint-disable-line sort-keys
     "@typescript-eslint/no-throw-literal": "error",
-    "@typescript-eslint/no-type-alias": "off",
     "@typescript-eslint/no-unnecessary-boolean-literal-compare": "error",
     "@typescript-eslint/no-unnecessary-condition": "error",
     "@typescript-eslint/no-unnecessary-qualifier": "warn",
@@ -95,6 +100,7 @@ module.exports = {
     "@typescript-eslint/prefer-function-type": "error",
     "@typescript-eslint/prefer-includes": "warn",
     "@typescript-eslint/prefer-literal-enum-member": "error",
+    "@typescript-eslint/prefer-namespace-keyword": "warn",
     "@typescript-eslint/prefer-nullish-coalescing": "warn",
     "@typescript-eslint/prefer-optional-chain": "warn",
     "@typescript-eslint/prefer-readonly": "warn",
