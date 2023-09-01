@@ -35,7 +35,7 @@
     "eslint-plugin-regexp": "^1.15.0"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^2.0.3",
+    "@eslint/eslintrc": "^2.1.2",
     "@tsconfig/node16": "^16.1.0",
     "@typescript-eslint/eslint-plugin": "^6.1.0",
     "eslint": "^8.45.0",
