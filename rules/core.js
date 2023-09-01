@@ -163,6 +163,7 @@ module.exports = {
     "spaced-comment": "error",
     strict: ["error", "never"],
     "symbol-description": "error",
+    "unicode-bom": "off",
     "vars-on-top": "error",
     yoda: "error",
   },
