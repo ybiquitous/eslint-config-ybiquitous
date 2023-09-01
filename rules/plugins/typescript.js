@@ -11,6 +11,8 @@ module.exports = {
     "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/ban-tslint-comment": "off",
     "@typescript-eslint/class-literal-property-style": "off",
+    "class-methods-use-this": "off",
+    "@typescript-eslint/class-methods-use-this": "warn", // eslint-disable-line sort-keys
     "@typescript-eslint/consistent-generic-constructors": "warn",
     "@typescript-eslint/consistent-indexed-object-style": "warn",
     "@typescript-eslint/consistent-type-assertions": "off",
