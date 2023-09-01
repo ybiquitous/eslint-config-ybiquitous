@@ -114,8 +114,7 @@ module.exports = {
     "@typescript-eslint/require-array-sort-compare": "warn",
     "@typescript-eslint/restrict-plus-operands": "error",
     "@typescript-eslint/restrict-template-expressions": "warn",
-    "no-return-await": "off",
-    "@typescript-eslint/return-await": "error", // eslint-disable-line sort-keys
+    "@typescript-eslint/return-await": "error",
     "@typescript-eslint/sort-type-constituents": "off",
     "@typescript-eslint/strict-boolean-expressions": "error",
     "@typescript-eslint/switch-exhaustiveness-check": "warn",
