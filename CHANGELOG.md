@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [18.1.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v18.0.0...v18.1.0) (2023-09-01)
+
+### Features
+
+- **core:** remove deprecated `no-return-await` rule ([#1243](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1243)) ([53946f8](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/53946f8d033bf4da1232e23349953b6cb185d1b9))
+- **typescript:** add `@typescript-eslint/class-methods-use-this` rule ([#1245](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1245)) ([5c2113c](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/5c2113c561b9c4c7a39d0b63a7f351dba15d61ed))
+
+### Bug Fixes
+
+- **deps:** bump eslint-config-prettier from 8.8.0 to 9.0.0 ([#1240](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1240)) ([4f9c88c](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/4f9c88cb28854258e7e260bd7ad3460e1b4090dc))
+
 ## [18.0.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v17.0.0...v18.0.0) (2023-07-20)
 
 ### ⚠ BREAKING CHANGES
