@@ -38,7 +38,7 @@
     "@eslint/eslintrc": "^2.1.2",
     "@tsconfig/node16": "^16.1.1",
     "@typescript-eslint/eslint-plugin": "^6.7.3",
-    "eslint": "^8.48.0",
+    "eslint": "^8.50.0",
     "eslint-find-rules": "^4.1.0",
     "prettier": "^3.0.3",
     "remark-preset-ybiquitous": "^0.3.1",
