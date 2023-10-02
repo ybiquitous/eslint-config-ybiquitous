@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [18.2.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v18.1.0...v18.2.0) (2023-10-02)
+
+### Features
+
+- **deps:** bump eslint from 8.48.0 to 8.50.0 ([#1250](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1250)) ([5c24f08](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/5c24f080d657a431ae82bf4f8c78a8f1f10ac214))
+
 ## [18.1.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v18.0.0...v18.1.0) (2023-09-01)
 
 ### Features
