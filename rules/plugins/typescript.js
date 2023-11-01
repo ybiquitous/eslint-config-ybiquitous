@@ -97,6 +97,8 @@ module.exports = {
     "@typescript-eslint/padding-line-between-statements": "off",
     "@typescript-eslint/parameter-properties": "warn",
     "@typescript-eslint/prefer-as-const": "error",
+    "prefer-destructuring": "off",
+    "@typescript-eslint/prefer-destructuring": "warn", // eslint-disable-line sort-keys
     "@typescript-eslint/prefer-enum-initializers": "error",
     "@typescript-eslint/prefer-for-of": "error",
     "@typescript-eslint/prefer-function-type": "error",
