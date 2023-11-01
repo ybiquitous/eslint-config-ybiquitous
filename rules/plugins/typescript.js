@@ -30,6 +30,8 @@ module.exports = {
     "@typescript-eslint/key-spacing": "off",
     "lines-between-class-members": "off",
     "@typescript-eslint/lines-between-class-members": "error", // eslint-disable-line sort-keys
+    "max-params": "off",
+    "@typescript-eslint/max-params": "warn", // eslint-disable-line sort-keys
     "@typescript-eslint/member-ordering": "off",
     "@typescript-eslint/method-signature-style": "error",
     "@typescript-eslint/naming-convention": "off",
@@ -97,6 +99,8 @@ module.exports = {
     "@typescript-eslint/padding-line-between-statements": "off",
     "@typescript-eslint/parameter-properties": "warn",
     "@typescript-eslint/prefer-as-const": "error",
+    "prefer-destructuring": "off",
+    "@typescript-eslint/prefer-destructuring": "warn", // eslint-disable-line sort-keys
     "@typescript-eslint/prefer-enum-initializers": "error",
     "@typescript-eslint/prefer-for-of": "error",
     "@typescript-eslint/prefer-function-type": "error",
