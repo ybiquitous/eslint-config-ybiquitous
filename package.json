@@ -24,7 +24,7 @@
     "provenance": true
   },
   "dependencies": {
-    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-compat": "^4.1.4",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-import": "^2.29.1",
