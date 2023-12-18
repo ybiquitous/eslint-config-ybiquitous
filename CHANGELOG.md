@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [19.0.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v18.3.0...v19.0.0) (2023-12-18)
+
+### ⚠ BREAKING CHANGES
+
+- drop Node.js 16 support (#1270)
+
+### Features
+
+- **deps:** bump @typescript-eslint/eslint-plugin from >=6.9.0 to >=6.14.0 ([#1273](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1273)) ([a1ace91](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/a1ace918f1e30a0a859398fcccfa66c1954cca8b))
+- **deps:** bump eslint-plugin-regexp from 1.15.0 to 2.1.2 ([#1274](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1274)) ([3948e14](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/3948e144ae11de086157c4b8e9874a3e0d3b8ddb))
+- drop Node.js 16 support ([#1270](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1270)) ([0495838](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/0495838352a62c3210671c28c72f739b19a729ea))
+
 ## [18.3.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v18.2.0...v18.3.0) (2023-11-01)
 
 ### Features
