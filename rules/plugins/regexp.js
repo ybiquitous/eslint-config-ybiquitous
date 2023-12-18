@@ -2,6 +2,7 @@ module.exports = {
   extends: ["plugin:regexp/recommended"],
 
   rules: {
+    "regexp/grapheme-string-literal": "off",
     "regexp/hexadecimal-escape": "off",
     "regexp/letter-case": "off",
     "regexp/no-contradiction-with-assertion": "error",
@@ -24,6 +25,7 @@ module.exports = {
     "regexp/prefer-regexp-test": "error",
     "regexp/prefer-result-array-groups": "error",
     "regexp/require-unicode-regexp": "error",
+    "regexp/require-unicode-sets-regexp": "off",
     "regexp/sort-alternatives": "off",
     "regexp/sort-character-class-elements": "warn",
     "regexp/unicode-escape": "off",
