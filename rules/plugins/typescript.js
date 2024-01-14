@@ -96,6 +96,7 @@ module.exports = {
     "no-useless-constructor": "off",
     "@typescript-eslint/no-useless-constructor": "error", // eslint-disable-line sort-keys
     "@typescript-eslint/no-useless-empty-export": "error",
+    "@typescript-eslint/no-useless-template-literals": "error",
     "@typescript-eslint/non-nullable-type-assertion-style": "warn",
     "@typescript-eslint/padding-line-between-statements": "off",
     "@typescript-eslint/parameter-properties": "warn",
