@@ -5,7 +5,7 @@
     "noEmit": true,
     "resolveJsonModule": true,
     "noImplicitAny": false,
-    "useUnknownInCatchVariables": false
+    "useUnknownInCatchVariables": false,
   },
-  "exclude": ["test/**"]
+  "exclude": ["test/**"],
 }
