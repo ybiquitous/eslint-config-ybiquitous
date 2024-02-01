@@ -35,6 +35,7 @@ module.exports = {
     "@typescript-eslint/member-ordering": "off",
     "@typescript-eslint/method-signature-style": "error",
     "@typescript-eslint/naming-convention": "off",
+    "@typescript-eslint/no-array-delete": "error",
     "@typescript-eslint/no-base-to-string": "error",
     "@typescript-eslint/no-confusing-non-null-assertion": "error",
     "@typescript-eslint/no-confusing-void-expression": [
@@ -111,6 +112,8 @@ module.exports = {
     "@typescript-eslint/prefer-namespace-keyword": "warn",
     "@typescript-eslint/prefer-nullish-coalescing": "warn",
     "@typescript-eslint/prefer-optional-chain": "warn",
+    "prefer-promise-reject-errors": "off",
+    "@typescript-eslint/prefer-promise-reject-errors": "error", // eslint-disable-line sort-keys
     "@typescript-eslint/prefer-readonly": "warn",
     "@typescript-eslint/prefer-readonly-parameter-types": "warn",
     "@typescript-eslint/prefer-reduce-type-parameter": "warn",
