@@ -81,11 +81,11 @@
     "prettier:check": "npm run prettier -- --check",
     "prettier:write": "npm run prettier -- --write",
     "format": "npm-run-all --print-label --silent --parallel lint:*:fix",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "lint-staged": {
     "*.{js,jsx,cjs,mjs,ts,tsx}": "eslint --cache --fix",
-    "!(*.snap)": "prettier --cache --write",
+    "!(**/*.snap|.husky/**)": "prettier --cache --write",
     "!(CHANGELOG).md": "remark --frail"
   },
   "standard-version": {
@@ -107,7 +107,7 @@
       "body-max-line-length": [
         1,
         "always",
-        200
+        300
       ],
       "header-max-length": [
         1,
