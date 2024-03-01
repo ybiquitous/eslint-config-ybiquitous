@@ -15,6 +15,8 @@ module.exports = {
     "@typescript-eslint/class-methods-use-this": "warn", // eslint-disable-line sort-keys
     "@typescript-eslint/consistent-generic-constructors": "warn",
     "@typescript-eslint/consistent-indexed-object-style": "warn",
+    "consistent-return": "off",
+    "@typescript-eslint/consistent-return": "error", // eslint-disable-line sort-keys
     "@typescript-eslint/consistent-type-assertions": "off",
     "@typescript-eslint/consistent-type-definitions": "off",
     "@typescript-eslint/consistent-type-exports": "warn",
@@ -105,6 +107,7 @@ module.exports = {
     "prefer-destructuring": "off",
     "@typescript-eslint/prefer-destructuring": "warn", // eslint-disable-line sort-keys
     "@typescript-eslint/prefer-enum-initializers": "error",
+    "@typescript-eslint/prefer-find": "error",
     "@typescript-eslint/prefer-for-of": "error",
     "@typescript-eslint/prefer-function-type": "error",
     "@typescript-eslint/prefer-includes": "warn",
