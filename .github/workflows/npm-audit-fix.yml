@@ -13,6 +13,9 @@ jobs:
       pull-requests: write
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "lts/*"
       - uses: ybiquitous/npm-audit-fix-action@v6
         with:
           github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
