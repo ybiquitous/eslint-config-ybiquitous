@@ -16,3 +16,4 @@ jobs:
       - uses: ybiquitous/npm-audit-fix-action@v6
         with:
           github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          npm_args: "--engine-strict=false" # NOTE: Prevent "Unsupported engine" error
