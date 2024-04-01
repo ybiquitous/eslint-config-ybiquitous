@@ -78,7 +78,6 @@ module.exports = {
     "@typescript-eslint/no-restricted-imports": "off", // eslint-disable-line sort-keys
     "no-shadow": "off",
     "@typescript-eslint/no-shadow": "error", // eslint-disable-line sort-keys
-    "@typescript-eslint/no-throw-literal": "error",
     "@typescript-eslint/no-unnecessary-boolean-literal-compare": "error",
     "@typescript-eslint/no-unnecessary-condition": "error",
     "@typescript-eslint/no-unnecessary-qualifier": "warn",
@@ -101,6 +100,8 @@ module.exports = {
     "@typescript-eslint/no-useless-empty-export": "error",
     "@typescript-eslint/no-useless-template-literals": "error",
     "@typescript-eslint/non-nullable-type-assertion-style": "warn",
+    "no-throw-literal": "off",
+    "@typescript-eslint/only-throw-error": "error", // eslint-disable-line sort-keys
     "@typescript-eslint/padding-line-between-statements": "off",
     "@typescript-eslint/parameter-properties": "warn",
     "@typescript-eslint/prefer-as-const": "error",
@@ -134,5 +135,6 @@ module.exports = {
     "@typescript-eslint/switch-exhaustiveness-check": "warn",
     "@typescript-eslint/typedef": "off",
     "@typescript-eslint/unified-signatures": "error",
+    "@typescript-eslint/use-unknown-in-catch-callback-variable": "error",
   },
 };
