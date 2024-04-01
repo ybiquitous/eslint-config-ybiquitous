@@ -4,6 +4,7 @@ module.exports = {
   rules: {
     "react/boolean-prop-naming": "off",
     "react/button-has-type": "off",
+    "react/checked-requires-onchange-or-readonly": "error",
     "react/default-props-match-prop-types": "error",
     "react/destructuring-assignment": "off",
     "react/forbid-component-props": "off",
