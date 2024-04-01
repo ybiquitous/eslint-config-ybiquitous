@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [20.0.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v19.1.0...v20.0.0) (2024-04-01)
+
+### ⚠ BREAKING CHANGES
+
+- **deps:** bump @typescript-eslint/eslint-plugin from 6.20.0 to 7.1.0 (#1299)
+
+### Features
+
+- **deps:** bump @typescript-eslint/eslint-plugin from 6.20.0 to 7.1.0 ([#1299](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1299)) ([fa09661](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/fa09661bcaeb0ebffc5bebd4fc2cd14c338a6e9d))
+- **deps:** bump @typescript-eslint/eslint-plugin from 7.1.0 to 7.4.0 ([#1308](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1308)) ([6a8b16c](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/6a8b16c936e10d211faf596db5c5b900b5eb5a9d))
+- **deps:** bump eslint-plugin-react from 7.33.2 to 7.34.1 ([#1304](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1304)) ([6a854e3](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/6a854e347df96b1374be5c5f763b8ccf12998971))
+
 ## [19.1.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v19.0.0...v19.1.0) (2024-02-01)
 
 ### Features
