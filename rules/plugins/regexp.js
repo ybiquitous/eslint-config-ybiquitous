@@ -29,6 +29,7 @@ module.exports = {
     "regexp/sort-alternatives": "off",
     "regexp/sort-character-class-elements": "warn",
     "regexp/unicode-escape": "off",
+    "regexp/unicode-property": "warn",
     "regexp/use-ignore-case": "warn",
   },
 };
