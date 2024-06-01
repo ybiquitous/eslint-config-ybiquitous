@@ -41,7 +41,7 @@
     "eslint": "^8.57.0",
     "eslint-find-rules": "^4.1.0",
     "prettier": "^3.2.5",
-    "remark-preset-ybiquitous": "^0.4.2",
+    "remark-preset-ybiquitous": "^0.4.3",
     "typescript": "^5.4.5",
     "vitest": "^1.6.0",
     "ybiq": "^17.3.0"
