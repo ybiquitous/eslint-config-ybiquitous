@@ -51,7 +51,6 @@ module.exports = {
     "@typescript-eslint/no-dynamic-delete": "warn",
     "no-empty-function": "off",
     "@typescript-eslint/no-empty-function": "error", // eslint-disable-line sort-keys
-    "@typescript-eslint/no-empty-interface": "error",
     "@typescript-eslint/no-extra-non-null-assertion": "error",
     "@typescript-eslint/no-extraneous-class": "error",
     "@typescript-eslint/no-floating-promises": "off",
@@ -62,8 +61,6 @@ module.exports = {
     "@typescript-eslint/no-invalid-void-type": "error",
     "no-loop-func": "off",
     "@typescript-eslint/no-loop-func": "error", // eslint-disable-line sort-keys
-    "no-loss-of-precision": "off",
-    "@typescript-eslint/no-loss-of-precision": "error", // eslint-disable-line sort-keys
     "@typescript-eslint/no-magic-numbers": "off",
     "@typescript-eslint/no-meaningless-void-operator": "error",
     "@typescript-eslint/no-mixed-enums": "error",
@@ -76,13 +73,17 @@ module.exports = {
     "@typescript-eslint/no-require-imports": "error",
     "no-restricted-imports": "off",
     "@typescript-eslint/no-restricted-imports": "off", // eslint-disable-line sort-keys
+    "@typescript-eslint/no-restricted-types": "off",
     "no-shadow": "off",
     "@typescript-eslint/no-shadow": "error", // eslint-disable-line sort-keys
     "@typescript-eslint/no-unnecessary-boolean-literal-compare": "error",
     "@typescript-eslint/no-unnecessary-condition": "error",
+    "@typescript-eslint/no-unnecessary-parameter-property-assignment": "error",
     "@typescript-eslint/no-unnecessary-qualifier": "warn",
+    "@typescript-eslint/no-unnecessary-template-expression": "error",
     "@typescript-eslint/no-unnecessary-type-arguments": "error",
     "@typescript-eslint/no-unnecessary-type-constraint": "error",
+    "@typescript-eslint/no-unnecessary-type-parameters": "error",
     "@typescript-eslint/no-unsafe-argument": "error",
     "@typescript-eslint/no-unsafe-assignment": "error",
     "@typescript-eslint/no-unsafe-call": "error",
@@ -98,7 +99,6 @@ module.exports = {
     "no-useless-constructor": "off",
     "@typescript-eslint/no-useless-constructor": "error", // eslint-disable-line sort-keys
     "@typescript-eslint/no-useless-empty-export": "error",
-    "@typescript-eslint/no-useless-template-literals": "error",
     "@typescript-eslint/non-nullable-type-assertion-style": "warn",
     "no-throw-literal": "off",
     "@typescript-eslint/only-throw-error": "error", // eslint-disable-line sort-keys
@@ -124,13 +124,11 @@ module.exports = {
     "@typescript-eslint/prefer-regexp-exec": "error", // See also `regexp/prefer-regexp-exec`
     "@typescript-eslint/prefer-return-this-type": "error",
     "@typescript-eslint/prefer-string-starts-ends-with": "warn",
-    "@typescript-eslint/prefer-ts-expect-error": "off",
     "@typescript-eslint/promise-function-async": "warn",
     "@typescript-eslint/require-array-sort-compare": "warn",
     "@typescript-eslint/restrict-plus-operands": "error",
     "@typescript-eslint/restrict-template-expressions": "warn",
     "@typescript-eslint/return-await": "error",
-    "@typescript-eslint/sort-type-constituents": "off",
     "@typescript-eslint/strict-boolean-expressions": "error",
     "@typescript-eslint/switch-exhaustiveness-check": "warn",
     "@typescript-eslint/typedef": "off",
