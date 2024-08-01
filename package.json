@@ -42,7 +42,7 @@
     "eslint-find-rules": "^4.1.0",
     "prettier": "^3.3.2",
     "remark-preset-ybiquitous": "^0.4.4",
-    "typescript": "^5.5.2",
+    "typescript": "^5.5.4",
     "vitest": "^1.6.0",
     "ybiq": "^17.3.0"
   },
