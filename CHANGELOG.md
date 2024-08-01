@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [21.0.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v20.0.0...v21.0.0) (2024-08-01)
+
+### ⚠ BREAKING CHANGES
+
+- **typescript:** require `@typescript-eslint/eslint-plugin>=8.0.0` as peer dependency (#1339)
+- **typescript:** add new rules and remove deprecated rules since @typescript-eslint/eslint-plugin v8 (#1331)
+
+### Features
+
+- **deps:** bump eslint-plugin-compat from 4.2.0 to 6.0.0 ([#1329](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1329)) ([e97ff04](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/e97ff048c0ca829695bf7c97ccc82183bccb2cd4))
+- **deps:** bump eslint-plugin-regexp from 2.4.0 to 2.5.0 ([#1312](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1312)) ([5a0b485](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/5a0b485c08e4fcfa4df11954d2d7bed4d9876b41))
+- **react:** add `react/jsx-props-no-spread-multi` rule ([#1334](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1334)) ([f871ae4](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/f871ae4c102c206f1ccbcbce7e787f2a9f7e7f84))
+- **typescript:** add new rules and remove deprecated rules since @typescript-eslint/eslint-plugin v8 ([#1331](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1331)) ([20cd09b](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/20cd09ba35e0ae6bbfa6ef420f65de324243418c))
+- **typescript:** require `@typescript-eslint/eslint-plugin>=8.0.0` as peer dependency ([#1339](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1339)) ([9cb0057](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/9cb0057c2799b34d907c8385042cd40dcd8ad7e9))
+
+### Bug Fixes
+
+- **deps:** stop supporting @typescript-eslint/eslint-plugin v8 ([#1336](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1336)) ([a246a97](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/a246a97ed095a33d5468fa7381d29f72b4ffef2c))
+
 ## [20.0.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v19.1.0...v20.0.0) (2024-04-01)
 
 ### ⚠ BREAKING CHANGES
