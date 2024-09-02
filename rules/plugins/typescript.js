@@ -42,6 +42,7 @@ module.exports = {
       "error",
       { ignoreArrowShorthand: true, ignoreVoidOperator: true },
     ],
+    "@typescript-eslint/no-deprecated": "error",
     "no-dupe-class-members": "off",
     "@typescript-eslint/no-dupe-class-members": "error", // eslint-disable-line sort-keys
     "@typescript-eslint/no-duplicate-enum-values": "error",
