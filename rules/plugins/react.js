@@ -12,6 +12,7 @@ module.exports = {
     "react/forbid-elements": "off",
     "react/forbid-foreign-prop-types": "error",
     "react/forbid-prop-types": ["error", { checkChildContextTypes: true, checkContextTypes: true }],
+    "react/forward-ref-uses-ref": "error",
     "react/function-component-definition": "off",
     "react/hook-use-state": "error",
     "react/iframe-missing-sandbox": "error",
