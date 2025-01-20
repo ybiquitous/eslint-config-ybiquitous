@@ -25,7 +25,12 @@ const log = (msg) => {
  * @param {import("child_process").ExecFileSyncOptions} options
  */
 export const $ = (cmd, args = [], options = {}) => {
-  log(`> ${cmd} '${args.join("' '")}'`);
+  if (args.length) {
+    log(`> ${cmd} '${args.join("' '")}'`);
+  } else {
+    log(`> ${cmd}`);
+  }
+
   const stdout = execFileSync(cmd, args, {
     ...options,
     encoding: "utf8",

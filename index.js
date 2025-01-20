@@ -40,7 +40,7 @@ const reactConfig = [
   importPlugin.flatConfigs.react,
 ];
 
-const typescriptConfig = [typescript, importPlugin.flatConfigs.typescript];
+const typescriptConfig = [...typescript, importPlugin.flatConfigs.typescript];
 
 module.exports = {
   configs: {
