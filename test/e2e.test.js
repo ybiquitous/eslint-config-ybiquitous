@@ -44,10 +44,10 @@ test("End-to-End", () => {
       outFile(
         "eslint.config.js",
         `
-import ybiquitous from "eslint-config-ybiquitous"
+import ybiquitous from "eslint-config-ybiquitous";
 
 export default ${config};
-`,
+`.trim(),
       );
 
     /**
