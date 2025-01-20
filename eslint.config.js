@@ -1,6 +1,9 @@
 const ybiquitous = require("./index.js");
 
 module.exports = [
+  ...ybiquitous.configs.recommended,
+  ...ybiquitous.configs.node,
+
   {
     files: ["**/*.{js,cjs,mjs,ts,cts,mts,jsx,tsx}"],
 
@@ -8,9 +11,6 @@ module.exports = [
       reportUnusedDisableDirectives: "warn",
     },
   },
-
-  ...ybiquitous.configs.recommended,
-  ...ybiquitous.configs.node,
 
   // TODO: Remove this configuration after the migration to ESM will complete.
   {
