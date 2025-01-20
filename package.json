@@ -47,10 +47,11 @@
     "ybiq": "^17.4.0"
   },
   "peerDependencies": {
-    "eslint": ">=8.50.0 <9.0.0"
+    "eslint": ">=8.50.0 <9.0.0",
+    "typescript-eslint": ">=8.20.0"
   },
   "peerDependenciesMeta": {
-    "@typescript-eslint/eslint-plugin": {
+    "typescript-eslint": {
       "optional": true
     }
   },
