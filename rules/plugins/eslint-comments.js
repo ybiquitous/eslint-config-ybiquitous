@@ -1,9 +1,9 @@
 module.exports = {
-  extends: ["plugin:eslint-comments/recommended"],
+  extends: ["plugin:@eslint-community/eslint-comments/recommended"],
   rules: {
-    "eslint-comments/no-restricted-disable": "off",
-    "eslint-comments/no-unused-disable": "error",
-    "eslint-comments/no-use": "off",
-    "eslint-comments/require-description": "off",
+    "@eslint-community/eslint-comments/no-restricted-disable": "off",
+    "@eslint-community/eslint-comments/no-unused-disable": "error",
+    "@eslint-community/eslint-comments/no-use": "off",
+    "@eslint-community/eslint-comments/require-description": "off",
   },
 };
