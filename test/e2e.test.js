@@ -94,8 +94,8 @@ export default ${config};
 `.trim(),
         );
       } else {
-        configs = configs.map((c) => `...ybiquitous.configs.${c}`).join(", ");
-        writeESLintConfig(`[...ybiquitous.configs.recommended, ${configs}]`);
+        const additionalConfigs = configs.map((c) => `...ybiquitous.configs.${c}`).join(", ");
+        writeESLintConfig(`[...ybiquitous.configs.recommended, ${additionalConfigs}]`);
       }
       writeLintTargetFile("[1, 2].indexOf(1);");
       $(eslint, [], { cwd });

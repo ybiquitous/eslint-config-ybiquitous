@@ -1,4 +1,4 @@
-const comments = require("@eslint-community/eslint-plugin-eslint-comments/configs");
+const comments = require("@eslint-community/eslint-plugin-eslint-comments/configs"); // eslint-disable-line import/no-internal-modules
 
 module.exports = [
   comments.recommended,

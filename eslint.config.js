@@ -23,13 +23,6 @@ module.exports = [
   },
 
   {
-    files: ["**/*.js"],
-    rules: {
-      "import/no-internal-modules": "off",
-    },
-  },
-
-  {
     files: ["rules/**/*.js"],
     rules: {
       "sort-keys": "error",

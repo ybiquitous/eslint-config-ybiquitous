@@ -1,4 +1,4 @@
-import { defineConfig } from "vitest/config"; // eslint-disable-line import/no-unresolved, node/no-missing-import
+import { defineConfig } from "vitest/config"; // eslint-disable-line import/no-unresolved
 
 export default defineConfig({
   server: {

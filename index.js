@@ -1,5 +1,6 @@
 const importPlugin = require("eslint-plugin-import");
 
+/* eslint-disable import/no-internal-modules */
 const core = require("./rules/core.js");
 const compat = require("./rules/plugins/compat.js");
 const eslintComments = require("./rules/plugins/eslint-comments.js");
@@ -12,6 +13,7 @@ const reactJsx = require("./rules/plugins/react-jsx.js");
 const reactPlugin = require("./rules/plugins/react.js");
 const regexp = require("./rules/plugins/regexp.js");
 const typescript = require("./rules/plugins/typescript.js");
+/* eslint-enable import/no-internal-modules */
 
 const recommended = [
   ...core,
