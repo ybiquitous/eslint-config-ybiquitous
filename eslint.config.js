@@ -4,20 +4,22 @@ module.exports = [
   {
     files: ["**/*.{js,cjs,mjs,ts,cts,mts,jsx,tsx}"],
 
-    languageOptions: {
-      // TODO: Remove this configuration after the migration to ESM will complete.
-      globals: {
-        module: "readonly",
-        require: "readonly",
-      },
-    },
-
     linterOptions: {
       reportUnusedDisableDirectives: "warn",
     },
   },
 
   ...node,
+
+  // TODO: Remove this configuration after the migration to ESM will complete.
+  {
+    languageOptions: {
+      globals: {
+        module: "readonly",
+        require: "readonly",
+      },
+    },
+  },
 
   {
     files: ["**/*.js"],
