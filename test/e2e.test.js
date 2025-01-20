@@ -2,7 +2,7 @@ import { writeFileSync, existsSync, unlinkSync } from "node:fs";
 import { EOL } from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { test, expect, beforeAll, afterAll } from "vitest"; // eslint-disable-line import/named -- False positive.
+import { test, expect, beforeAll, afterAll } from "vitest";
 import pkg from "../package.json";
 import { sandbox, $ } from "./helper.js";
 
