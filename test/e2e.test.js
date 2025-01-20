@@ -57,7 +57,7 @@ test("End-to-End", () => {
 
     writeESLintConfig({ extends: "ybiquitous" });
     writeLintTargetFile("const func = () => 1;\nfunc();");
-    $(eslint, ["."], { cwd });
+    $(eslint, [], { cwd });
 
     const runTest = (/** @type {string} */ file) => {
       const configName = `ybiquitous/${path.basename(file, ".js")}`;
@@ -79,7 +79,7 @@ test("End-to-End", () => {
         writeESLintConfig({ extends: configName });
       }
       writeLintTargetFile("[1, 2].indexOf(1);");
-      $(eslint, ["."], { cwd });
+      $(eslint, [], { cwd });
       return true;
     };
 
