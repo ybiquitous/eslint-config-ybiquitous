@@ -1,9 +1,11 @@
 const tseslint = require("typescript-eslint");
 
-export default tseslint.config(
+module.exports = tseslint.config(
   tseslint.configs.eslintRecommended,
   tseslint.configs.strictTypeChecked,
+
   {
+    name: "ybiquitous/typescript",
     rules: {
       "@typescript-eslint/adjacent-overload-signatures": "error",
       "@typescript-eslint/array-type": "off",

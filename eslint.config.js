@@ -1,4 +1,4 @@
-const node = require("./node.js");
+const ybiquitous = require("./index.js");
 
 module.exports = [
   {
@@ -9,7 +9,8 @@ module.exports = [
     },
   },
 
-  ...node,
+  ...ybiquitous.configs.recommended,
+  ...ybiquitous.configs.node,
 
   // TODO: Remove this configuration after the migration to ESM will complete.
   {

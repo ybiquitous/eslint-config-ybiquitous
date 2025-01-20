@@ -4,6 +4,7 @@ module.exports = [
   importPlugin.flatConfigs.recommended,
 
   {
+    name: "ybiquitous/import",
     rules: {
       "import/consistent-type-specifier-style": "off",
       "import/dynamic-import-chunkname": "off",

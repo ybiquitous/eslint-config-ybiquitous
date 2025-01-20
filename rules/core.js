@@ -1,9 +1,10 @@
-const js = require("@eslint/js"); // eslint-disable-line import/no-extraneous-dependencies
+const js = require("@eslint/js"); // eslint-disable-line import/no-extraneous-dependencies, n/no-extraneous-require
 
 module.exports = [
   js.configs.recommended,
 
   {
+    name: "ybiquitous/core",
     rules: {
       "accessor-pairs": "off",
       "array-callback-return": "error",

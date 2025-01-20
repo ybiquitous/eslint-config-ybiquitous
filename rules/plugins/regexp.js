@@ -4,6 +4,7 @@ module.exports = [
   regexp.configs["flat/recommended"],
 
   {
+    name: "ybiquitous/regexp",
     rules: {
       "regexp/grapheme-string-literal": "off",
       "regexp/hexadecimal-escape": "off",

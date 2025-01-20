@@ -4,6 +4,7 @@ module.exports = [
   n.configs["flat/recommended-module"],
 
   {
+    name: "ybiquitous/node",
     rules: {
       "n/callback-return": "warn",
       "n/exports-style": ["error", "module.exports"],

@@ -24,7 +24,7 @@ npm install --save-dev eslint-config-ybiquitous eslint prettier
 When using TypeScript, install the following in addition:
 
 ```sh
-npm install --save-dev @typescript-eslint/eslint-plugin
+npm install --save-dev typescript-eslint
 ```
 
 ## Usage
@@ -44,5 +44,15 @@ For example:
 ```js
 import ybiquitous from "eslint-config-ybiquitous";
 
-export default [ybiquitous.configs.recommended, ybiquitous.configs.node];
+export default [...ybiquitous.configs.recommended, ...ybiquitous.configs.node];
+```
+
+```js
+import ybiquitous from "eslint-config-ybiquitous";
+
+export default [
+  ...ybiquitous.configs.recommended,
+  ...ybiquitous.configs.browser,
+  ...ybiquitous.configs.react,
+];
 ```

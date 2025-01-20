@@ -2,7 +2,9 @@ const comments = require("@eslint-community/eslint-plugin-eslint-comments/config
 
 module.exports = [
   comments.recommended,
+
   {
+    name: "ybiquitous/eslint-comments",
     rules: {
       "@eslint-community/eslint-comments/no-restricted-disable": "off",
       "@eslint-community/eslint-comments/no-unused-disable": "error",

@@ -2,6 +2,7 @@
 
 module.exports = [
   {
+    name: "ybiquitous/react-jsx",
     rules: {
       "react/jsx-boolean-value": "off",
       "react/jsx-curly-brace-presence": "error",

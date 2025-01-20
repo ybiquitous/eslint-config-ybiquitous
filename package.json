@@ -10,10 +10,7 @@
   ],
   "main": "index.js",
   "files": [
-    "node.js",
-    "browser.js",
-    "react.js",
-    "typescript.js",
+    "index.js",
     "rules"
   ],
   "repository": "ybiquitous/eslint-config-ybiquitous",

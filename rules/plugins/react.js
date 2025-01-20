@@ -4,6 +4,7 @@ module.exports = [
   react.configs.flat.recommended,
 
   {
+    name: "ybiquitous/react",
     rules: {
       "react/boolean-prop-naming": "off",
       "react/button-has-type": "off",
