@@ -56,3 +56,9 @@ export default [
   ...ybiquitous.configs.react,
 ];
 ```
+
+```js
+import ybiquitous from "eslint-config-ybiquitous";
+
+export default [...ybiquitous.configs.recommended, ...ybiquitous.configs.typescript];
+```
