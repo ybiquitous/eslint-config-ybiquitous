@@ -1,3 +1,4 @@
-module.exports = {
-  extends: ["./index.js", "./rules/plugins/compat.js"],
-};
+const compat = require("./rules/plugins/compat.js");
+const index = require("./index.js");
+
+module.exports = [...index, ...compat];
