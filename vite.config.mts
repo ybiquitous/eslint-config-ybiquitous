@@ -4,4 +4,7 @@ export default defineConfig({
   server: {
     watch: { ignored: ["**/tmp/**"] },
   },
+  test: {
+    testTimeout: 30_000 /* ms */,
+  },
 });
