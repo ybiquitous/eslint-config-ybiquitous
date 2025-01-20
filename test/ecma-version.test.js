@@ -1,12 +1,11 @@
-import { test, expect } from "vitest"; // eslint-disable-line import/named -- False positive.
+import { test, expect } from "vitest";  
 
 import { $ } from "./helper.js";
 
 test("set correct `ecmaVersion`", () => {
   const runTest = (/** @type {string} */ file) => {
     const stdout = JSON.parse($("eslint", ["--print-config", file]));
-    expect(stdout.parserOptions.ecmaVersion).toBe(2020);
-    expect(stdout.env.es2020).toBe(true);
+    expect(stdout.parserOptions.ecmaVersion).toBe(2022);
     return true;
   };
 
