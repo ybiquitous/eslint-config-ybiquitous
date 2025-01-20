@@ -1,4 +1,4 @@
-const node = require('./node.js');
+const node = require("./node.js");
 
 module.exports = [
   {
@@ -22,8 +22,8 @@ module.exports = [
   {
     files: ["**/*.js"],
     rules: {
-      "import/no-internal-modules": "off"
-    }
+      "import/no-internal-modules": "off",
+    },
   },
 
   {
