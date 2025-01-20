@@ -1,4 +1,4 @@
-const base = require('./index.js');
+const index = require('./index.js');
 
 const { FlatCompat } = require("@eslint/eslintrc");
 
@@ -9,8 +9,6 @@ module.exports = [
     files: ["**/*.{js,cjs,mjs,ts,cts,mts,jsx,tsx}"],
 
     languageOptions: {
-      ecmaVersion: 2022,
-
       // TODO: Remove this configuration after the migration to ESM will complete.
       globals: {
         module: "readonly",
@@ -24,9 +22,15 @@ module.exports = [
   },
 
   //  ...compat.extends("./node.js"),
-  ...base,
+  ...index,
 
-  // Rules
+  {
+    files: ["**/*.js"],
+    rules: {
+      "import/no-internal-modules": "off"
+    }
+  },
+
   {
     files: ["rules/**/*.js"],
     rules: {

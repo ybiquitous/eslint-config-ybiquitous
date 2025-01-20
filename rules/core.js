@@ -1,4 +1,4 @@
-const js = require("@eslint/js");
+const js = require("@eslint/js"); // eslint-disable-line import/no-extraneous-dependencies
 
 module.exports = [
   js.configs.recommended,
