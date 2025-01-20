@@ -1,12 +1,8 @@
 module.exports = {
-  env: {
-    es2020: true,
-  },
-
   extends: ["plugin:n/recommended-module"],
 
   parserOptions: {
-    ecmaVersion: 2020,
+    ecmaVersion: 2022,
   },
 
   rules: {
