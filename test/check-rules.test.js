@@ -70,7 +70,7 @@ test("no unused rules", () => {
   }
 });
 
-test.only("deprecated rules", () => {
+test("deprecated rules", () => {
   const ignoredRules = [
     // stylistic
     "array-bracket-newline",
