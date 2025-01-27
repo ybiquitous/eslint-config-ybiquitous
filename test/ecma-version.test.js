@@ -2,16 +2,22 @@ import { test, expect } from "vitest";
 
 import { $ } from "./helper.js";
 
-test("set correct `ecmaVersion`", () => {
-  const runTest = (/** @type {string} */ file) => {
-    const stdout = JSON.parse($("eslint", ["--print-config", file]));
-    expect(stdout.parserOptions.ecmaVersion).toBe(2022);
-    return true;
-  };
+const ecmaVersion = 2022;
 
-  expect(runTest("index.js")).toBeTruthy();
-  expect(runTest("node.js")).toBeTruthy();
-  expect(runTest("browser.js")).toBeTruthy();
-  expect(runTest("react.js")).toBeTruthy();
-  expect(runTest("typescript.js")).toBeTruthy();
-});
+/**
+ * @param {string} file
+ * @returns {boolean}
+ */
+const runTest = (file) => {
+  const stdout = JSON.parse($("eslint", ["--print-config", file]));
+  expect(stdout.languageOptions.ecmaVersion).toBe(ecmaVersion);
+  return true;
+};
+
+const files = ["index.js", "node.js", "browser.js", "react.js", "typescript.js"];
+
+for (const file of files) {
+  test(`set correct \`ecmaVersion: ${ecmaVersion}\` in ${file}`, () => {
+    expect(runTest(file)).toBeTruthy();
+  });
+}

@@ -38,10 +38,17 @@ test("End-to-End", () => {
     const outFile = (file, content) => writeFileSync(path.join(cwd, file), content);
 
     /**
-     * @param {Record<string, unknown>} config
+     * @param {string} config
      */
     const writeESLintConfig = (config) =>
-      outFile(".eslintrc", JSON.stringify({ root: true, ...config }));
+      outFile(
+        "eslint.config.js",
+        `
+import ybiquitous from "eslint-config-ybiquitous";
+
+export default ${config};
+`.trim(),
+      );
 
     /**
      * @param {string} content
@@ -49,56 +56,56 @@ test("End-to-End", () => {
     const writeLintTargetFile = (content) => outFile("test.js", `${content}${EOL}`);
 
     outFile(".npmrc", npmrc);
-    outFile("package.json", "{}");
+    outFile("package.json", JSON.stringify({ type: "module" }));
 
     $("npm", ["install", ...peerDeps, tarballPath], { cwd });
 
     const eslint = path.join(cwd, "node_modules", ".bin", "eslint");
 
-    writeESLintConfig({ extends: "ybiquitous" });
+    writeESLintConfig("ybiquitous.configs.recommended");
     writeLintTargetFile("const func = () => 1;\nfunc();");
-    $(eslint, ["."], { cwd });
+    $(eslint, [], { cwd });
 
-    const runTest = (/** @type {string} */ file) => {
-      const configName = `ybiquitous/${path.basename(file, ".js")}`;
-      if (configName.endsWith("/typescript")) {
+    /**
+     * @param {string[]} configs
+     */
+    const runTest = (...configs) => {
+      if (configs[0] === "typescript") {
         outFile(
           "tsconfig.json",
           JSON.stringify({
             compilerOptions: { checkJs: true, noEmit: true, strict: true },
           }),
         );
-        writeESLintConfig({
-          extends: configName,
-          parserOptions: {
-            tsconfigRootDir: cwd,
-            project: ["./tsconfig.json"],
-          },
-        });
+        writeESLintConfig(
+          `
+[
+  ...ybiquitous.configs.recommended,
+  ...ybiquitous.configs.typescript,
+  {
+    languageOptions: {
+      parserOptions: {
+        tsconfigRootDir: "${cwd}",
+        project: ["./tsconfig.json"],
+      },
+    },
+  },
+]
+`.trim(),
+        );
       } else {
-        writeESLintConfig({ extends: configName });
+        const additionalConfigs = configs.map((c) => `...ybiquitous.configs.${c}`).join(", ");
+        writeESLintConfig(`[...ybiquitous.configs.recommended, ${additionalConfigs}]`);
       }
       writeLintTargetFile("[1, 2].indexOf(1);");
-      $(eslint, ["."], { cwd });
+      $(eslint, [], { cwd });
+      $(eslint, ["--print-config", "eslint.config.js"], { cwd });
       return true;
     };
 
-    expect(runTest("node.js")).toBeTruthy();
-    expect(runTest("browser.js")).toBeTruthy();
-    expect(runTest("react.js")).toBeTruthy();
-    expect(runTest("typescript.js")).toBeTruthy();
-
-    const printConfig = (/** @type {string} */ file) => {
-      $(eslint, ["--print-config", path.join("node_modules", "eslint-config-ybiquitous", file)], {
-        cwd,
-      });
-      return true;
-    };
-
-    expect(printConfig("index.js")).toBeTruthy();
-    expect(printConfig("node.js")).toBeTruthy();
-    expect(printConfig("browser.js")).toBeTruthy();
-    expect(printConfig("react.js")).toBeTruthy();
-    expect(printConfig("typescript.js")).toBeTruthy();
+    expect(runTest("node")).toBeTruthy();
+    expect(runTest("browser")).toBeTruthy();
+    expect(runTest("browser", "react")).toBeTruthy();
+    expect(runTest("typescript")).toBeTruthy();
   });
 });

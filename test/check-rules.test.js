@@ -1,15 +1,43 @@
+import { writeFileSync, rmSync } from "node:fs";
 import { EOL } from "node:os";
-import { test, expect } from "vitest";
-import { $ } from "./helper.js";
+import path from "node:path";
+import { test, beforeAll, afterAll } from "vitest";
+
+import { $, makeTmpDir } from "./helper.js";
+
+let tmpDir;
+let tmpConfigFile;
+
+beforeAll(() => {
+  tmpDir = makeTmpDir();
+  tmpConfigFile = path.join(tmpDir, "eslint.config.mjs");
+  writeFileSync(
+    tmpConfigFile,
+    `
+import ybiquitous from "../../index.js";
+
+export default [
+  ...ybiquitous.configs.recommended,
+  ...ybiquitous.configs.node,
+  ...ybiquitous.configs.browser,
+  ...ybiquitous.configs.react,
+  ...ybiquitous.configs.typescript,
+];
+`.trim(),
+  );
+});
+
+afterAll(() => {
+  rmSync(tmpDir, { force: true, recursive: true });
+});
 
 /**
- * @param {string} file
  * @param {string} option
  * @param {Record<string, string>} env
  */
-const checkRules = (file, option, env = {}) => {
+const checkRules = (option, env = {}) => {
   try {
-    $("eslint-find-rules", ["--verbose", option, file], { env });
+    $("eslint-find-rules", ["--verbose", "--flatConfig", option, tmpConfigFile], { env });
   } catch (err) {
     const { stdout, stderr } = err;
     if (typeof stdout === "string" && stdout !== "") {
@@ -27,29 +55,19 @@ test("no unused rules", () => {
     // ...
   ];
 
-  const runTest = (/** @type {string} */ file) => {
-    try {
-      checkRules(file, "--unused");
-      return true;
-    } catch (err) {
-      if (typeof err.stdout === "string") {
-        const msgs = deprecatedRules
-          .filter((rule) => err.stdout.includes(`${rule} `))
-          .map((rule) => `  --> "${rule}" is deprecated`);
-        if (msgs.length !== 0) {
-          process.stderr.write(msgs.join(EOL) + EOL);
-          return true;
-        }
+  try {
+    checkRules("--unused");
+  } catch (err) {
+    if (typeof err.stdout === "string") {
+      const msgs = deprecatedRules
+        .filter((rule) => err.stdout.includes(`${rule} `))
+        .map((rule) => `  --> "${rule}" is deprecated`);
+      if (msgs.length !== 0) {
+        process.stderr.write(msgs.join(EOL) + EOL);
       }
-      throw err;
     }
-  };
-
-  expect(runTest("index.js")).toBeTruthy();
-  expect(runTest("node.js")).toBeTruthy();
-  expect(runTest("browser.js")).toBeTruthy();
-  expect(runTest("react.js")).toBeTruthy();
-  expect(runTest("typescript.js")).toBeTruthy();
+    throw err;
+  }
 });
 
 test("deprecated rules", () => {
@@ -126,27 +144,18 @@ test("deprecated rules", () => {
     "yield-star-spacing",
   ];
 
-  const runTest = (/** @type {string} */ file) => {
-    try {
-      checkRules(file, "--deprecated", { ESLINT_CONFIG_PRETTIER_NO_DEPRECATED: "true" });
-      return true;
-    } catch (err) {
-      if (typeof err.stdout === "string") {
-        const msgs = ignoredRules
-          .filter((rule) => err.stdout.includes(`${rule} `))
-          .map((rule) => `  --> "${rule}" is deprecated but included in the recommended config`);
-        if (msgs.length !== 0) {
-          process.stderr.write(msgs.join(EOL) + EOL);
-          return true;
-        }
+  try {
+    checkRules("--deprecated", { ESLINT_CONFIG_PRETTIER_NO_DEPRECATED: "true" });
+  } catch (err) {
+    if (typeof err.stdout === "string") {
+      const msgs = ignoredRules
+        .filter((rule) => err.stdout.includes(`${rule} `))
+        .map((rule) => `  --> "${rule}" is deprecated but included in the recommended config`);
+      if (msgs.length !== 0) {
+        process.stderr.write(msgs.join(EOL) + EOL);
+        return; // passed
       }
-      throw err;
     }
-  };
-
-  expect(runTest("index.js")).toBeTruthy();
-  expect(runTest("node.js")).toBeTruthy();
-  expect(runTest("browser.js")).toBeTruthy();
-  expect(runTest("react.js")).toBeTruthy();
-  expect(runTest("typescript.js")).toBeTruthy();
+    throw err;
+  }
 });

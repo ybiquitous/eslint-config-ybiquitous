@@ -24,17 +24,41 @@ npm install --save-dev eslint-config-ybiquitous eslint prettier
 When using TypeScript, install the following in addition:
 
 ```sh
-npm install --save-dev @typescript-eslint/eslint-plugin
+npm install --save-dev typescript-eslint
 ```
 
 ## Usage
 
-Edit your `.eslintrc.*` file according to some following cases:
+Edit your `eslint.config.js` file according to some following cases:
 
-| Case       | Setting                            |
-| ---------- | ---------------------------------- |
-| Basic      | `extends: "ybiquitous"`            |
-| Node.js    | `extends: "ybiquitous/node"`       |
-| Browser    | `extends: "ybiquitous/browser"`    |
-| React      | `extends: "ybiquitous/react"`      |
-| TypeScript | `extends: "ybiquitous/typescript"` |
+| Case        | Setting               |
+| ----------- | --------------------- |
+| Recommended | `configs.recommended` |
+| Node.js     | `configs.node`        |
+| Browser     | `configs.browser`     |
+| React       | `configs.react`       |
+| TypeScript  | `configs.typescript`  |
+
+For example:
+
+```js
+import ybiquitous from "eslint-config-ybiquitous";
+
+export default [...ybiquitous.configs.recommended, ...ybiquitous.configs.node];
+```
+
+```js
+import ybiquitous from "eslint-config-ybiquitous";
+
+export default [
+  ...ybiquitous.configs.recommended,
+  ...ybiquitous.configs.browser,
+  ...ybiquitous.configs.react,
+];
+```
+
+```js
+import ybiquitous from "eslint-config-ybiquitous";
+
+export default [...ybiquitous.configs.recommended, ...ybiquitous.configs.typescript];
+```

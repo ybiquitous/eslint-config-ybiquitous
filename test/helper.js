@@ -25,7 +25,12 @@ const log = (msg) => {
  * @param {import("child_process").ExecFileSyncOptions} options
  */
 export const $ = (cmd, args = [], options = {}) => {
-  log(`> ${cmd} '${args.join("' '")}'`);
+  if (args.length) {
+    log(`> ${cmd} '${args.join("' '")}'`);
+  } else {
+    log(`> ${cmd}`);
+  }
+
   const stdout = execFileSync(cmd, args, {
     ...options,
     encoding: "utf8",
@@ -43,12 +48,18 @@ export const $ = (cmd, args = [], options = {}) => {
 };
 
 /**
+ * @returns {string}
+ */
+export const makeTmpDir = () => {
+  mkdirSync(TMP_DIR, { recursive: true });
+  return mkdtempSync(TMP_DIR);
+};
+
+/**
  * @param {(workDir: string) => void} callback
  */
 export const sandbox = (callback) => {
-  mkdirSync(TMP_DIR, { recursive: true });
-
-  const workDir = mkdtempSync(TMP_DIR);
+  const workDir = makeTmpDir();
   try {
     return callback(workDir);
   } catch (err) {
@@ -65,6 +76,6 @@ export const sandbox = (callback) => {
     }
     throw err;
   } finally {
-    rmSync(TMP_DIR, { recursive: true, force: true });
+    rmSync(workDir, { recursive: true, force: true });
   }
 };
