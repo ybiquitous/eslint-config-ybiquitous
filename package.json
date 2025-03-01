@@ -43,7 +43,7 @@
     "prettier": "^3.4.2",
     "remark-preset-ybiquitous": "^0.4.4",
     "typescript": "^5.7.3",
-    "vitest": "^3.0.5",
+    "vitest": "^3.0.7",
     "ybiq": "^17.4.0"
   },
   "peerDependencies": {
