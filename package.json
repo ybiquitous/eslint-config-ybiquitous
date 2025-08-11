@@ -37,7 +37,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
     "@tsconfig/node16": "^16.1.4",
-    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/eslint-plugin": "^8.39.0",
     "eslint": "^8.57.0",
     "eslint-find-rules": "^5.0.0",
     "prettier": "^3.6.2",
@@ -47,7 +47,7 @@
     "ybiq": "^18.0.0"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": ">=8.20.0",
+    "@typescript-eslint/eslint-plugin": ">=8.39.0",
     "eslint": ">=8.50.0 <9.0.0"
   },
   "peerDependenciesMeta": {
