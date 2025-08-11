@@ -2,6 +2,33 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [22.0.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v21.1.0...v22.0.0) (2025-08-11)
+
+### ⚠ BREAKING CHANGES
+
+- drop Node.js 18 support (#1451)
+- update `ecmaVersion` to `2022` (#1392)
+- migrate `eslint-plugin-node` to `eslint-plugin-n` (#1391)
+- migrate `eslint-plugin-eslint-comments` to `@eslint-community/eslint-plugin-eslint-comments` (#1390)
+
+### Features
+
+- **deps:** bump @typescript-eslint/eslint-plugin from 8.12.2 to 8.19.0 ([#1374](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1374)) ([b878cd9](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/b878cd98205c77ca4040e0d48fcfecb0a11b4223))
+- **deps:** bump @typescript-eslint/eslint-plugin from 8.19.0 to 8.20.0 ([#1384](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1384)) ([4fcb4a4](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/4fcb4a4d1c61d16a8800685723b65b75e99231a3))
+- **deps:** bump @typescript-eslint/eslint-plugin from 8.20.0 to 8.39.0 as peer ([#1447](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1447)) ([d5b2889](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/d5b2889607508ef3e433cc65fb7a6d6445b7a679))
+- **deps:** bump eslint-plugin-import from 2.31.0 to 2.32.0 ([#1439](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1439)) ([9640e14](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/9640e14a4c66c8754b41f92035ed1b757117f2a1))
+- **deps:** bump eslint-plugin-n from 17.18.0 to 17.21.3 ([#1448](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1448)) ([f06cf36](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/f06cf3692a16341c417d6b5b50d4e9737ad82d0e))
+- **deps:** bump eslint-plugin-react from 7.35.0 to 7.37.2 ([#1359](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1359)) ([dc57baf](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/dc57baf3ed1382b54e478f1e32c688c1770dba06))
+- drop Node.js 18 support ([#1451](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1451)) ([553603c](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/553603c06fa7dbf1d7d2b3d6c1e6ae736635dfa3))
+- migrate `eslint-plugin-eslint-comments` to `@eslint-community/eslint-plugin-eslint-comments` ([#1390](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1390)) ([71defcb](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/71defcb90b12185ff6fc91da33c6d4a5e2b2c010))
+- migrate `eslint-plugin-node` to `eslint-plugin-n` ([#1391](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1391)) ([5ed92b5](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/5ed92b5ccc13a8ba5263a546ae98f5ef197c2180))
+- update `ecmaVersion` to `2022` ([#1392](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1392)) ([1b49bdf](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/1b49bdf45b416061efd60b7ef7306abd2ca3085f))
+
+### Bug Fixes
+
+- **deps:** bump eslint-config-prettier from 9.1.0 to 10.0.1 ([#1382](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1382)) ([280f93b](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/280f93b8bd427ffa0d5a38ab74db57c666bc9b41))
+- **deps:** clarify eslint 9.0.0 has not unsupported yet ([#1381](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1381)) ([8e8eb0c](https://github.com/ybiquitous/eslint-config-ybiquitous/commit/8e8eb0c19d98c43a65e13c42af59576941c345de))
+
 ## [21.1.0](https://github.com/ybiquitous/eslint-config-ybiquitous/compare/v21.0.0...v21.1.0) (2024-09-02)
 
 ### Features
