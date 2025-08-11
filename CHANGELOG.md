@@ -12,8 +12,8 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### ⚠ BREAKING CHANGES
 
-- **typescript:** require `@typescript-eslint/eslint-plugin>=8.0.0` as peer dependency (#1339)
-- **typescript:** add new rules and remove deprecated rules since @typescript-eslint/eslint-plugin v8 (#1331)
+- **typescript:** require `@typescript-eslint/eslint-plugin>=8.0.0` as peer dependency ([#1339](https://github.com/ybiquitous/eslint-config-ybiquitous/pull/1339))
+- **typescript:** add new rules and remove deprecated rules since @typescript-eslint/eslint-plugin v8 ([#1331](https://github.com/ybiquitous/eslint-config-ybiquitous/pull/1331))
 
 ### Features
 
@@ -31,7 +31,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### ⚠ BREAKING CHANGES
 
-- **deps:** bump @typescript-eslint/eslint-plugin from 6.20.0 to 7.1.0 (#1299)
+- **deps:** bump @typescript-eslint/eslint-plugin from 6.20.0 to 7.1.0 ([#1299](https://github.com/ybiquitous/eslint-config-ybiquitous/pull/1299))
 
 ### Features
 
@@ -50,7 +50,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### ⚠ BREAKING CHANGES
 
-- drop Node.js 16 support (#1270)
+- drop Node.js 16 support ([#1270](https://github.com/ybiquitous/eslint-config-ybiquitous/pull/1270))
 
 ### Features
 
@@ -85,7 +85,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### ⚠ BREAKING CHANGES
 
-- **deps:** bump @typescript-eslint/eslint-plugin from 5.60.1 to 6.1.0 (#1235)
+- **deps:** bump @typescript-eslint/eslint-plugin from 5.60.1 to 6.1.0 ([#1235](https://github.com/ybiquitous/eslint-config-ybiquitous/pull/1235))
 
 ### Features
 
@@ -95,7 +95,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### ⚠ BREAKING CHANGES
 
-- drop Node.js 14 support (#1212)
+- drop Node.js 14 support ([#1212](https://github.com/ybiquitous/eslint-config-ybiquitous/pull/1212))
 
 ### Features
 
@@ -132,7 +132,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### ⚠ BREAKING CHANGES
 
-- drop Node.js v12 support (#1109)
+- drop Node.js v12 support ([#1109](https://github.com/ybiquitous/eslint-config-ybiquitous/pull/1109))
 
 ### Features
 
