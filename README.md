@@ -29,12 +29,12 @@ npm install --save-dev @typescript-eslint/eslint-plugin
 
 ## Usage
 
-Edit your `.eslintrc.*` file according to some following cases:
+Add any sharable configs to your ESLint configuration files, according to some following cases:
 
-| Case       | Setting                            |
-| ---------- | ---------------------------------- |
-| Basic      | `extends: "ybiquitous"`            |
-| Node.js    | `extends: "ybiquitous/node"`       |
-| Browser    | `extends: "ybiquitous/browser"`    |
-| React      | `extends: "ybiquitous/react"`      |
-| TypeScript | `extends: "ybiquitous/typescript"` |
+| Case       | Config                               |
+| ---------- | ------------------------------------ |
+| Basic      | `extends: ["ybiquitous"]`            |
+| Node.js    | `extends: ["ybiquitous/node]`        |
+| Browser    | `extends: ["ybiquitous/browser"]`    |
+| React      | `extends: ["ybiquitous/react"]`      |
+| TypeScript | `extends: ["ybiquitous/typescript"]` |
