@@ -21,6 +21,7 @@ module.exports = {
     "n/no-restricted-import": "off",
     "n/no-restricted-require": "off",
     "n/no-sync": "off",
+    "n/no-top-level-await": "error",
     "n/prefer-global/buffer": "error",
     "n/prefer-global/console": "error",
     "n/prefer-global/process": "error",
