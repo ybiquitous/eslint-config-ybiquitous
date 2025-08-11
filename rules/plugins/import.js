@@ -4,6 +4,7 @@ module.exports = {
   rules: {
     "import/consistent-type-specifier-style": "off",
     "import/dynamic-import-chunkname": "off",
+    "import/enforce-node-protocol-usage": ["error", "always"],
     "import/exports-last": "off",
     "import/extensions": [
       "error",
