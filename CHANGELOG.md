@@ -6,10 +6,10 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### ⚠ BREAKING CHANGES
 
-- drop Node.js 18 support (#1451)
-- update `ecmaVersion` to `2022` (#1392)
-- migrate `eslint-plugin-node` to `eslint-plugin-n` (#1391)
-- migrate `eslint-plugin-eslint-comments` to `@eslint-community/eslint-plugin-eslint-comments` (#1390)
+- drop Node.js 18 support ([#1451](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1451))
+- update `ecmaVersion` to `2022` ([#1392](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1392))
+- migrate `eslint-plugin-node` to `eslint-plugin-n` ([#1391](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1391))
+- migrate `eslint-plugin-eslint-comments` to `@eslint-community/eslint-plugin-eslint-comments` ([#1390](https://github.com/ybiquitous/eslint-config-ybiquitous/issues/1390))
 
 ### Features
 
