@@ -32,7 +32,7 @@
     "eslint-plugin-n": "^17.21.3",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-regexp": "^2.9.0"
+    "eslint-plugin-regexp": "^2.10.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
