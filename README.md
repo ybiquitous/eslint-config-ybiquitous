@@ -1,3 +1,6 @@
+> [!WARNING]
+> This package has been deprecated. The update will no longer be provided.
+
 # eslint-config-ybiquitous
 
 [![npm](https://img.shields.io/npm/v/eslint-config-ybiquitous.svg)](https://www.npmjs.com/package/eslint-config-ybiquitous)
