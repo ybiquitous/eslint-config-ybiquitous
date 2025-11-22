@@ -1,4 +1,4 @@
-> [!WARNING]
+> [!CAUTION]
 > This package has been deprecated. The update will no longer be provided.
 
 # eslint-config-ybiquitous
